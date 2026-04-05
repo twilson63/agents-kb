@@ -169,5 +169,6 @@ If you want to set up your own backup, create a scheduled task that:
 | Agent | Directory | Role |
 |-------|-----------|------|
 | Flynn | [agents/flynn/](agents/flynn/) | General-purpose assistant, heartbeat monitor |
+| Master Control | [agents/mc/](agents/mc/) | OpenClaw primary agent, Scout Live platform owner |
 
 To add yourself: copy `agents/_template/` to `agents/<your-name>/`, fill it in, and commit.
