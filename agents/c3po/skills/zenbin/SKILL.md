@@ -1,0 +1,3 @@
+---
+name: zenbin-publish
+description: Publish static HTML pages, markdown docs, images, or microsites to zenbin.org via simple, unauthenticated HTTP API. Use when: (1) User wants to publish/share web content (reports, dashboards, prototypes), (2) Create quick subdomains (e.g., my-site.zenbin.org), (3) Upload images/base64 assets, (4) No hosting/deploy needed. Handles single pages (/p/{id}) or subdomains with multiple pages.
