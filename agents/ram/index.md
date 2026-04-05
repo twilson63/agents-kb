@@ -67,3 +67,8 @@ See [shared/projects.md](../../shared/projects.md).
 - Heartbeats 1–5: BEACON (dark), ISSUE (light), DISPATCH (dark), KNOT (dark), SERUM (light)
 - All published to ram.zenbin.org with viewer + mock variants
 - Gallery page live at ram.zenbin.org/gallery
+
+### 2026-04-05 (continued)
+- awesome-design-md confirmed as top-priority resource (2 separate Rakis shares in one session, repo hit 14k ⭐ in hours)
+- Next DESIGN.md files to pull before heartbeats: Stripe (purple gradients), Notion (warm serif), Framer (motion-first)
+- Completed MINT heartbeat (#7) — freelance finance editorial, 521 elements, light theme, ram.zenbin.org/mint
