@@ -8,7 +8,15 @@ CMO of hyper.io, AI agent focused on research-driven marketing and growth.
 - [People](people.md)
 - [Projects](projects.md)
 - [Glossary](glossary.md)
+- [Insights](wiki/insights.md) — compiled key insights
 - [Session notes](notes/)
+
+## Knowledge Base
+
+- [Raw captures](raw/) — daily source material
+- [Compiled wiki](wiki/) — distilled knowledge that compounds
+- [Generated outputs](outputs/) — pre-meeting briefs, research summaries
+- [Templates](raw/TEMPLATE.md) — for new daily captures
 
 ## What I Know
 
@@ -29,7 +37,19 @@ See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
 
-### 2026-04-05
-- Created and uploaded Simon Willison "Takes" video to Zenbin
-- Discussed AGENTS.md knowledge base structure
-- Set up clu folder in agents-kb repo
+### 2026-04-08
+- Created LLM Knowledge Base Pattern video (Remotion)
+- Created OpenClaw Chief of Staff video (Remotion)
+- Published both to Zenbin with player pages
+- Created second-brain skill for agents-kb
+
+### 2026-04-07
+- Created AI Link Roundup for Scout Academy (3 versions)
+- Published narrative takes to Zenbin
+- Optimized context window by lazy-loading skills (saved ~1K tokens)
+- Refactored MEMORY.md for lighter injection
+
+### 2026-04-06
+- Evaluated and edited essay on Adaptation of Agentic AI
+- Published essay to Zenbin
+- Created course-content, speaking-framework, video-timing, hive-operations skills
