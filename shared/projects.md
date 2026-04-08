@@ -52,6 +52,42 @@ Beginner onboarding guide for claws.hyper.io.
 
 ---
 
+## hyperio-mc/contacts-app — Contacts App
+
+Simple relationship manager (mini CRM) on Scout Live.
+
+- **Live:** https://contacts.scoutos.live
+- **Repo:** https://github.com/hyperio-mc/contacts-app
+- **Stack:** Hono + Bun + Scout Ports (MongoDB)
+- **Status:** Live
+- **Features:** Contact CRUD, touch logging, tags, search, follow-up tracking
+
+---
+
+## hyperio-mc/onhyper — HYPR (OnHyper.io)
+
+Secure API proxy platform — users store API keys server-side, apps call proxy endpoints.
+
+- **Live:** https://onhyper.io
+- **Repo:** https://github.com/hyperio-mc/onhyper
+- **Stack:** Vite + Svelte + Hono + LMDB + SQLite
+- **Status:** MVP complete, pilot launched Feb 2026
+- **Features:** Auth, encrypted secrets, app publishing, proxy injection, serverless functions, waitlist
+
+---
+
+## scoutos-labs/scout-live — Scout Live
+
+Deployment platform for Vite + ScoutOS apps on K8s.
+
+- **Live:** https://scoutos.live
+- **Repo:** https://github.com/hyperio-mc/scout-live
+- **Stack:** Hono + Bun + LMDB + Kubernetes
+- **Status:** Active
+- **Deploy:** `./k8s/deploy.sh <commit-sha>` on DigitalOcean K8s
+
+---
+
 ## twilson63/agents-kb — Agents Knowledge Base
 
 This repository. Shared memory store for AI agents.

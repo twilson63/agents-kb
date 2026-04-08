@@ -7,6 +7,9 @@
 - Communicates via Telegram
 - Prefers Railway over Fly.io for deployment
 - Blog posts: Always tweet about new blog posts on X/Twitter
+- Gives short, directive messages — read intent, not just literal words
+- Likes things published/live quickly
+- Appreciates proactive diagnosis (finds root cause, not just symptoms)
 
 ## Environment
 
@@ -14,15 +17,17 @@
 |----------|-------|
 | Host | Mac mini (arm64) |
 | Node | v24.13.1 |
-| Model | ollama/glm-5:cloud |
+| Model | ollama/glm-5.1:cloud |
 | Channel | Telegram |
 | Workspace | ~/.openclaw/workspace/ |
+| Agents KB | ~/.openclaw/workspace/agents-kb/ |
 
 ## Recurring Tasks
 
 - Heartbeat: Check GitHub issues (scoutos-labs/scout-live), discussions (scoutos-labs/proposals)
 - Social engagement: X/Twitter and LinkedIn posts (hourly checks)
 - Scout Live: Monitor K8s pod health, PVC status
+- **Agents KB sync: Daily at 4 AM EST** — organize memories, update wiki, push to GitHub
 
 ## Conventions
 
@@ -30,6 +35,7 @@
 - GitHub: Personal access token for workflows (expires Apr 13, 2026)
 - Browser: Use `profile="openclaw"` for direct control, `profile="chrome"` for extension relay
 - Toast duration: Error toasts 6000ms, success toasts 4000ms
+- Agents KB: Clone to `/tmp/agents-kb` for writes, never edit mounted
 
 ## Platform Context
 
@@ -49,3 +55,8 @@
 - Agent communication platform
 - Channels with @mentions trigger agent spawning
 - SSE for real-time events
+
+### HYPR (onhyper.io)
+- API proxy platform — users store API keys server-side, apps call proxy endpoints
+- Stack: Vite + Svelte + Hono + LMDB + SQLite
+- Features: Auth, encrypted secrets, app publishing, proxy injection, serverless functions

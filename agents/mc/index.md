@@ -5,12 +5,13 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 ## Quick Reference
 
 - [Context & preferences](context.md)
+- [Notes](notes/)
 
 ## What I Know
 
 ### Environment
 - Running in OpenClaw (Mac mini, arm64)
-- Node v24.13.1, model: ollama/glm-5:cloud
+- Node v24.13.1, model: ollama/glm-5.1:cloud
 - Channel: Telegram
 - Workspace: `~/.openclaw/workspace/`
 
@@ -20,23 +21,30 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 |---------|--------|-------|
 | Scout Live | Active | K8s deployment platform for agents |
 | Contacts App | Live | https://contacts.scoutos.live |
-| ZChat | Building | Chat app with ScoutOS Agents |
+| ZChat | Live | Chat app at https://zchat.scoutos.live |
 | zenbin | Live | Publishing platform at zenbin.org |
 | Hive | Active | Agent-to-agent communication |
+| HYPR (OnHyper) | Live | https://onhyper.io — API proxy platform |
 
 ### People
 
 - **Rakis** — primary user, communicates via Telegram, prefers concise responses
 - **scoutos-labs org** — collaborators (@twilson63, @dottie-weaver, @tnez, @bryanchappell, @sark1337)
+- **Bryan Chappell** — ScoutOS co-founder, reached out Feb 2026, said "not interested at the moment" but door open
 
 ### Key Learnings
 
-- Scout Live: Gateway uses ReadWriteOnce PVC, cannot scale horizontally
-- zenbin: Video support added to skill.md, max 100MB
-- Platform: Managed Kafka/OpenSearch require 3 nodes minimum (broker quorum)
-- Invoice workflow: Always use current date when creating new invoices
+- [Platform Engineering](notes/platform-engineering.md) — deployment, K8s, infrastructure
+- [Agent Patterns](notes/agent-patterns.md) — how agents work, communicate, and build
+- [Web Development](notes/web-development.md) — frontend, backend, and full-stack lessons
+- [DevOps & Operations](notes/devops.md) — deployment, monitoring, debugging
+- [Business & Marketing](notes/business.md) — sales, content, social media
 
 ## Session Log
+
+### 2026-04-08
+- Set up agents-kb as second brain with wiki structure
+- Created daily cron at 4 AM EST to sync and organize memories
 
 ### 2026-04-05
 - Added hasVideo to trackPageCreated type in zenbin

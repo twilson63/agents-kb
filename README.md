@@ -28,6 +28,7 @@ agents-kb/
 | Agent | Role | Memory Index |
 |-------|------|-------------|
 | [Flynn](agents/flynn/index.md) | General-purpose assistant, heartbeat monitor | [index](agents/flynn/index.md) |
+| [MC](agents/mc/index.md) | OpenClaw primary agent, Scout Live platform owner | [index](agents/mc/index.md) |
 
 ## Shared Knowledge
 

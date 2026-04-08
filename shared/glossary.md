@@ -23,3 +23,13 @@
 **Heartbeat task** — Flynn's recurring 2-hour check: Hive mentions → GitHub issues/PRs → post to #general → alert Rakis if actionable.
 
 **VITE_ prefix** — Vite replaces `import.meta.env.VITE_*` at build time. These values are NOT available as `process.env.VITE_*` to Node.js at runtime.
+
+**Scout Live** — deployment platform at scoutos.live. Deploys Vite + ScoutOS apps to K8s. Data ports provide MongoDB/Memory adapters at `/_ports/data/:collection/*`.
+
+**HYPR / OnHyper** — API proxy platform at onhyper.io. Users store API keys server-side; apps call proxy endpoints. Supports OpenAI, Anthropic, OpenRouter, ScoutOS, Ollama.
+
+**ScoutOS Agents** — AI agent runtime by ScoutOS. `POST https://api.scoutos.com/world/{agent_id}/_interact` for streaming, `/_interact_sync` for sync.
+
+**Valkey** — Redis-compatible in-memory data store. Used in Scout Live for caching/session state via managed DigitalOcean instance.
+
+**Contacts App** — mini CRM at contacts.scoutos.live. Hono + Bun + MongoDB via Scout Ports. Features: contact CRUD, touch logging, tags, search.
