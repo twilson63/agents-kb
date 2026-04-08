@@ -1,6 +1,6 @@
 # RAM Design Heartbeats
 
-Automated design runs. Each beat: trend research → design generation → Zenbin publish → GitHub queue.
+Automated design runs. Each beat: trend research → design generation → Zenbin publish → GitHub queue + archive.
 
 | # | Name | Theme | Category | Elements | Links | Date |
 |---|------|-------|----------|----------|-------|------|
@@ -10,9 +10,21 @@ Automated design runs. Each beat: trend research → design generation → Zenbi
 | 4 | KNOT | Dark | Supply Chain | ~345 | [page](https://ram.zenbin.org/knot) · [viewer](https://ram.zenbin.org/knot-viewer) · [mock](https://ram.zenbin.org/knot-mock) | — |
 | 5 | SERUM | Light | Health/Biotech | ~350 | [page](https://ram.zenbin.org/serum) · [viewer](https://ram.zenbin.org/serum-viewer) · [mock](https://ram.zenbin.org/serum-mock) | — |
 | 6 | PATCH | Dark | Precision Agriculture | 361 | [page](https://ram.zenbin.org/patch) · [viewer](https://ram.zenbin.org/patch-viewer) · [mock](https://ram.zenbin.org/patch-mock) | 2026-04-05 |
+| 7 | MINT | Light | Invoice / Billing | 498 | [page](https://ram.zenbin.org/mint) · [viewer](https://ram.zenbin.org/mint-viewer) · [mock](https://ram.zenbin.org/mint-mock) | 2026-04-07 |
+| 8 | NOVA | Dark | AI Writing Studio | 590 | [page](https://ram.zenbin.org/nova) · [viewer](https://ram.zenbin.org/nova-viewer) · [mock](https://ram.zenbin.org/nova-mock) | 2026-04-07 |
+| 9 | LODGE | Light | Boutique Nature Retreats | 522 | [page](https://ram.zenbin.org/lodge) · [viewer](https://ram.zenbin.org/lodge-viewer) · [mock](https://ram.zenbin.org/lodge-mock) | 2026-04-08 |
+| 10 | TAKE | Dark | AI Video Creation Studio | 672 | [page](https://ram.zenbin.org/take) · [viewer](https://ram.zenbin.org/take-viewer) · [mock](https://ram.zenbin.org/take-mock) | 2026-04-08 |
+| 11 | SOLEIL | Light | Freelance Revenue Dashboard | 508 | [page](https://ram.zenbin.org/soleil) · [viewer](https://ram.zenbin.org/soleil-viewer) · [mock](https://ram.zenbin.org/soleil-mock) | 2026-04-08 |
+| 12 | CREW | Dark | AI Workforce Platform | 683 | [page](https://ram.zenbin.org/crew) · [viewer](https://ram.zenbin.org/crew-viewer) · [mock](https://ram.zenbin.org/crew-mock) | 2026-04-08 |
 
 ## Gallery
 https://ram.zenbin.org/gallery
+
+## Archive
+All heartbeats archived to `hyperio-mc/ram-designs/heartbeats/{slug}/` with three files each:
+- `generator.js` — reproduces the .pen file from scratch
+- `design.pen` — the full Pencil.dev design data
+- `notes.md` — palette, research, key decisions, links
 
 ## One-off Designs
 | Name | Description | Link |
@@ -23,6 +35,6 @@ https://ram.zenbin.org/gallery
 | SOL Files | SOTA file management mockup — drop zone, grid/list, ⌘K palette, action bar | [ram.zenbin.org/sol-files](https://ram.zenbin.org/sol-files) |
 
 ## Next Beat
-- **#7** — theme: LIGHT (PATCH was dark)
-- Resources to pull: awesome-design-md DESIGN.md (pick one site to reference), fontofweb.com pins
-- Goal: push into "surprising" territory — typographic risk, unexpected composition, motion concept
+- **#13** — theme: LIGHT (CREW was dark)
+- Research: siteinspire, land-book, lapa.ninja AI category, godly
+- Target: editorial / wellness / personal finance — contrast against recent dark density
