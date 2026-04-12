@@ -2,16 +2,6 @@
 
 Guidelines for agents writing to this knowledge base.
 
-## The Second Brain Pattern
-
-This knowledge base uses the **second brain** pattern — a three-layer system that compounds over time:
-
-1. **`raw/`** — Unprocessed inputs (links, notes, search results)
-2. **`wiki/`** — Compiled knowledge (maintained by the agent daily)
-3. **`outputs/`** — Generated artifacts (reports, answers, summaries)
-
-See [skills/second-brain/SKILL.md](skills/second-brain/SKILL.md) for the full workflow.
-
 ## Principles
 
 - **Plain markdown** — no special syntax, no frontmatter required
@@ -19,31 +9,42 @@ See [skills/second-brain/SKILL.md](skills/second-brain/SKILL.md) for the full wo
 - **Date your entries** — use `<!-- YYYY-MM-DD -->` comments or headings
 - **Be concise** — summaries over transcripts, facts over narrative
 - **Prefer updating over appending** — keep pages current, not chronological logs
-- **Compile, don't hoard** — process raw inputs into wiki pages, don't leave them in raw/
-- **Distill regularly** — weekly review of wiki → context, monthly review of context → index
+
+## The Second Brain Pattern
+
+This repo follows the Karpathy-inspired knowledge base pattern:
+
+```
+raw/      → Unprocessed inputs (links, notes, screenshots)
+wiki/     → Compiled knowledge (daily status, decisions, patterns)
+outputs/  → Generated artifacts (reports, analyses, videos)
+```
+
+### How it works
+
+1. **During sessions:** Drop links, notes, observations into `raw/`
+2. **Daily compile:** Agent reads raw inputs, extracts key facts, writes to `wiki/`
+3. **Weekly review:** Agent reviews wiki, distills patterns into `context.md`
+4. **Monthly distillation:** Agent reviews everything, archives stale entries
+
+### The compile step is the key
+
+RAG retrieves. This compounds. The difference is the compile step — moving raw inputs into structured, searchable, cross-linked wiki pages.
 
 ## File Conventions
 
-### Agent directories (`agents/<name>/`)
+### Agent memory files (`agents/<name>/`)
 
-```
-agents/<name>/
-├── index.md       ← Top-level index (updated regularly)
-├── context.md     ← Persistent context: preferences, patterns, environment
-├── projects.md    ← Active projects and status
-├── people.md      ← Key relationships and preferences
-├── glossary.md    ← Terms, tools, conventions
-├── raw/           ← Unprocessed inputs
-│   └── archive/   ← Processed raw files
-├── wiki/          ← Compiled knowledge
-│   ├── today.md   ← Today's compiled status
-│   ├── decisions.md
-│   ├── patterns.md
-│   ├── lessons.md
-│   └── <topic>.md
-├── outputs/       ← Generated artifacts
-└── notes/         ← Legacy topic notes (migrate to wiki/ over time)
-```
+- `index.md` — top-level index of what the agent knows
+- `context.md` — persistent context: user preferences, recurring patterns, environment facts
+- `wiki/today.md` — today's compiled status (created fresh each day)
+- `wiki/decisions.md` — important decisions and reasoning
+- `wiki/patterns.md` — recurring patterns and mental models
+- `wiki/lessons.md` — mistakes made, lessons learned
+- `wiki/<topic>.md` — topic-specific compiled knowledge (web dev, AI research, etc.)
+- `raw/` — unprocessed inputs, filed with date prefix
+- `raw/archive/` — processed raw files (moved after compilation)
+- `notes/<topic>.md` — legacy topic notes (migrate to wiki/ over time)
 
 ### Shared files (`shared/`)
 
@@ -51,42 +52,86 @@ agents/<name>/
 - Update `people.md` when you learn something durable about a person
 - Add to `glossary.md` when a new term or tool enters the vocabulary
 
-### Skills (`skills/`)
+### Raw file naming
 
-- Each skill has a `SKILL.md` that defines purpose, triggers, and workflow
-- Skills are agent-agnostic — any agent can use them
-- Reference skills from AGENTS.md or index.md
+```
+raw/
+├── 2026-04-08-link-karpathy-gist.md
+├── 2026-04-08-twitter-coreyganim.md
+├── 2026-04-08-meeting-notes.md
+└── archive/              ← Processed raw files (moved after compile)
+```
+
+## Wiki Entry Format
+
+### wiki/today.md
+
+```markdown
+# YYYY-MM-DD
+
+## Completed
+- [specific thing you did]
+
+## Decisions
+- [decision made and why]
+
+## Raw inputs processed
+- [what you read/learned and compiled]
+
+## Carried forward
+- [things to remember for tomorrow]
+```
+
+### wiki/decisions.md
+
+```markdown
+# Decisions Log
+
+## YYYY-MM-DD: [Decision Title]
+**Context:** Why this decision was needed
+**Decision:** What was chosen
+**Reasoning:** Why
+**Outcome:** (update later)
+```
+
+### wiki/patterns.md
+
+```markdown
+# Patterns & Mental Models
+
+## [Pattern Name]
+Brief description of the pattern, when it applies, and why it works.
+```
+
+### wiki/lessons.md
+
+```markdown
+# Lessons Learned
+
+## YYYY-MM-DD: [Lesson Title]
+**What happened:** Brief description
+**Lesson:** What was learned
+**Action:** What was done about it
+```
 
 ## Writing Style
 
-```markdown
-## Topic
+Keep entries factual and concise. Prefer structured data over narrative. Use headers and lists for scannability.
 
-Brief summary of what this is.
-
-### Key facts
-- Fact one
-- Fact two
-
-### Last updated
-2026-04-08 — added X
-```
-
-## Daily Workflow
-
-1. **Session start:** Read `index.md`, `context.md`, `wiki/today.md`
-2. **During session:** Write raw inputs to `raw/`, process into `wiki/`
-3. **Session end:** Update `wiki/today.md` with the day's summary
-4. **Weekly:** Review wiki → update context, projects, people
-5. **Monthly:** Distill context → archive stale entries
-
-## Commit Messages
+## Git Commit Conventions
 
 Use descriptive commit messages so the git log is readable:
 
 ```
-clu: compile raw → wiki — karpathy knowledge base pattern
-clu: weekly review — updated context, projects
-clu: monthly distill — archived stale entries
-shared: update projects — hyperclaw landing live
+<agent>: compile raw → wiki — <summary of what was compiled>
+<agent>: weekly review — updated context, projects
+<agent>: monthly distill — archived stale entries
+shared: update projects — <what changed>
 ```
+
+## Agent-Specific vs Shared
+
+**Agent-specific insights** stay in `agents/<name>/wiki/`.  
+**Cross-agent insights** (project status, shared contacts) go in `shared/`.
+
+Rule of thumb: if another agent would benefit from knowing it, put it in shared.

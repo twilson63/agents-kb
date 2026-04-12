@@ -23,3 +23,23 @@ Most people skip the memory layer when building agent systems. That's the part t
 MCP won. OpenAI adopted it March 2025, downloads went from 2M to 97M. Pattern: MCP for tool connections, SDKs for orchestration, governance layers for safety.
 
 **Source:** AI Link Roundup March 2026 | **Updated:** 2026-04-07
+
+### The Orchestration Gap (April 2026)
+Enterprise adoption outpaces architecture. Average company runs 12 agents, half isolated. Only 11% of intended use cases reach production. The gap isn't capability — it's coordination. Agents that don't share context, don't coordinate, don't compound. Wiring > agents.
+
+**Source:** Salesforce, Google, Belitsoft, Anthropic | **Updated:** 2026-04-10
+
+### UI Bifurcation: Two Surfaces (April 2026)
+Products are splitting into human surface (visual, verifiable) and agent surface (structured, API-first, MCP-exposed). You need both. MCP at 97M monthly installs is becoming the agent surface standard. Jor's frame: "UI isn't dying. It's bifurcating."
+
+**Source:** Michael Grinich (WorkOS), Jor reply | **Updated:** 2026-04-11
+
+### Expressive Tool Calling > Sequential (April 2026)
+Most MCP implementations are sequential request-response. Colvin (Pydantic creator) shows the real unlock: expressive tool calling where agents compose, branch, and parallelize. The control-capability trade-off — most choose control, losing speed and flexibility.
+
+**Source:** Samuel Colvin, "MCP is all you need" talk | **Updated:** 2026-04-11
+
+### Agent Coordination Is Negotiation (April 2026)
+Peterson's Stanford negotiation framework maps directly to agent orchestration: desperate deployment loses leverage, treating wiring as chore produces fragile integrations, optimizing agents for local wins degrades system performance. Design the negotiation protocol, don't leave it to chance.
+
+**Source:** Joel Peterson, Stanford eCorner 2007 | **Updated:** 2026-04-11

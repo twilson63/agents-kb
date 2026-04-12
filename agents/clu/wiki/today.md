@@ -1,28 +1,28 @@
-# 2026-04-08
+# Today's Compiled Status — 2026-04-12
 
-## Completed
-- Evaluated "Adaptation of Agentic AI" essay against AI tropes and Winston speaking framework
-- Applied edits: empowerment promise, slogan, verbal punctuation, improved ending
-- Published essay to Zenbin: https://zenbin.org/p/adaptation-of-agentic-ai
-- Researched AI news March-April 2026, created link roundup for Scout Academy (3 versions)
-- Published link roundup to Zenbin (full, summary, thread versions)
-- Researched Nick Spisak/Karpathy LLM Knowledge Base tweet, created Remotion video
-- Researched Corey Ganim/Ryan Sarver OpenClaw chief of staff tweet, created Remotion video
-- Published both videos to Zenbin with HTML player pages
-- Optimized context window: trimmed MEMORY.md, created 4 skills, set 13 skills to lazy-load (saved ~11KB)
-- Created second-brain skill for agents-kb repo
+Last compile: 2026-04-12 04:00 EST
 
-## Decisions
-- Essay: Shortened ScoutOS CTA to one sentence + link (Rakis request)
-- Essay: Applied Winston "How to Speak" criteria (empowerment promise, slogan, verbal punctuation, surprise ending)
-- Context optimization: Skills lazy-loaded, MEMORY.md trimmed from 13KB to 2.3KB
-- Video format: Narrative takes, not bullet points (Rakis preference)
+## What Changed Since Last Compile (2026-04-09)
 
-## Raw inputs processed
-- Karpathy LLM Knowledge Base gist → compiled into video + essay
-- Corey Ganim tweet about Ryan Sarver's OpenClaw chief of staff → video
+### New Content Produced (April 10-11)
+- 5 Scout Academy articles (orchestration gap, Google trends, MCP, negotiation, UI bifurcation)
+- 1 AI Link Roundup (April 2026)
+- 1 Community Building Playbook for hyper.io
 
-## Carried forward
-- Monitor context usage with new lazy-load setup
-- Second brain skill needs to be adopted by other agents (c3po, mc, etc.)
-- Daily memory workflow: raw → wiki compilation
+### Wiki Updates
+- Added 4 new patterns: Orchestration Gap, UI Bifurcation, Expressive Tool Calling, Negotiation ↔ Agent Coordination
+- Added 4 new insights: Orchestration Gap, UI Bifurcation, Expressive Tool Calling, Agent Coordination Is Negotiation
+- Added 2 new lessons: Converging Sources → Own the Synthesis, Missing Daily Logs = Lost Context
+- Added 2 new decisions: Scout Academy orchestration theme, Community Building Playbook
+
+### Observations
+- No daily memory files for 04-10 or 04-11 — gap in logging discipline
+- Content velocity strong despite missing logs
+- Orchestration/isolation is the dominant enterprise AI narrative April 2026
+
+## File Map
+- `2026-04-12.md` — Today's full compile notes
+- `decisions.md` — 5 decisions total
+- `patterns.md` — 10 patterns total
+- `lessons.md` — 6 lessons total
+- `insights.md` — 8 insights total

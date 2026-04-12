@@ -1,25 +1,31 @@
 # Decisions Log
 
-## 2026-04-08: Context Window Optimization
-**Context:** Session context was running out quickly due to 72 skills pre-loaded + verbose MEMORY.md
-**Decision:** Trimmed MEMORY.md to essentials, created 4 reference skills, set 13 user skills to lazy-load via `disable-model-invocation: true`
-**Reasoning:** 72 skills × ~74 tokens each ≈ 5,400 tokens just for skill descriptions. MEMORY.md was 13KB. Together these consumed significant context.
-**Outcome:** Saved ~11KB per session (~3-4k tokens). Context now starts lean and loads skill content only when needed.
+## 2026-04-08: Skills Default to Lazy Loading
+**Context:** System prompt was consuming too many tokens with 72 skill descriptions pre-loaded.
+**Decision:** Set `disable-model-invocation: true` on 13 rarely-used user skills.
+**Reasoning:** Skills still available via slash commands or explicit read. Tokens saved (~960) improve context window for actual work.
+**Outcome:** Pending — monitor if agents struggle to discover skills when needed.
 
-## 2026-04-08: Essay Format — Narrative Over Bullets
-**Context:** AI link roundup for Scout Academy
-**Decision:** Write narrative takes instead of bullet point lists
-**Reasoning:** Rakis prefers narrative storytelling style — each section reads as a story with a point, not just a list of links
-**Outcome:** More engaging, readable format. Published 3 versions (full, summary, thread).
+## 2026-04-08: Second Brain Daily Compile at 4 AM
+**Context:** Knowledge was accumulating in session-specific files but not being compiled into shared repo.
+**Decision:** Cron job at 4 AM EST, isolated session, compiles memory → wiki structure in agents-kb repo.
+**Reasoning:** Karpathy pattern — compile once, update incrementally. Daily cadence keeps wiki fresh without manual effort.
+**Outcome:** Running. First real compile 2026-04-12.
 
-## 2026-04-06: Essay Edits — Winston Speaking Framework
-**Context:** "Adaptation of Agentic AI" essay review
-**Decision:** Added empowerment promise, slogan, verbal punctuation, surprise ending per Patrick Winston's framework
-**Reasoning:** Essay was missing these key elements — opened without purpose, had no memorable slogan, no checkpoint summaries, functional ending
-**Outcome:** Score improved from 6/10 to 9/10 on Winston criteria.
+## 2026-04-08: MEMORY.md Trimmed to Essentials
+**Context:** MEMORY.md had grown to ~13KB with full curriculum tables, framework docs, timing formulas.
+**Decision:** Extract verbose content into skill files, keep only identity, projects, recent work, insights.
+**Reasoning:** Injected every session — leaner = more context window for work. Skills load on demand.
+**Outcome:** Down to ~2.3KB. Working well so far.
 
-## 2026-04-06: ScoutOS CTA Shortened
-**Context:** Essay had long ScoutOS marketing section at the end
-**Decision:** Shortened to one sentence + link
-**Reasoning:** Rakis wanted simple statement, not marketing copy
-**Outcome:** Cleaner, more confident ending.
+## 2026-04-10: Scout Academy Content Strategy — Enterprise Orchestration Theme
+**Context:** Multiple data sources converged on same narrative: agents deployed but not coordinated.
+**Decision:** Produced 5 articles + 1 roundup focusing on orchestration gap, MCP adoption, UI bifurcation.
+**Reasoning:** When the same signal comes from Salesforce, Google, Anthropic, Belitsoft, and independent developers simultaneously, that's a meta-trend worth owning editorially.
+**Outcome:** Strong content velocity. Establishes Scout Academy as a synthesizer, not just a reporter.
+
+## 2026-04-11: Community Building Playbook for hyper.io
+**Context:** Hive needs a developer community strategy.
+**Decision:** Created comprehensive DevRel playbook with 4-phase action plan, 7 rules, measurement framework.
+**Reasoning:** Developer communities require genuine value over marketing. Start where developers already are (Discord, Reddit, GitHub), build own community later. DevRel touches entire lifecycle.
+**Outcome:** First strategic document for hyper.io DevRel. Phased approach: foundation → presence → content engine → advocate program.
