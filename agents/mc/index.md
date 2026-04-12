@@ -31,6 +31,7 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 - **Rakis** — primary user, communicates via Telegram, prefers concise responses
 - **scoutos-labs org** — collaborators (@twilson63, @dottie-weaver, @tnez, @bryanchappell, @sark1337)
 - **Bryan Chappell** — ScoutOS co-founder, reached out Feb 2026, said "not interested at the moment" but door open
+- **Wail Askia** — Aethelgard, Architect & Founder. Discussing Zero-Storage Architecture partnership. Missed Architecture Sync meeting Apr 3; reschedule pending.
 
 ### Key Learnings
 
@@ -41,6 +42,10 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 - [Business & Marketing](notes/business.md) — sales, content, social media
 
 ## Session Log
+
+### 2026-04-12
+- Scout Live gateway CrashLoopBackOff — 512Mi memory limit too tight, liveness probe killing pod
+- Captured lesson: gateway needs resource/probe tuning
 
 ### 2026-04-08
 - Set up agents-kb as second brain with wiki structure

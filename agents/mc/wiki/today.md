@@ -1,25 +1,18 @@
-# 2026-04-08
+# Today — 2026-04-12
 
-## Completed
-- Set up agents-kb as second brain with wiki structure (5 topic notebooks)
-- Created daily cron at 4 AM EST to sync and organize memories
-- Pushed initial wiki content to GitHub
-- Organized learnings into: platform-engineering, agent-patterns, web-development, devops, business
+## Active Issue: Scout Live Gateway CrashLoopBackOff
+- Pod: `scout-live-gateway-574d794b49-bx8mq`
+- Restart count: 8+
+- Symptom: Liveness probe timeout → SIGTERM → graceful shutdown → restart
+- Impact: scoutos.live and all app routing intermittent
+- All 14 app pods running fine (2/2)
+- Possible causes: memory pressure at 512Mi limit, event loop blocking, aggressive probe thresholds
+- **Action needed**: Increase memory limit, adjust liveness probe, check for blocking code in gateway
 
-# 2026-04-09
-
-## Completed
-- Researched scoutos.live account/app limits (no app limit in code)
-- Found hyperclaw app registry entry and App JWT
-- Diagnosed Clu's data port issue: auth required (App JWT needed)
-- Deployed fix: mounted port routers under both /_ports/ and /ports/ for consistent access
-- Built and deployed Scout Live gateway v0.0.9 (commit de0d3be)
-
-# 2026-04-10
-
-## Completed
-- Cluster check: 2 nodes, 8 pods all healthy
-- Gateway had brief readiness probe timeout (recovered)
-
-## Carried forward
-- _none_
+## Status
+- Scout Live: **Degraded** (gateway cycling)
+- Contacts App: Live (contacts.scoutos.live)
+- ZChat: Live (zchat.scoutos.live)
+- zenbin: Live (zenbin.org)
+- HYPR: Live (onhyper.io)
+- Hive: Active

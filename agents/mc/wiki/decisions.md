@@ -5,6 +5,11 @@
 - Wiki structure: platform-engineering, agent-patterns, web-development, devops, business
 - Daily cron at 4 AM EST to sync and push
 
+## 2026-04-01: Removed HPA from Scout Live gateway
+- ReadWriteOnce PVC prevents horizontal scaling — HPA tried to create 2nd replica, pod stuck in ContainerCreating
+- Decision: single replica with no HPA; documented reason in k8s/gateway.yaml
+- May revisit with ReadWriteMany PVC (NFS) or stateless gateway in future
+
 ## 2026-04-09: Port paths should be /_ports/ consistently
 - Mounted port routers under both /_ports/ and /ports/ on gateway
 - Internal pod callers use /_ports/data/... (sidecar proxy)

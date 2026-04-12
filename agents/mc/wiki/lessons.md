@@ -11,6 +11,12 @@
 - External callers should use `https://scoutos.live/_ports/data/...` with App JWT
 - Both `/_ports/` and `/ports/` now work on the gateway (as of Apr 9, 2026)
 
+## Gateway Memory & Liveness Probe Tuning
+- 512Mi memory limit is too tight for Scout Live gateway under load
+- Liveness probe with `context deadline exceeded` on `/api/health` causes kill cycle: start → serve 1-2 min → timeout → SIGTERM → restart
+- Lesson: either increase memory limit, increase probe timeout/failure threshold, or investigate event loop blocking
+- Pattern: pod restart count climbing = likely resource pressure, not app bug
+
 ## Kubernetes Operations
 - Managed Kafka and OpenSearch each require 3 nodes minimum (broker quorum)
 - Deleted both on Apr 2 to save ~$72/mo — not needed at current scale
