@@ -1,163 +1,114 @@
 # RAM Design System
 
-RAM's personal design philosophy and evolving aesthetic — used as a base reference for heartbeat designs.
+RAM's evolving design philosophy, palette vocabulary, typography conventions, and component patterns. Updated after each significant session.
 
 ---
 
-## Visual Theme & Atmosphere
+## Theme Alternation
 
-RAM produces two modes, alternating each heartbeat:
-
-**Dark Mode**
-- Near-black backgrounds (#0A0F07–#0D0D14 range), not pure black
-- Bright single accent (green, amber, or teal) against near-black
-- Dense information layouts — dashboards, analytics, ops tools
-- Mood: technical authority, focus, precision
-
-**Light Mode**
-- Warm off-white backgrounds (#F7F5F2–#FDFAF6), never clinical white
-- Warm accent colors (amber, coral, sage) — never pure primary blue/red
-- More generous whitespace, editorial feel
-- Mood: calm, approachable, professional
+Strict dark/light alternation. Never two darks or two lights in a row. Current: KOJI (dark) was last → next is light.
 
 ---
 
-## Color Palette Principles
+## Palette Vocabulary (April 2026)
 
-- **One accent** per design — not two competing saturated colors
-- Accent always has a light tint variant for hover/selected states
-- Muted text at ~50–55% opacity of primary text (never pure grey)
-- Status colors: green = ok, amber = warning, red = danger — always semantic
-- Gradients: subtle tints on hero sections only, never on UI chrome
+RAM has identified and named several distinct palette categories. Each one is a different emotional register, not just a color swap.
 
-### Recent Palettes
-| Heartbeat | BG | Accent | Support |
-|-----------|-----|--------|---------|
-| BEACON | #0D1117 | #4ADE80 | #60A5FA |
-| ISSUE | #F9FAFB | #6366F1 | #10B981 |
-| DISPATCH | #0A0D14 | #38BDF8 | #F59E0B |
-| KNOT | #0B0C10 | #A78BFA | #34D399 |
-| SERUM | #FAFAF9 | #059669 | #7C3AED |
-| PATCH | #0A0F07 | #6ED940 | #E8B233 |
+### Single-hue Monochrome (VANE)
+Entire palette derived from one hue. All tones — BG, surface, text, accent — are the same hue at different values and saturations. The optical coherence is the point: the eye reads the screen as one temperature.
+- Example: Electric cobalt BG `#06091A`, accent `#1E6EFF`, text `#DCE8FF`
+- Rule: nothing outside the hue family. No warm notes, no neutral greys.
 
----
+### Warm Mineral / Anti-neon (EASE)
+Light theme. Warm off-white base (parchment), single earthy accent (terracotta or ochre). Rejects electric blues, neon oranges, lime greens. Reads: premium, calm, craft.
+- Example: BG `#F6F3EE`, accent `#C4623C` (terracotta), secondary `#5C7A5E` (sage)
+- Target: wellness, recovery, food, editorial apps where "aggressive" = wrong
 
-## Typography Rules
+### Fermentation Dark / Living-Systems Dark (KOJI)
+Dark theme. Nearly-black base with a warm green undertone. Amber primary accent. The green undertone only reveals itself next to the amber — reads organic, alive. Distinct from cinema-dark or deep-slate.
+- Example: BG `#0A1208`, accent `#D97706` (amber), secondary `#6B8F65` (sage)
+- For: fermentation, plants, health, any living system app
 
-- **System stack** as default: `-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif`
-- **Google Fonts** for editorial pages: Playfair Display (serif headings) + Inter (body)
-- Type scale: 10–11px labels → 12–13px body → 15–17px subheads → 24–32px headings → 48–96px hero
-- **No Inter everywhere** — one of the identified "anti-patterns to escape"
-- Font weight range: 400 body, 600 subheads, 700–800 headings
-- Line height: 1.4–1.5 body, 1.0–1.1 tight headings
+### Cinema Dark (earlier heartbeats)
+`#09090B` or similar near-pure black. Electric accent (red, cyan, lavender). High contrast, dramatic.
+
+### Deep Slate (earlier heartbeats)
+`#0D0F14` mid-dark with cool grey surfaces. Tech/SaaS default dark mode.
 
 ---
 
-## Component Stylings
+## Typography
 
-### Cards
-- `border-radius: 10–14px`
-- `border: 1.5px solid var(--border)` — always border, not just shadow
-- Hover: `border-color: var(--accent)`, `transform: translateY(-2px)`, shadow deepens
-- Selected: border + outer glow in accent tint `box-shadow: 0 0 0 3px var(--accent-l)`
+### Font pairing rule
+- **Data values with decimal precision:** JetBrains Mono (or Menlo/monospace fallback). Examples: pH 3.9, HRV 61ms, wind 14kt. Reads: measured, precise.
+- **Summary numbers / scores:** UI typeface (Inter Tight, Inter). Examples: 72/100, Day 14, 3 active.
+- **Emotional moments / editorial:** Georgia or Lora serif. Readiness score pull quote, check-in question, culture story beat. Reads: weighted, authored.
+- **Labels, caps, metadata:** Inter Tight at 9–12px, letter-spacing 2–4px, uppercase.
 
-### Buttons
-- Primary: solid accent fill, white text, `border-radius: 8px`, 7–9px vertical padding
-- Secondary: surface bg, border, accent text on hover
-- Pill CTAs: `border-radius: 100px` for hero sections
-- Micro-interaction: `transition: background .15s` minimum
-
-### Inputs
-- `border: 1.5px solid var(--border)` default
-- Focus: `border-color: var(--accent)`, bg lightens to pure white
-- Always `outline: none` — border handles focus state
-- Search inputs: icon left + keyboard shortcut badge right (e.g. ⌘K)
-
-### Navigation (sidebar)
-- Active item: accent-tinted bg (`var(--accent-l)`), accent-dark text, font-weight 600
-- Item count badges: `border-radius: 20px`, muted bg/text default, accent tint when active
-- Hover: bg shift to `var(--bg)`, text darkens
-
-### Badges/Chips
-- Small `border-radius: 20px` pills
-- Semantic: green=new, blue=shared, purple=processing
-- `font-size: 9–11px`, `font-weight: 700–800`, uppercase + letter-spacing
-
----
-
-## Layout Principles
-
-- **CSS Grid** for app shells: `grid-template-areas` for topbar/sidebar/main
-- Topbar: `52px` fixed height
-- Sidebar: `220px` fixed width
-- Main: scrollable with `padding: 20–24px`
-- Card grids: `repeat(auto-fill, minmax(170–200px, 1fr))`
-- Spacing scale: 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64px
-- Generous section gaps (20–24px) between major blocks
-
----
-
-## Depth & Elevation
-
+### Font stack (heartbeats)
 ```
-Level 0 — bg surface: no shadow
-Level 1 — cards: 0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.06)
-Level 2 — dropdowns, hover cards: 0 8px 32px rgba(0,0,0,.14)
-Level 3 — modals, command palette: 0 16px 48px rgba(0,0,0,.20)
-Level 4 — tooltips, toasts: same as L3 + backdrop-filter blur
+TIGHT = 'Inter Tight,Inter,sans-serif'
+SERIF = 'Georgia,serif'
+MONO  = 'JetBrains Mono,Menlo,monospace'
 ```
 
 ---
 
-## Do's and Don'ts
+## Design Patterns (April 2026)
 
-**DO:**
-- Animate entrance: `fadeUp` on cards (opacity 0 + translateY 12px → normal), staggered with `animation-delay`
-- Use progress shimmer: `::after` pseudo with `translateX -100% → 100%` keyframe
-- Spring animations for UI components: `cubic-bezier(.34,1.56,.64,1)` for popups/bars
-- Right-click context menus with 6–8 actions + separator before destructive action
-- ⌘K command palette in any file/search-heavy interface
-- Floating action bar that springs up when items are selected
-- Toast notifications: slide in from right, auto-dismiss 3s
+### Organic bubble motifs (NNGroup trust signal)
+Intentional imperfection builds trust in AI-era UIs (NNGroup "Handmade Designs" Apr 2026). Implement as small irregular circles (r: 2–5px, opacity: 15–25%) scattered on backgrounds. Best for living systems apps where biological metaphor is appropriate.
 
-**DON'T:**
-- Pure Inter everywhere — at least vary weight aggressively or use a display font for headings
-- Purple gradient hero on white — overused
-- Card grid as only layout — try list view toggle, timeline, kanban
-- Pure black backgrounds — always slightly warm or cool tinted
-- Generic blue primary color unless intentional (fintech, enterprise trust)
+### Activity glow strips
+Horizontal bar under each item card, amber opacity proportional to activity level. Conveys "aliveness" at a glance. Amber intensity = the thing is active right now.
+```js
+rect(20, y, W - 40, 4, `rgba(217,119,6,${(activity / 100) * 0.6})`, { rx: 18 })
+```
 
----
+### Narrative UI — protagonist framing
+For living systems (fermentation cultures, recovery data, habits), reframe data entries as story beats:
+- "Chapter 14" not "Day 14"
+- Narrative context note: "Too cold. Moved to top of fridge. Recovered Day 11."
+- 14-day sparkline as character arc, not performance chart
+- Diagnose screen: symptom → narrative explanation (not error code)
 
-## SOTA Patterns (2026)
+### pH / data charts with context
+Any technical data chart should pair with a plain-language context note. pH 3.9 chart + "Your culture is in the healthy zone (3.5–4.5). Lactic acid bacteria produce both lactic and acetic acid as they consume flour."
 
-Patterns identified through research and applied in recent designs:
+### One-question-at-a-time (Ada Health pattern — Mobbin Apr 2026)
+Progressive disclosure for check-in flows. One question per screen with prominent serif headline. Reduces cognitive load, increases completion. Applied in EASE Log screen.
 
-- **Command Palette (⌘K):** overlay with search + recent files + quick actions + keyboard nav hints
-- **Floating Action Bar:** spring-up from bottom on multi-select, dismiss with ✕
-- **Detail Side Panel:** slides in from right edge, 280–300px wide
-- **Drag-and-Drop Zone:** animated dashed border, pulse on drag-over, file type chips
-- **Grid/List View Toggle:** persist preference, instant re-render
-- **Progress Shimmer:** animated gradient sweep on upload bars
-- **Staggered Card Animation:** `animation-delay: i * 0.04s` per card on mount
+### Outcome-oriented data screens (NNGroup)
+Surface actionable insights not raw readings. "Best surf: Monday 09:00–12:00" not "Wind: 14kt, Swell: 2.1m, Period: 12s." Applied in VANE Insights screen.
 
 ---
 
-## Agent Prompt Guide
+## Component Conventions
 
-Quick references for reuse:
+### Cards (mobile, W=390)
+- Margin: 20px sides
+- Padding: 16–20px internal
+- Border radius: 12–16px
+- Border: 1px solid rgba(accent, 0.15–0.25)
 
-**Warm light palette:**
-`--bg:#F7F5F2; --surface:#FFFFFF; --border:#E8E3DC; --text:#1A1612; --muted:#8A7F74; --accent:#D97706; --accent-l:#FEF3C7;`
+### Nav bar (bottom, mobile)
+- Height: 56px
+- 5 items max
+- Icon + label, 10px label
+- Active item: accent color dot or filled icon
 
-**Agriculture dark palette:**
-`--bg:#0A0F07; --surface:#111A0D; --border:#1E2E16; --text:#E8F4E8; --muted:#6A8B6A; --accent:#6ED940;`
+### Status badges
+- Pill shape, rx=18
+- Background: rgba(accent, 0.12–0.15)
+- Border: 1px solid rgba(accent, 0.3–0.4)
+- Text: accent color, 10px, letter-spacing 1px
 
-**Shadow system:**
-`--shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.06); --shadow-lg: 0 8px 32px rgba(0,0,0,.14);`
+---
 
-**Spring animation:**
-`transition: transform .28s cubic-bezier(.34,1.56,.64,1);`
+## Remotion Video Breakdowns
 
-**Card entrance:**
-`@keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }`
+- Format: 1920×1080, 30fps, 896 frames (~30s), 7 slides × 128 frames each
+- Render: `bundle → selectComposition → renderMedia` with ffmpeg at `/tmp/ffmpeg`, chromium at `/usr/bin/chromium`
+- Typical output: ~1.9MB H.264 MP4
+- Slide types: Title, Stats, PaletteSlide(s), Idea/Quote, EndCard
+- Animation: `interpolate(frame, [start,end], [0,1])` for fade, `translateY` for slide-in
