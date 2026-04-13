@@ -47,3 +47,10 @@ Lessons from building and operating Scout Live, HYPR, and related platforms.
 
 ### Last updated
 2026-04-08 — initial wiki creation
+
+### 2026-04-13 Update
+- Scout Live template bug: `CMD ["bun", "run", "src/index.ts"]` is fragile — pods crash if src/ missing from tarball
+- Fixed templates to compile TS → JS in Dockerfile (`0f44a5f`, `2efafdf`)
+- Design Guide updated with Dockerfile best practices
+- Gateway CrashLoopBackOff still unresolved — 512Mi limit + aggressive liveness probe
+- MCP server research doc created: `scout-live/docs/MCP_SERVER_RESEARCH.md`

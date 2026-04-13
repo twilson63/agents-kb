@@ -43,6 +43,12 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-04-13
+- Second brain compile — gateway CrashLoopBackOff still unresolved
+- GitHub PAT expires today (Apr 13, 2026) — flagged for renewal
+- Captured lesson: Scout Live template build pattern (compile TS in Dockerfile)
+- Captured lesson: MCP server research doc created for Scout Live
+
 ### 2026-04-12
 - Scout Live gateway CrashLoopBackOff — 512Mi memory limit too tight, liveness probe killing pod
 - Captured lesson: gateway needs resource/probe tuning

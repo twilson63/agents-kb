@@ -29,6 +29,10 @@
 - Scout Live: Monitor K8s pod health, PVC status
 - **Agents KB sync: Daily at 4 AM EST** — organize memories, update wiki, push to GitHub
 
+## Alerts
+
+- **GitHub PAT expires Apr 13, 2026** — needs renewal or replacement before it stops working
+
 ## Conventions
 
 - Memory writes: Append to `memory/YYYY-MM-DD.md`, never overwrite

@@ -21,3 +21,18 @@
 - Managed Kafka and OpenSearch each require 3 nodes minimum (broker quorum)
 - Deleted both on Apr 2 to save ~$72/mo — not needed at current scale
 - Gateway ReadWriteOnce PVC limits horizontal scaling
+
+## Scout Live Template Build Pattern (Apr 6)
+- Old templates used `CMD ["bun", "run", "src/index.ts"]` — runs TS directly, fragile
+- If `src/` folder is missing from tarball or imports are complex, pod crashes with `Module not found`
+- Fixed pattern: `RUN bun build src/index.ts --outdir=dist` then `CMD ["bun", "dist/index.js"]`
+- Templates fixed in commits `0f44a5f` and `2efafdf`
+- Also updated DESIGN_GUIDE.md with best practices
+- Lesson: Always compile TypeScript in Dockerfile; never rely on runtime TS execution in containers
+
+## MCP Server Research (Apr 6)
+- Created comprehensive research doc: `scout-live/docs/MCP_SERVER_RESEARCH.md`
+- Architecture: scouts.live (MCP server) → scoutos.live (REST API) — MCP is just another client
+- No NPM package needed — just remote HTTP/SSE server
+- Tools: deploy_template, list_apps, set_env, get_logs, etc.
+- ~26 hours estimated implementation

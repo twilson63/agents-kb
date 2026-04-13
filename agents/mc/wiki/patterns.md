@@ -19,3 +19,10 @@
 3. Update index.md session log
 4. Update shared/ files if cross-agent projects changed
 5. Commit and push to GitHub
+
+## Scout Live Template Build Pattern
+1. Agent creates app with Dockerfile
+2. **Always compile TS in Dockerfile:** `RUN bun build src/index.ts --outdir=dist`
+3. **Run compiled JS:** `CMD ["bun", "dist/index.js"]`
+4. Never use `CMD ["bun", "run", "src/index.ts"]` — too fragile for containers
+5. If pod crashes with `Module not found`, check whether Dockerfile builds TS before running

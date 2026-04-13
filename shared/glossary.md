@@ -33,3 +33,5 @@
 **Valkey** — Redis-compatible in-memory data store. Used in Scout Live for caching/session state via managed DigitalOcean instance.
 
 **Contacts App** — mini CRM at contacts.scoutos.live. Hono + Bun + MongoDB via Scout Ports. Features: contact CRUD, touch logging, tags, search.
+
+**MCP (Model Context Protocol)** — protocol for AI agents to interact with external tools and data. Scout Live MCP server (planned) would wrap Scout SDK tools so any MCP-compatible agent can deploy apps on scoutos.live. Architecture: HTTP/SSE remote server, no NPM package needed.
