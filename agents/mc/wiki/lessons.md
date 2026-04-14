@@ -17,6 +17,12 @@
 - Lesson: either increase memory limit, increase probe timeout/failure threshold, or investigate event loop blocking
 - Pattern: pod restart count climbing = likely resource pressure, not app bug
 
+## GitHub PAT Expiry
+- PATs expire silently — no advance warning from GitHub
+- Set calendar reminders 1-2 weeks before expiry
+- Expired tokens cause `gh` CLI auth failures and push failures
+- Lesson: Track token expiry dates proactively
+
 ## Kubernetes Operations
 - Managed Kafka and OpenSearch each require 3 nodes minimum (broker quorum)
 - Deleted both on Apr 2 to save ~$72/mo — not needed at current scale

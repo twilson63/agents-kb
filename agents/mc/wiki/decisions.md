@@ -15,3 +15,8 @@
 - Internal pod callers use /_ports/data/... (sidecar proxy)
 - External callers can now also use /_ports/data/... (was /ports/data/... only)
 - This makes SDK and client code consistent regardless of where it runs
+
+## 2026-04-14: GitHub PAT renewal needed
+- Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
+- New token must be created via GitHub Settings or browser automation
+- Old token stored in TOOLS.md — needs replacement when renewed

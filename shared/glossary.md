@@ -35,3 +35,7 @@
 **Contacts App** — mini CRM at contacts.scoutos.live. Hono + Bun + MongoDB via Scout Ports. Features: contact CRUD, touch logging, tags, search.
 
 **MCP (Model Context Protocol)** — protocol for AI agents to interact with external tools and data. Scout Live MCP server (planned) would wrap Scout SDK tools so any MCP-compatible agent can deploy apps on scoutos.live. Architecture: HTTP/SSE remote server, no NPM package needed.
+
+**ZChat** — chat app at zchat.scoutos.live using ScoutOS Agents API. Minimal Bun server, SSE streaming, UUID sessions. MVP complete.
+
+**App Builder** — Scout Live native app for creating/deploying apps from the dashboard. One of several new apps deployed Apr 2026.

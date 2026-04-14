@@ -31,7 +31,7 @@
 
 ## Alerts
 
-- **GitHub PAT expires Apr 13, 2026** — needs renewal or replacement before it stops working
+- **GitHub PAT expired Apr 13, 2026** — token must be replaced before `gh` CLI or git push will work
 
 ## Conventions
 
