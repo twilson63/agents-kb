@@ -16,7 +16,8 @@
 - External callers can now also use /_ports/data/... (was /ports/data/... only)
 - This makes SDK and client code consistent regardless of where it runs
 
-## 2026-04-14: GitHub PAT renewal needed
+## 2026-04-14: GitHub PAT renewal needed → Completed
 - Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
-- New token must be created via GitHub Settings or browser automation
-- Old token stored in TOOLS.md — needs replacement when renewed
+- New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)
+- New PAT expires Jul 12, 2026 — set reminder ~Jul 1 for renewal
+- Token stored in TOOLS.md

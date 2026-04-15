@@ -43,6 +43,11 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-04-15
+- Second brain compile — GitHub PAT renewal confirmed (new token expires Jul 12, 2026)
+- Gateway still fragile, needs memory/probe tuning
+- Pipedrive CRM blocked by paywall issue
+
 ### 2026-04-14
 - Second brain compile — GitHub PAT expired, flagged for renewal
 - Gateway CrashLoopBackOff partially resolved (was running at check time, still fragile)

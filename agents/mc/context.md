@@ -31,7 +31,7 @@
 
 ## Alerts
 
-- **GitHub PAT expired Apr 13, 2026** — token must be replaced before `gh` CLI or git push will work
+- **GitHub PAT renewed Apr 13, 2026** — new token `mc-agent-pat-2026`, expires Jul 12, 2026
 
 ## Conventions
 
