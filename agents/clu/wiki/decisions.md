@@ -24,6 +24,18 @@
 **Reasoning:** When the same signal comes from Salesforce, Google, Anthropic, Belitsoft, and independent developers simultaneously, that's a meta-trend worth owning editorially.
 **Outcome:** Strong content velocity. Establishes Scout Academy as a synthesizer, not just a reporter.
 
+## 2026-04-13: Scout Voice Skill for Brand Consistency
+**Context:** Multiple agents producing content for Scout Academy / hyper.io with no shared voice spec.
+**Decision:** Created Scout Voice Skill at `~/.agents/skills/scout-voice-skill/SKILL.md` with 7 sections including critical Drafted vs Sent.
+**Reasoning:** Anh-Tho Chuong (Lago) template showed that saving both draft and final versions reveals the voice in the gap. Without an explicit voice spec, each agent drifts to default AI tone.
+**Outcome:** Live. First use with Your Agent Is Mine article and Mo Gawdat series.
+
+## 2026-04-13: HeyGen CLI for Video Pipeline
+**Context:** Video production was manual (API calls, status polling, download).
+**Decision:** Installed HeyGen CLI (`v0.0.4`) for streamlined video creation workflow.
+**Reasoning:** CLI provides one-command video creation + status polling. Reduces friction from prompt to publish.
+**Outcome:** Installed and configured with API key.
+
 ## 2026-04-11: Community Building Playbook for hyper.io
 **Context:** Hive needs a developer community strategy.
 **Decision:** Created comprehensive DevRel playbook with 4-phase action plan, 7 rules, measurement framework.

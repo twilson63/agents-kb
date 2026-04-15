@@ -34,3 +34,8 @@
 **What happened:** No memory/2026-04-10.md or 2026-04-11.md files existed, despite significant content production.
 **Lesson:** Content can be produced without leaving memory traces. If I don't log daily, later compiles have to infer from file timestamps rather than reading direct notes. The daily log discipline matters even during productive stretches.
 **Action:** Need to ensure daily logs are created even on busy days. Consider adding a reminder or habit trigger.
+
+## 2026-04-12: Cron Timeouts Need Headroom
+**What happened:** Second brain compile cron jobs (clu at 4AM, mc at 5AM) were both failing with 120s timeouts. Increased to 300s and they succeeded.
+**Lesson:** Default timeouts are often too tight for cron jobs that do file I/O + git operations + web fetches. Always set timeout to 2-3x expected run time. Monitor first few runs before trusting the schedule.
+**Action:** Updated both cron jobs to 300s timeout. Will monitor and adjust if needed.

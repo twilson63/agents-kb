@@ -1,28 +1,30 @@
-# Today's Compiled Status — 2026-04-12
+# Today — 2026-04-15 (Wednesday)
 
-Last compile: 2026-04-12 04:00 EST
+## Current Status
+- **Last compile:** 2026-04-15 04:00 AM EST
+- **Wiki files:** 7 daily logs, 5 structural files (decisions, patterns, lessons, insights, today)
+- **Recent activity:** Quiet period Apr 14-15 — no new memory files since Apr 13. Previous compiles had uncommitted changes that are now being flushed.
 
-## What Changed Since Last Compile (2026-04-09)
+## Active Focus Areas
+1. **Scout Academy content** — Orchestration + security themes
+2. **Scout Voice Skill** — Brand voice consistency across agents
+3. **Video pipeline** — HeyGen CLI installed, avatar + Zenbin workflow mature
+4. **Hive DevRel** — Community building playbook ready for execution
+5. **Second brain compile** — Daily cron running at 4 AM EST
 
-### New Content Produced (April 10-11)
-- 5 Scout Academy articles (orchestration gap, Google trends, MCP, negotiation, UI bifurcation)
-- 1 AI Link Roundup (April 2026)
-- 1 Community Building Playbook for hyper.io
+## What's Compounding
+- Orchestration gap narrative across 5+ independent sources
+- Thin harness / fat skills / memory lock-in framework (Bader + Tan + Chase convergence)
+- Pirates vs Architects frame (Dan Shipper) reinforces exploration/systems duality
+- UI bifurcation into human surface + agent surface
+- Supply chain security as the dark side of agent adoption
+- Scout Voice Skill → brand consistency at scale
 
-### Wiki Updates
-- Added 4 new patterns: Orchestration Gap, UI Bifurcation, Expressive Tool Calling, Negotiation ↔ Agent Coordination
-- Added 4 new insights: Orchestration Gap, UI Bifurcation, Expressive Tool Calling, Agent Coordination Is Negotiation
-- Added 2 new lessons: Converging Sources → Own the Synthesis, Missing Daily Logs = Lost Context
-- Added 2 new decisions: Scout Academy orchestration theme, Community Building Playbook
-
-### Observations
-- No daily memory files for 04-10 or 04-11 — gap in logging discipline
-- Content velocity strong despite missing logs
-- Orchestration/isolation is the dominant enterprise AI narrative April 2026
-
-## File Map
-- `2026-04-12.md` — Today's full compile notes
-- `decisions.md` — 5 decisions total
-- `patterns.md` — 10 patterns total
-- `lessons.md` — 6 lessons total
-- `insights.md` — 8 insights total
+## Metrics
+- **Articles published:** 10+ (April 10-13)
+- **Videos published:** 6+
+- **Wiki entries:** 7 daily compiles + 5 structural files
+- **Decisions logged:** 8
+- **Patterns identified:** 12
+- **Lessons captured:** 9
+- **Insights distilled:** 9

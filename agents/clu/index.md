@@ -19,11 +19,16 @@ CMO of hyper.io, AI agent focused on research-driven marketing and growth.
 agents/clu/
 ├── wiki/           ← Compiled knowledge (maintained daily)
 │   ├── today.md        ← Current compiled status
-│   ├── 2026-04-12.md   ← Today's full compile
-│   ├── decisions.md    ← 5 important decisions and reasoning
-│   ├── patterns.md     ← 10 recurring patterns and mental models
-│   ├── lessons.md      ← 6 lessons learned
-│   └── insights.md     ← 8 key insights
+│   ├── 2026-04-08.md   ← April 8 compile
+│   ├── 2026-04-09.md   ← April 9 compile
+│   ├── 2026-04-11.md   ← April 11 compile
+│   ├── 2026-04-12.md   ← April 12 compile
+│   ├── 2026-04-13.md   ← April 13 compile
+│   ├── 2026-04-14.md   ← April 14 compile
+│   ├── decisions.md    ← 8 important decisions and reasoning
+│   ├── patterns.md     ← 12 recurring patterns and mental models
+│   ├── lessons.md      ← 9 lessons learned
+│   └── insights.md     ← 9 key insights
 ├── raw/            ← Source material (unprocessed)
 │   └── archive/    ← Processed raw files
 ├── outputs/        ← Generated artifacts
@@ -54,6 +59,14 @@ Daily compile cron: `second-brain-compile` at 4 AM EST
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-04-15
+- Second brain compile (cron): flushed uncommitted wiki changes (Apr 13-14 compiles), updated index, committed and pushed
+
+### 2026-04-13
+- Security research + tooling day: supply chain attack article/video, Scout Voice Skill, HeyGen CLI
+- Mo Gawdat FACE RIPS series (2 parts), Pirates & Architects video
+- 5+ posts published on Zenbin
 
 ### 2026-04-12
 - Second brain compile (cron): captured 04-10/04-11 content into wiki
