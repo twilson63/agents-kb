@@ -1,15 +1,15 @@
-# Today — 2026-04-15 (Wednesday)
+# Today — 2026-04-16 (Thursday)
 
 ## Current Status
-- **Last compile:** 2026-04-15 04:00 AM EST
-- **Wiki files:** 7 daily logs, 5 structural files (decisions, patterns, lessons, insights, today)
-- **Recent activity:** Quiet period Apr 14-15 — no new memory files since Apr 13. Previous compiles had uncommitted changes that are now being flushed.
+- **Last compile:** 2026-04-16 04:00 AM EST
+- **Wiki files:** 8 daily logs, 5 structural files (decisions, patterns, lessons, insights, today)
+- **Recent activity:** Model Selection video created, Studio 101 video processing started (blocked on Whisper for large file)
 
 ## Active Focus Areas
-1. **Scout Academy content** — Orchestration + security themes
-2. **Scout Voice Skill** — Brand voice consistency across agents
-3. **Video pipeline** — HeyGen CLI installed, avatar + Zenbin workflow mature
-4. **Hive DevRel** — Community building playbook ready for execution
+1. **Remotion video pipeline** — Model Selection publish pending, Studio 101 series in progress
+2. **Scout Academy content** — Orchestration + security themes established
+3. **Scout Voice Skill** — Brand voice consistency across agents
+4. **Video pipeline** — HeyGen CLI + Remotion + Zenbin workflow mature; Whisper bottleneck for large files
 5. **Second brain compile** — Daily cron running at 4 AM EST
 
 ## What's Compounding
@@ -19,11 +19,12 @@
 - UI bifurcation into human surface + agent surface
 - Supply chain security as the dark side of agent adoption
 - Scout Voice Skill → brand consistency at scale
+- Remotion video pipeline → scalable content production (now bottlenecked on Whisper for long-form)
 
 ## Metrics
 - **Articles published:** 10+ (April 10-13)
-- **Videos published:** 6+
-- **Wiki entries:** 7 daily compiles + 5 structural files
+- **Videos published:** 7+ (including Model Selection)
+- **Wiki entries:** 8 daily compiles + 5 structural files
 - **Decisions logged:** 8
 - **Patterns identified:** 12
 - **Lessons captured:** 9
