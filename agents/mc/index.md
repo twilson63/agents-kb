@@ -43,6 +43,11 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-04-17
+- Second brain compile — no new daily notes since Apr 12, status unchanged
+- Updated today.md date to 2026-04-17
+- Gateway still degraded, MCP server live, content auth still blocked
+
 ### 2026-04-16
 - Second brain compile — no new daily notes since Apr 12, status unchanged
 - Scout Live gateway still degraded, needs memory/probe tuning
