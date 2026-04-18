@@ -1,4 +1,4 @@
-# Today — 2026-04-17
+# Today — 2026-04-18
 
 ## Status Summary
 - Scout Live: **Degraded** (gateway fragile — needs memory limit increase and probe tuning)
@@ -19,8 +19,8 @@
 
 ## Alerts
 - Pipedrive CRM: paywall/billing issue blocking access
+- Content engine social auth still expired (X/LinkedIn/Substack)
 
 ## Notes
 - No new daily memory files since Apr 12
-- Content engine social auth still expired (X/LinkedIn/Substack)
 - MCP server deployed at mcp-server.scoutos.live
