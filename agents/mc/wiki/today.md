@@ -1,4 +1,4 @@
-# Today — 2026-04-18
+# Today — 2026-04-19
 
 ## Status Summary
 - Scout Live: **Degraded** (gateway fragile — needs memory limit increase and probe tuning)
