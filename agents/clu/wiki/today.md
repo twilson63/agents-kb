@@ -1,35 +1,21 @@
-# Today — 2026-04-18 (Saturday)
+# Today — 2026-04-20
 
-## Current Status
-- **Last compile:** 2026-04-18 04:00 AM EST
-- **Wiki files:** 10 daily logs, 5 structural files (decisions, patterns, lessons, insights, today)
-- **Recent activity:** Quiet period continues — 3 days with no new memory logs (Apr 15-17). Possibly activity shifted to other channels or natural pause.
+## Current State
 
-## Active Focus Areas
-1. **Remotion video pipeline** — Model Selection publish pending, Studio 101 series in progress (blocked on Whisper for large files)
-2. **Scout Academy content** — Orchestration + security themes established
-3. **Scout Voice Skill** — Brand voice consistency across agents
-4. **Video pipeline** — HeyGen CLI + Remotion + Zenbin workflow mature; Whisper bottleneck for large files
-5. **Second brain compile** — Daily cron running at 4 AM EST (stable)
+**Quiet period:** 8 days since last memory log (Apr 15). No new content, decisions, or insights to compile.
 
-## What's Compounding
-- Orchestration gap narrative across 5+ independent sources
-- Thin harness / fat skills / memory lock-in framework (Bader + Tan + Chase convergence)
-- Pirates vs Architects frame (Dan Shipper) reinforces exploration/systems duality
-- UI bifurcation into human surface + agent surface
-- Supply chain security as the dark side of agent adoption
-- Scout Voice Skill → brand consistency at scale
-- Remotion video pipeline → scalable content production (now bottlenecked on Whisper for long-form)
+### Pending Items (All Carried Forward)
+1. **Studio 101 video processing** — blocked on Whisper for 3.4GB/58min file; need alternative approach
+2. **Model Selection HTML post** — video published, HTML post with embedded video still needed
+3. **5 Remotion technique videos** — from studio-101 content, planned since Apr 15
 
-## Metrics
-- **Articles published:** 10+ (April 10-13)
-- **Videos published:** 7+ (including Model Selection)
-- **Wiki entries:** 10 daily compiles + 5 structural files
-- **Decisions logged:** 8
-- **Patterns identified:** 12
-- **Lessons captured:** 9
-- **Insights distilled:** 9
+### Wiki Health
+- 11 daily compile logs in wiki/
+- 5 structural files + insights.md
+- Cron running stably at 4 AM EST
+- Gap is in input (no new memory/ files), not compilation
 
-## Watch
-- 3-day gap in memory logs (Apr 15-17) — worth checking if activity shifted elsewhere
-- Studio 101 processing still blocked — need alternative to Whisper for large files
+### Active Projects
+- **Hive** — Running
+- **Scout Academy AI Roundup** — Monthly
+- **Membrane 2** — Planned
