@@ -1,6 +1,6 @@
 # Active Projects
 
-## hyper63/claws — Hyper Claw
+## hyper63/claws — Claws Cloud
 
 AI-powered Telegram bot platform. Users create a "Claw" (bot) via a web dashboard.
 
@@ -31,14 +31,12 @@ Single-file browser notepad with localStorage persistence and share-via-URL.
 ### Features
 - Multi-note sidebar, contenteditable editor, auto-save
 - Share note via base64-encoded URL param (`?note=...`)
-- QR code share modal (api.qrserver.com, no library needed)
 - Dark/light theme toggle, focus mode
 - URL-safe base64 encoding for share links
-- Also live at https://pad.zenbin.org (claimed subdomain)
 
 ---
 
-## Hyper Claw Getting Started Guide
+## Claws Getting Started Guide
 
 Beginner onboarding guide for claws.hyper.io.
 
@@ -51,7 +49,6 @@ Beginner onboarding guide for claws.hyper.io.
 - Mock Telegram chat UI for step illustrations
 - Browser notepad tip dropdown
 - Zen Notepad pre-filled template link
-- All references updated from "Claw Cloud" to "Hyper Claw"
 
 ---
 
@@ -88,29 +85,6 @@ Deployment platform for Vite + ScoutOS apps on K8s.
 - **Stack:** Hono + Bun + LMDB + Kubernetes
 - **Status:** Active
 - **Deploy:** `./k8s/deploy.sh <commit-sha>` on DigitalOcean K8s
-
----
-
-## scoutos-labs/geo — Radar (GEO Score Tracker)
-
-AI visibility tracking tool — monitors how often a brand appears in LLM responses across OpenAI, Anthropic, Perplexity.
-
-- **Repo:** https://github.com/scoutos-labs/geo
-- **Live:** https://geo-score-tracker.scoutos.live (deploy key needed)
-- **Stack:** Hono + Bun + LMDB + React/Vite/Tailwind dashboard
-- **Status:** Active development
-- **Features:** Multi-account, brands, scheduled scans, GEO scoring, alerts (Slack), invite system, prompt library (brand-scoped packs)
-
-### Key Architecture
-- Backend: `src/` — Hono API, LMDB collections, scan-worker, schedule-runner, alert detection
-- Frontend: `dashboard/src/` — React SPA with protected routes, account context, settings page
-- Auth: custom JWT (30-day expiry), Google OAuth, invite tokens
-- Invite flow: `/invite/:token` → login/signup with `?next=/invite/TOKEN` → accept → join account
-
-### Recent Work
-- Invite accept flow: Login.tsx + Signup.tsx respect `?next=/invite/` param (commit 4c960e4)
-- scan-worker refactored to use `runScan()` return value, scheduleId stamped on ScanRun
-- JWT expiry extended 7d → 30d
 
 ---
 
