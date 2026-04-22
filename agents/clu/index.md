@@ -29,10 +29,11 @@ agents/clu/
 │   ├── 2026-04-17.md   ← April 17 compile
 │   ├── 2026-04-18.md   ← April 18 compile
 │   ├── 2026-04-20.md   ← April 20 compile
-│   ├── decisions.md    ← 8 important decisions and reasoning
-│   ├── patterns.md     ← 12 recurring patterns and mental models
-│   ├── lessons.md      ← 9 lessons learned
-│   └── insights.md     ← 9 key insights
+│   ├── 2026-04-21.md   ← April 21 compile
+│   ├── decisions.md    ← 13 important decisions and reasoning
+│   ├── patterns.md     ← 13 recurring patterns and mental models
+│   ├── lessons.md      ← 11 lessons learned
+│   └── insights.md     ← 10 key insights
 ├── raw/            ← Source material (unprocessed)
 │   └── archive/    ← Processed raw files
 ├── outputs/        ← Generated artifacts
@@ -63,6 +64,9 @@ Daily compile cron: `second-brain-compile` at 4 AM EST
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-04-22
+- Second brain compile (cron): Apr 21 compiled — editor pipeline built, AI Enterprise 3-part series complete, AI-Native Leader's Guide 6 essays published, taste/relationships insight captured, Tom voice set as HeyGen default
 
 ### 2026-04-20
 - Second brain compile (cron): 8-day gap in memory logs (longest since system established), no new items

@@ -35,6 +35,31 @@
 **Lesson:** Content can be produced without leaving memory traces. If I don't log daily, later compiles have to infer from file timestamps rather than reading direct notes. The daily log discipline matters even during productive stretches.
 **Action:** Need to ensure daily logs are created even on busy days. Consider adding a reminder or habit trigger.
 
+## 2026-04-20: HTTP 200 Doesn't Mean Success
+**What happened:** ElevenLabs TTS API returned HTTP 200 with empty body. Credits confirmed (13k). No error thrown.
+**Lesson:** Check response body, not just status code. API success indicators are not always reliable. Add body-length assertions when calling external APIs.
+**Action:** Switch to HeyGen Starfish TTS as alternative. Validate response body on all API calls going forward.
+
+## 2026-04-20: Pipeline Approach Unlocks 10x Content Velocity
+**What happened:** Used content-publishing skill to produce 10 essays + 16 videos in one day.
+**Lesson:** The pipeline workflow (essay → video → publish) eliminates creative cold starts. Each piece takes ~10 min. The system, not individual creativity, drives velocity. This is how small teams outproduce large ones.
+**Action:** Default to pipeline for all content sprints. Never produce a solo piece when the pipeline can handle it.
+
+## 2026-04-20: Hyperframes Renders Timeout at Scale
+**What happened:** Hyperframes render consistently fails at ~70% completion (frame ~3300/3330), SIGTERM. Multiple attempts, same result.
+**Lesson:** Long renders need either chunking (render in segments) or significantly more timeout headroom. The 70% mark suggests memory/time pressure at the tail of the render. May need to split compositions or pre-render static sections.
+**Action:** Try chunking approach for long Hyperframes compositions. Fall back to Remotion if needed.
+
+## 2026-04-21: Video Rendering Stalls Alienate Collaborators
+**What happened:** ScoutOS video (90s) took 2+ hours. Rakis checked in 5 times asking for progress, eventually asked to delegate or move on. The delay wasn't technical failure — it was process failure.
+**Lesson:** When someone is waiting for output, speed matters more than perfection. A 90s video shouldn't take 2 hours. If a task takes longer than expected, communicate the delay early or delegate to a sub-agent.
+**Action:** For video renders: estimate time upfront, communicate if >10 min, delegate long renders to sub-agents.
+
+## 2026-04-21: Delegate Blocking Work to Sub-Agents
+**What happened:** Rakis explicitly asked to delegate the remaining video work to Hive or a sub-agent rather than continuing to stall. The right call — a sub-agent can render while the main session continues.
+**Lesson:** When a task is blocking the main conversation and doesn't require the primary session's context, delegate it. Rendering, uploading, and processing are ideal delegation candidates.
+**Action:** Use sessions_spawn for rendering and processing tasks. Keep main session for conversation and decisions.
+
 ## 2026-04-12: Cron Timeouts Need Headroom
 **What happened:** Second brain compile cron jobs (clu at 4AM, mc at 5AM) were both failing with 120s timeouts. Increased to 300s and they succeeded.
 **Lesson:** Default timeouts are often too tight for cron jobs that do file I/O + git operations + web fetches. Always set timeout to 2-3x expected run time. Monitor first few runs before trusting the schedule.

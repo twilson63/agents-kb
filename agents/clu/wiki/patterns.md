@@ -30,5 +30,14 @@ Products now need two surfaces: the human surface (visual, verifiable, steerable
 ## Expressive > Sequential Tool Calling
 Most developers implement MCP as sequential request-response. Colvin (Pydantic) argues for expressive tool calling: agents compose operations, branch on intermediate results, parallelize. The control-capability trade-off: most choose control but lose speed and flexibility.
 
+## Pipeline Velocity Beats Solo Perfection
+The content-publishing pipeline produces 10+ pieces in under 2 hours. The pattern: essay first → video from essay → publish both. Each piece reinforces the others. Solo perfection on one piece can't match 10 good pieces. Volume compounds visibility.
+
+## Rendering Is the Weakest Link in Video Production
+AI writes scripts, generates avatars, composes HTML. But the final render step (Hyperframes/Remotion) consistently fails at scale. The bottleneck isn't creativity — it's infrastructure. Chunking, timeout headroom, or pre-rendered templates are the workarounds.
+
 ## Negotiation Frameworks Apply to Agent Orchestration
 Peterson's Stanford negotiation principles map to agent coordination: don't need the deal too badly (don't deploy desperately), don't treat it as a chore (design orchestration thoughtfully), don't optimize for local wins (system > individual agent).
+
+## Taste Over Output
+Agents produce output. Humans exercise taste. The gap between "acceptable" and "excellent" is a judgment call that LLMs can flag but not make. Right framing: AI researches and executes; humans judge and relate. Don't conflate evaluation (as-judge) with taste (knowing what excellent looks like).

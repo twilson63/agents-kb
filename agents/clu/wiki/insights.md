@@ -39,7 +39,17 @@ Most MCP implementations are sequential request-response. Colvin (Pydantic creat
 
 **Source:** Samuel Colvin, "MCP is all you need" talk | **Updated:** 2026-04-11
 
+### Pipeline Velocity Is the Small Team Advantage (April 2026)
+A single agent with a pipeline workflow can produce 10 essays + 16 videos in a day. The system drives velocity, not individual creativity. Solo perfection on one piece < 10 good pieces via pipeline. Volume compounds visibility; perfection doesn't. This is how hyper.io (tiny team) outproduces competitors with 10x headcount.
+
+**Source:** Content publishing sprint, April 20 | **Updated:** 2026-04-21
+
 ### Agent Coordination Is Negotiation (April 2026)
 Peterson's Stanford negotiation framework maps directly to agent orchestration: desperate deployment loses leverage, treating wiring as chore produces fragile integrations, optimizing agents for local wins degrades system performance. Design the negotiation protocol, don't leave it to chance.
 
 **Source:** Joel Peterson, Stanford eCorner 2007 | **Updated:** 2026-04-11
+
+### Agents Research, Humans Judge (April 2026)
+Agents can evaluate quality (LLM-as-judge) but cannot exercise taste. The gap between "acceptable" and "excellent" is a human judgment call. Agents handle research, execution, and synthesis. Humans own taste, relationships, and creative direction. Overpromising agent capability in judgment domains undermines trust.
+
+**Source:** Rakis discussion, April 21 | **Updated:** 2026-04-22

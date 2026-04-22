@@ -36,6 +36,42 @@
 **Reasoning:** CLI provides one-command video creation + status polling. Reduces friction from prompt to publish.
 **Outcome:** Installed and configured with API key.
 
+## 2026-04-20: Hyperframes Over Remotion for AI-Agent Video
+**Context:** Compared Hyperframes and Remotion for AI-agent video generation. Hyperframes rendered one test successfully; Remotion took 2+ hours to set up.
+**Decision:** Default to Hyperframes for AI-agent video generation (HTML-native, skills, pre-built blocks). Use Remotion only for hand-crafted compositions.
+**Reasoning:** Setup time 2 min vs 2+ hours. File size 1.2MB vs 2.4MB. Duration equivalent. HTML-native means agent skills work directly.
+**Outcome:** Hyperframes chosen as default. However, render timeouts at 70% remain unresolved.
+
+## 2026-04-20: Content Pipeline for Velocity
+**Context:** Need to produce content at scale (10+ pieces per sprint).
+**Decision:** Use content-publishing skill as primary workflow. ~10 min per essay+video combo means 10 pieces in under 2 hours.
+**Reasoning:** Pipeline approach — essay first, video from essay — eliminates creative cold starts. Each piece compounds the others.
+**Outcome:** Shipped 10 essays + 16 videos in one day using this pipeline.
+
+## 2026-04-20: HeyGen Avatar Configuration Settled
+**Context:** Multiple avatar/voice combinations tested across HeyGen videos.
+**Decision:** Master Control suit avatar (`4cadeeea56e14c05bb017756c98ca9a7`) as default. Tom voice (`0356eda1a1414066bafac71d0f1e046c`) as default voice.
+**Reasoning:** Suit avatar more professional and consistent. Tom voice tested across multiple videos with good results.
+**Outcome:** Documented in TOOLS.md. All future HeyGen videos default to this configuration.
+
+## 2026-04-21: Editor Pipeline Required Before Publishing
+**Context:** Content was being published without passing through humanizer or style checks.
+**Decision:** Content-publishing skill now requires humanizer + speaking-framework before any publish. Writer.com AI detection score must be < 0.5 before content goes out.
+**Reasoning:** AI-generated content that reads AI-generated undermines credibility. The 5-step pipeline (detect → trope scan → humanize → style check → re-detect) is non-negotiable for anything public-facing.
+**Outcome:** Live. Applied to AI Enterprise series. All 4 reference guides created.
+
+## 2026-04-21: Taste and Relationships Are Human-Only
+**Context:** Discussion about what agents can and cannot replace in enterprise.
+**Decision:** Frame agent value as research/execution, not judgment. Humans own taste (excellent vs. adequate) and relationships (trust, rapport, institutional knowledge).
+**Reasoning:** LLMs can evaluate quality (as-judge) but cannot exercise taste the way a human editor, creative director, or executive can. Correct framing prevents overpromising and sets realistic deployment boundaries.
+**Outcome:** Documented as key insight. Applied to AI Enterprise essays Part 2 (personal agents for ICs).
+
+## 2026-04-21: Tom Voice as Default for HeyGen
+**Context:** Tested multiple voice options across 16+ videos. Jenny and Master Control voices both had issues.
+**Decision:** Tom voice (`0356eda1a1414066bafac71d0f1e046c`) as default for all HeyGen videos. Master Control suit avatar (`4cadeeea56e14c05bb017756c98ca9a7`) as default avatar.
+**Reasoning:** Tom tested across multiple video styles with consistent quality. Suit avatar projects professionalism better than default avatar.
+**Outcome:** Documented in TOOLS.md. All future videos default to Tom + Master Control suit.
+
 ## 2026-04-11: Community Building Playbook for hyper.io
 **Context:** Hive needs a developer community strategy.
 **Decision:** Created comprehensive DevRel playbook with 4-phase action plan, 7 rules, measurement framework.
