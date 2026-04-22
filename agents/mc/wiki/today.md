@@ -1,4 +1,4 @@
-# Today — 2026-04-21
+# Today — 2026-04-22
 
 ## Status Summary
 - Scout Live: **Degraded** (gateway fragile — needs memory limit increase and probe tuning)
@@ -20,10 +20,11 @@
 
 ## Alerts
 - Pipedrive CRM: paywall/billing issue blocking access
-- Content engine social auth still expired (X/LinkedIn/Substack)
-- PR #2 (scout-live) open since Mar 7 (45+ days)
+- Content engine social auth still expired (X/LinkedIn/Substack) — all 3 platforms need re-login
+- PR #2 (scout-live) open since Mar 7 (46+ days)
+- 4 unpublished blog posts queued, blocked by content auth expiry
 
 ## Notes
-- No daily memory file for Apr 21 yet (early morning compile)
-- Last daily memory: Apr 20 (heartbeat check — PR #2 still open, social stale 16 days)
+- No new daily memory files since Apr 21
+- Content auth fully expired (Substack, X, LinkedIn) — requires human re-login
 - No new decisions, patterns, or lessons since last compile

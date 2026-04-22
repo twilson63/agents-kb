@@ -43,10 +43,17 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-04-22
+- Second brain compile — no new daily notes since Apr 21
+- Updated today.md: content auth alert refined (all 3 platforms expired), 4 blog posts queued
+- Gateway still fragile, PR #2 open 46+ days, social stale 18+ days
+- No new decisions, patterns, or lessons to capture
+
 ### 2026-04-21
-- Second brain compile — no new daily notes since Apr 20 heartbeat
-- Gateway still fragile (4 restarts, last 30h ago at last check)
-- PR #2 open 45+ days; social stale 16+ days
+- Second brain compile — daily note: content engine fully blocked (all platform sessions expired)
+- 4 unpublished posts queued, social stale 16+ days
+- Gateway still fragile (4 restarts, last 30h ago)
+- PR #2 open 45+ days
 - No new decisions, patterns, or lessons to capture
 
 ### 2026-04-20

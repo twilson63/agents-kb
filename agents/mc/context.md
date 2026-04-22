@@ -36,7 +36,7 @@
 ## Conventions
 
 - Memory writes: Append to `memory/YYYY-MM-DD.md`, never overwrite
-- GitHub: Personal access token for workflows (expires Apr 13, 2026)
+- GitHub: Personal access token for workflows (mc-agent-pat-2026, expires Jul 12, 2026)
 - Browser: Use `profile="openclaw"` for direct control, `profile="chrome"` for extension relay
 - Toast duration: Error toasts 6000ms, success toasts 4000ms
 - Agents KB: Clone to `/tmp/agents-kb` for writes, never edit mounted
