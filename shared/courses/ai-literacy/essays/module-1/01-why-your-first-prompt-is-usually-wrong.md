@@ -1,0 +1,31 @@
+# Why Your First Prompt Is Usually Wrong
+
+*Module 1 — Reverse Prompting | Essay 1 of 8*
+
+---
+
+Most people approach AI the same way they approach a vending machine. Put in a selection, expect a result. Wrong result? Try a different selection. Still wrong? The machine must be broken.
+
+That instinct makes sense for vending machines. It's the wrong frame for an AI agent.
+
+We've spent years training ourselves on search engines. Type something in, scan the results, refine if it missed. So when people sit down with an AI agent for the first time, they do the same thing. Type a request. Read the output. Decide if it worked. And when it doesn't, type a new request from scratch.
+
+The problem isn't the agent. Your first prompt almost never contains enough information for the agent to do what you actually want.
+
+Take a common one: "help me write an email." The agent doesn't know who it's for. It doesn't know your relationship with that person, the tone you want, what outcome you're after, or the three things you definitely don't want to say. It doesn't know if you write formally or casually, if you're in sales or operations, if this is a follow-up or a cold outreach.
+
+So it fills in the blanks. It produces a reasonable, generic email that doesn't sound like you and doesn't quite fit the situation. You read it and think it missed. You're right, but the agent wasn't wrong. It just didn't have what it needed.
+
+This is where most frustration with AI tools comes from. People decide the AI isn't smart enough, doesn't understand them, or just doesn't work for their use case. The gap isn't intelligence. It's information.
+
+Here's what actually changes things: your first prompt is the start of a conversation, not a finished order. The agent isn't a machine waiting for a perfect input. It's a capable collaborator that works better the more context you give it, and that can ask you for what it needs if you let it.
+
+Once you start thinking of prompting as a dialogue, a few things shift. You stop expecting perfection on round one. You start including context you'd previously assumed was obvious. You get comfortable going back and forth, building toward the output you actually want rather than hunting for the magic phrasing that produces it instantly.
+
+That's what this module teaches. How to give context before the command. How to ask the agent to interview you before it starts. How to read its response for clues about what landed and what didn't. How to iterate without starting from scratch every time.
+
+But it starts here. Your first prompt is a starting point. The agent is ready to work with you. The question is whether you're ready to work with it.
+
+---
+
+*Pod exercise: Open your practice pod and send this exact prompt: "Help me write an email." Read what comes back. Now send a second message adding context — who it's for, what you want to accomplish, your tone. Keep both outputs. You'll refer to them throughout the module.*
