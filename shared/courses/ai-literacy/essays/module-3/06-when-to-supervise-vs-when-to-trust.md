@@ -1,0 +1,31 @@
+# When to Supervise vs. When to Trust
+
+*Module 3 — Multi-Agent & Delegation | Essay 6 of 7*
+
+---
+
+Delegation only works if you actually let go.
+
+The most common failure mode with multi-agent work isn't bad outputs — it's over-supervision. Checking every step. Redirecting constantly. Asking for a review before the first agent has even finished. That's not delegation. That's doing the work yourself while an agent types.
+
+But under-supervision has its own failure mode. You hand off a complex workflow, walk away entirely and come back to find that the second stage built on a first stage that went sideways. The error compounded. What would have taken a small correction early now requires starting over.
+
+The right answer is calibrated supervision. Not hands-off, not hovering — strategic checkpoints at the moments where a bad direction would cost you the most.
+
+Three factors determine where to put your checkpoints.
+
+*Complexity.* Simple tasks with clear outputs need one review at the end. Complex tasks with judgment calls at multiple stages need a check before moving from each stage to the next.
+
+*Familiarity.* A skill you've run 20 times with good results needs less oversight than something you're trying for the first time. Trust is earned through track record.
+
+*Stakes.* The higher the cost of getting it wrong, the more supervision is warranted. A first draft of an internal document can be reviewed once. A draft going to a client tomorrow needs a checkpoint after every stage.
+
+When something does go wrong — and it will — the correction instinct matters. Don't start over out of frustration. Understand what actually went wrong. Was it a bad brief? A weak handoff? An agent that made a reasonable choice you didn't anticipate? Fix that specific thing and continue.
+
+The goal is to develop a feel for your workflows. Over time you'll know which stages need close review and which ones run cleanly. Your checkpoints will tighten around the moments that actually matter and relax everywhere else.
+
+That's what experienced delegation looks like. Not blind trust, not constant intervention. Judgment about where your attention is actually needed.
+
+---
+
+*Pod exercise: Run a three-step workflow in your practice pod. Before you start, write down your supervision plan: where will you review before proceeding, and where will you let it run to completion? After the workflow, evaluate: was your checkpoint in the right place? What would you change?*
