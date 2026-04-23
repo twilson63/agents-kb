@@ -1,0 +1,31 @@
+# Ask the Agent to Ask You Questions
+
+*Module 1 — Reverse Prompting | Essay 3 of 8*
+
+---
+
+Here's a technique that sounds backwards until you try it. Instead of writing a prompt and hoping it captures everything the agent needs, you ask the agent to interview you first.
+
+Before you give the task, you give one instruction: "Before you start, ask me everything you need to know to do this well."
+
+That's it. That's reverse prompting.
+
+What happens next is usually surprising. The agent comes back with five or six specific questions you hadn't thought to answer. What's the deadline? Who's the primary audience? What's the one thing this needs to accomplish? Are there things I should avoid? What format does this need to be in?
+
+Those aren't generic questions. They're the questions a smart person would ask before starting real work. And answering them takes about two minutes — after which the agent has everything it needs to produce something genuinely useful on the first try.
+
+The reason this works is simple. Agents know what information they need to do a task well. They just don't ask for it by default. They assume you've given them everything and proceed with whatever they have. Reverse prompting flips that dynamic. You're telling the agent: don't assume, ask.
+
+It's most powerful for complex tasks where the stakes of getting it wrong are high. Writing something that represents you publicly. Planning something with real consequences. Drafting a message to someone where tone matters. For these, the two minutes you spend answering questions saves you from the 20 minutes of trying to fix an output that started from incomplete information.
+
+For simple tasks — "summarize this article," "convert this to bullet points" — skip it. The overhead isn't worth it when the task is clear.
+
+But for anything where you'd feel frustrated if the first output missed, try this first. Open your practice pod and type: "I need your help with [task]. Before you start, ask me everything you need to know to do this well."
+
+Then answer the questions honestly. Don't rush. The agent's questions are telling you exactly what context matters.
+
+The output that comes after will feel different. Not because the agent got smarter. Because it finally had what it needed.
+
+---
+
+*Pod exercise: Choose a task you'd normally just fire a quick prompt at — writing something, planning something, deciding something. This time, open with: "Before you start, ask me everything you need to know to do this well." Answer every question it asks. Run it to completion. Compare the result to what you'd typically get from a one-line prompt.*
