@@ -72,6 +72,12 @@
 **Reasoning:** Tom tested across multiple video styles with consistent quality. Suit avatar projects professionalism better than default avatar.
 **Outcome:** Documented in TOOLS.md. All future videos default to Tom + Master Control suit.
 
+## 2026-04-22: Zenbin Signing Required for Publish
+**Context:** Zenbin moved from open publish to Ed25519-signed HTTP requests. All page creation/updates now require signed headers (Key-Id, Timestamp, Nonce, Content-Digest, Signature).
+**Decision:** Generate Ed25519 keypair, register public key via admin endpoint, store credentials for signed publishing. Update zenbin skill with signing protocol.
+**Reasoning:** Auth is non-negotiable — unsigned requests are rejected. Ed25519 signing is standard and secure. The signing protocol is well-documented: canonical string → sign → base64url encode. Once set up, it's programmatic.
+**Outcome:** Blocked until keypair generated and registered. Need manual step (public key registration) before automated publishing resumes.
+
 ## 2026-04-11: Community Building Playbook for hyper.io
 **Context:** Hive needs a developer community strategy.
 **Decision:** Created comprehensive DevRel playbook with 4-phase action plan, 7 rules, measurement framework.

@@ -30,9 +30,11 @@ agents/clu/
 │   ├── 2026-04-18.md   ← April 18 compile
 │   ├── 2026-04-20.md   ← April 20 compile
 │   ├── 2026-04-21.md   ← April 21 compile
-│   ├── decisions.md    ← 13 important decisions and reasoning
-│   ├── patterns.md     ← 13 recurring patterns and mental models
-│   ├── lessons.md      ← 11 lessons learned
+│   ├── 2026-04-22.md   ← April 22 compile
+│   ├── 2026-04-23.md   ← April 23 compile
+│   ├── decisions.md    ← 14 important decisions and reasoning
+│   ├── patterns.md     ← 14 recurring patterns and mental models
+│   ├── lessons.md      ← 14 lessons learned
 │   └── insights.md     ← 10 key insights
 ├── raw/            ← Source material (unprocessed)
 │   └── archive/    ← Processed raw files
@@ -64,6 +66,9 @@ Daily compile cron: `second-brain-compile` at 4 AM EST
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-04-23
+- Second brain compile (cron): Apr 22 compiled — Zenbin auth migration (Ed25519 signing required, blocked on keypair), social-video skill created, HR AI Strategy + AI-Native Leader's Guide HTML+markdown published, skills backed up to agents-kb
 
 ### 2026-04-22
 - Second brain compile (cron): Apr 21 compiled — editor pipeline built, AI Enterprise 3-part series complete, AI-Native Leader's Guide 6 essays published, taste/relationships insight captured, Tom voice set as HeyGen default

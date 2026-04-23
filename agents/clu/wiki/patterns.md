@@ -39,5 +39,8 @@ AI writes scripts, generates avatars, composes HTML. But the final render step (
 ## Negotiation Frameworks Apply to Agent Orchestration
 Peterson's Stanford negotiation principles map to agent coordination: don't need the deal too badly (don't deploy desperately), don't treat it as a chore (design orchestration thoughtfully), don't optimize for local wins (system > individual agent).
 
+## Auth Friction Breaks Flow
+External APIs that change auth requirements without migration paths break agent workflows. Zenbin's shift from open publish to Ed25519 signing required manual keypair generation and registration — no automatic path. Lesson: any external dependency needs a fallback or local cache. Auth changes are the most disruptive type of API change for automated systems.
+
 ## Taste Over Output
 Agents produce output. Humans exercise taste. The gap between "acceptable" and "excellent" is a judgment call that LLMs can flag but not make. Right framing: AI researches and executes; humans judge and relate. Don't conflate evaluation (as-judge) with taste (knowing what excellent looks like).

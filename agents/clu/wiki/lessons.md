@@ -60,6 +60,11 @@
 **Lesson:** When a task is blocking the main conversation and doesn't require the primary session's context, delegate it. Rendering, uploading, and processing are ideal delegation candidates.
 **Action:** Use sessions_spawn for rendering and processing tasks. Keep main session for conversation and decisions.
 
+## 2026-04-22: External Auth Changes Require Manual Intervention
+**What happened:** Zenbin changed from open publish to Ed25519 signed requests. No migration path or automatic key provisioning. Publishing blocked until keypair generated and registered manually.
+**Lesson:** External API dependencies are fragile. Auth changes are the most disruptive type of API change for agent workflows. When an external service changes auth, the agent can't self-serve — it needs human setup (key generation, registration, credential storage).
+**Action:** Generate Ed25519 keypair and register with Zenbin admin endpoint. Store credentials in TOOLS.md or zenbin skill. Consider caching published pages locally as fallback.
+
 ## 2026-04-12: Cron Timeouts Need Headroom
 **What happened:** Second brain compile cron jobs (clu at 4AM, mc at 5AM) were both failing with 120s timeouts. Increased to 300s and they succeeded.
 **Lesson:** Default timeouts are often too tight for cron jobs that do file I/O + git operations + web fetches. Always set timeout to 2-3x expected run time. Monitor first few runs before trusting the schedule.
