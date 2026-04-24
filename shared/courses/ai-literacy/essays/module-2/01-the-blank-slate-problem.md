@@ -18,7 +18,21 @@ Skills take this further. If memory is what your agent knows about you, skills a
 
 Together, memory and skills solve the blank slate problem. Not by making the agent smarter, by making it informed.
 
-The rest of this module teaches you how to build both. Start with memory, because it takes 10 minutes and changes how every conversation feels. Then build your first skill, because that's where the real time savings compound.
+## What you'll leave this module able to do
+
+The rest of this module teaches you how to build both. Here's what you'll walk away with.
+
+You'll know what memory actually is, not some invisible system running in the background, but a set of plain-text notes your agent reads before it responds. That's it. Once you understand that, writing and updating memory notes becomes straightforward. By Essay 3, you'll have written your first ones, and you'll feel the difference immediately in how your agent responds.
+
+You'll know the difference between personal context and task context, and why mixing them up causes problems. Personal context: your role, how you communicate, what you care about, belongs in memory. Task context, this project, this deadline, this specific audience, belongs in the conversation. Getting that distinction right keeps your memory notes useful and your conversations clean.
+
+You'll have built your first skill. Not a template, not a prompt you've saved somewhere: an actual skill your agent knows how to run on demand. You'll test it on a real task from your work, refine it based on what comes back, and leave with something you can use on Monday morning.
+
+You'll understand how skills compound. One skill saves you five minutes once. A library of ten skills, each covering a task you do every week, changes how much time you spend on repetitive work. By Essay 7, you'll have a plan for building that library over 30 days.
+
+And you'll understand what it feels like to work with an agent that actually knows you. Not just a smart tool you're using, but something configured to your work, your style, your situation. That's what memory and skills build, not a smarter agent, an informed one.
+
+Start with memory. It takes 10 minutes and changes how every conversation feels. Then build your first skill, because that's where the real time savings compound.
 
 ---
 

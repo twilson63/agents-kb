@@ -22,9 +22,23 @@ Here's what actually changes things: your first prompt is the start of a convers
 
 Once you start thinking of prompting as a dialogue, a few things shift. You stop expecting perfection on round one. You start including context you'd previously assumed was obvious. You get comfortable going back and forth, building toward the output you actually want rather than hunting for the magic phrasing that produces it instantly.
 
-That's what this module teaches. How to give context before the command. How to ask the agent to interview you before it starts. How to read its response for clues about what landed and what didn't. How to iterate without starting from scratch every time.
+## What you'll leave this module able to do
 
-But it starts here. Your first prompt is a starting point. The agent is ready to work with you. The question is whether you're ready to work with it.
+In 50 minutes, you'll go from the vending machine model to something that actually works. Here's what that looks like in practice.
+
+You'll know how to give context before you give a command, not in a complicated way, just the five things an agent needs to stop guessing: who you are, what you're trying to do, who the audience is, what constraints matter, and what good looks like. Most people skip all five. You won't.
+
+You'll know how to flip the dynamic entirely using reverse prompting: telling the agent to ask you questions before it starts working. This single technique eliminates more wasted effort than anything else in this module. You ask it once, it interviews you, and the output it produces is grounded in what you actually need instead of what it assumed.
+
+You'll know how to read an agent's response, not just whether the result is good or bad, but *why*. Generic language means missing context. Hedging means uncertainty. Asking clarifying questions means it understood the task but not your situation. Once you can read those signals, you know exactly what to give it next.
+
+You'll know when to iterate and when to start over. Most people start over when they should iterate, and iterate when they should start over. By the end of Essay 5, you'll have a clear instinct for which is which, and a way to give feedback that moves the work forward instead of just registering dissatisfaction.
+
+You'll know how to break a complex request into a series of focused conversations. One prompt to do everything produces one mediocre result. A series of focused prompts: each with its own context and goal, produces something you'd actually use.
+
+And you'll leave with a personal prompting checklist: a five-second check you run before you send any prompt that catches the most common mistakes before they happen.
+
+That's the module. Not theory, habits you'll build in real time using your own work in your practice pod. Your first prompt is a starting point. The agent is ready to work with you. The question is whether you're ready to work with it.
 
 ---
 
