@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Literacy Course</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #22263a;
+    --border: #2e3350;
+    --text: #e8eaf0;
+    --muted: #8b90a7;
+    --radius: 12px;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+  }
+
+  /* Nav */
+  .topnav {
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    padding: 0 40px;
+    display: flex; align-items: center; gap: 12px;
+    height: 56px;
+  }
+  .topnav-logo { font-size: 13px; font-weight: 700; letter-spacing: 0.05em; color: var(--text); }
+  .topnav-sep { color: var(--border); }
+  .topnav-course { font-size: 13px; color: var(--muted); }
+
+  /* Hero */
+  .hero {
+    max-width: 880px; margin: 0 auto; padding: 80px 40px 64px;
+    text-align: center;
+  }
+  .hero-eyebrow {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: #6c63ff; background: rgba(108,99,255,0.12);
+    padding: 5px 14px; border-radius: 999px; margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 52px); font-weight: 800;
+    line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.02em;
+  }
+  .hero-sub {
+    font-size: 18px; color: var(--muted); line-height: 1.65;
+    max-width: 580px; margin: 0 auto 40px;
+  }
+  .hero-stats {
+    display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat-num { font-size: 28px; font-weight: 800; color: var(--text); }
+  .hero-stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  /* Divider */
+  .section-divider {
+    max-width: 880px; margin: 0 auto; padding: 0 40px 16px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted);
+    border-bottom: 1px solid var(--border); margin-bottom: 40px;
+  }
+
+  /* Module cards */
+  .modules {
+    max-width: 880px; margin: 0 auto; padding: 0 40px 80px;
+    display: flex; flex-direction: column; gap: 24px;
+  }
+
+  .module-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); overflow: hidden;
+    display: flex; text-decoration: none; color: inherit;
+    transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  }
+  .module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  }
+  .module-card:hover.m1 { border-color: #6c63ff; }
+  .module-card:hover.m2 { border-color: #f59e0b; }
+  .module-card:hover.m3 { border-color: #22d3ee; }
+
+  .module-accent {
+    width: 6px; flex-shrink: 0;
+  }
+  .m1 .module-accent { background: #6c63ff; }
+  .m2 .module-accent { background: #f59e0b; }
+  .m3 .module-accent { background: #22d3ee; }
+
+  .module-body { padding: 32px 36px; flex: 1; }
+
+  .module-meta {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+  }
+  .module-num {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 3px 10px; border-radius: 999px;
+  }
+  .m1 .module-num { color: #6c63ff; background: rgba(108,99,255,0.12); }
+  .m2 .module-num { color: #f59e0b; background: rgba(245,158,11,0.12); }
+  .m3 .module-num { color: #22d3ee; background: rgba(34,211,238,0.12); }
+
+  .module-pills { display: flex; gap: 8px; }
+  .module-pill {
+    font-size: 11px; color: var(--muted); background: var(--surface2);
+    border: 1px solid var(--border); padding: 2px 8px; border-radius: 999px;
+  }
+
+  .module-card h2 { font-size: 22px; font-weight: 700; margin-bottom: 10px; line-height: 1.3; }
+  .module-desc { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 24px; max-width: 560px; }
+
+  .module-lessons { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .lesson-chip {
+    font-size: 12px; color: var(--muted); background: var(--surface2);
+    border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .module-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 600; padding: 10px 20px;
+    border-radius: 8px; border: none; cursor: pointer;
+    text-decoration: none; transition: opacity 0.15s;
+  }
+  .module-cta:hover { opacity: 0.85; }
+  .m1 .module-cta { background: #6c63ff; color: #fff; }
+  .m2 .module-cta { background: #f59e0b; color: #0f1117; }
+  .m3 .module-cta { background: #22d3ee; color: #0f1117; }
+
+  .module-img {
+    width: 220px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--surface2);
+    font-size: 72px;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 40px;
+    text-align: center;
+    font-size: 13px; color: var(--muted);
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 48px 20px 40px; }
+    .modules { padding: 0 20px 60px; }
+    .module-body { padding: 24px 20px; }
+    .module-img { display: none; }
+    .hero-stats { gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="topnav-logo">AI Literacy</span>
+  <span class="topnav-sep">/</span>
+  <span class="topnav-course">Course Overview</span>
+</nav>
+
+<section class="hero">
+  <span class="hero-eyebrow">Self-Paced Course</span>
+  <h1>AI Literacy:<br>From Prompts to Agent Teams</h1>
+  <p class="hero-sub">Three focused modules that take you from smarter prompting to running multi-agent workflows — with video lessons and hands-on pod exercises throughout.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">3</div>
+      <div class="hero-stat-label">Modules</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">23</div>
+      <div class="hero-stat-label">Video Lessons</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">~3 hrs</div>
+      <div class="hero-stat-label">Total Length</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">23</div>
+      <div class="hero-stat-label">Pod Exercises</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider">Course Modules</div>
+
+<div class="modules">
+
+  <!-- Module 1 -->
+  <a class="module-card m1" href="./module-1/">
+    <div class="module-accent"></div>
+    <div class="module-body">
+      <div class="module-meta">
+        <span class="module-num">Module 1</span>
+        <div class="module-pills">
+          <span class="module-pill">8 lessons</span>
+          <span class="module-pill">~60 min</span>
+        </div>
+      </div>
+      <h2>Reverse Prompting</h2>
+      <p class="module-desc">Stop guessing what to ask. Learn to make the AI interview you — surfacing what you actually need before a word of output is written. The foundation of everything that follows.</p>
+      <div class="module-lessons">
+        <span class="lesson-chip">Why prompts fail</span>
+        <span class="lesson-chip">The reverse prompt pattern</span>
+        <span class="lesson-chip">Constraint-first framing</span>
+        <span class="lesson-chip">Iterative refinement</span>
+        <span class="lesson-chip">+ 4 more</span>
+      </div>
+      <span class="module-cta">Start Module 1 →</span>
+    </div>
+    <div class="module-img">🧠</div>
+  </a>
+
+  <!-- Module 2 -->
+  <a class="module-card m2" href="./module-2/">
+    <div class="module-accent"></div>
+    <div class="module-body">
+      <div class="module-meta">
+        <span class="module-num">Module 2</span>
+        <div class="module-pills">
+          <span class="module-pill">8 lessons</span>
+          <span class="module-pill">~60 min</span>
+        </div>
+      </div>
+      <h2>Memory &amp; Context</h2>
+      <p class="module-desc">AI doesn't remember between sessions — you have to build the memory layer yourself. Learn how to maintain continuity, carry context forward, and turn scattered conversations into a coherent working relationship.</p>
+      <div class="module-lessons">
+        <span class="lesson-chip">How context windows work</span>
+        <span class="lesson-chip">Memory notes</span>
+        <span class="lesson-chip">Session continuity</span>
+        <span class="lesson-chip">Persistent context files</span>
+        <span class="lesson-chip">+ 4 more</span>
+      </div>
+      <span class="module-cta">Start Module 2 →</span>
+    </div>
+    <div class="module-img">💾</div>
+  </a>
+
+  <!-- Module 3 -->
+  <a class="module-card m3" href="./module-3/">
+    <div class="module-accent"></div>
+    <div class="module-body">
+      <div class="module-meta">
+        <span class="module-num">Module 3</span>
+        <div class="module-pills">
+          <span class="module-pill">7 lessons</span>
+          <span class="module-pill">~45 min</span>
+        </div>
+      </div>
+      <h2>Multi-Agent &amp; Delegation</h2>
+      <p class="module-desc">One agent trying to do everything produces mediocre results at every step. Learn to decompose work into roles, run agents in parallel, write clean handoffs, and supervise without micromanaging.</p>
+      <div class="module-lessons">
+        <span class="lesson-chip">Thinking in roles</span>
+        <span class="lesson-chip">Your first delegation</span>
+        <span class="lesson-chip">Parallel vs sequential</span>
+        <span class="lesson-chip">Writing handoffs</span>
+        <span class="lesson-chip">+ 3 more</span>
+      </div>
+      <span class="module-cta">Start Module 3 →</span>
+    </div>
+    <div class="module-img">🤝</div>
+  </a>
+
+</div>
+
+<footer>
+  AI Literacy Course · Built with Claude · <a href="https://zenbin.org/p/ai-literacy-course" style="color: #6c63ff; text-decoration: none;">View on ZenBin</a>
+</footer>
+
+</body>
+</html>
