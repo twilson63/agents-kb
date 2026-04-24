@@ -65,6 +65,11 @@
 **Lesson:** External API dependencies are fragile. Auth changes are the most disruptive type of API change for agent workflows. When an external service changes auth, the agent can't self-serve — it needs human setup (key generation, registration, credential storage).
 **Action:** Generate Ed25519 keypair and register with Zenbin admin endpoint. Store credentials in TOOLS.md or zenbin skill. Consider caching published pages locally as fallback.
 
+## 2026-04-23: Content Structure Is a Pipeline Step, Not an Afterthought
+**What happened:** Content was passing humanizer (voice/style check) but still not landing with readers. The issue wasn't AI-generated tone — it was structure. Posts built up to conclusions instead of leading with them.
+**Lesson:** Structure and voice are orthogonal. Humanizer catches AI voice/tropes. Minto Pyramid catches structural problems (burying the lead, paragraphs that don't serve the conclusion). Both need to be in the pipeline, in that order. Structure is the easier fix but the one people skip.
+**Action:** Added Minto Pyramid check as pipeline step after humanizer. 5-point checklist: conclusion first, first sentence = entire claim, every paragraph serves conclusion, claim→points→evidence, read-aloud test.
+
 ## 2026-04-12: Cron Timeouts Need Headroom
 **What happened:** Second brain compile cron jobs (clu at 4AM, mc at 5AM) were both failing with 120s timeouts. Increased to 300s and they succeeded.
 **Lesson:** Default timeouts are often too tight for cron jobs that do file I/O + git operations + web fetches. Always set timeout to 2-3x expected run time. Monitor first few runs before trusting the schedule.

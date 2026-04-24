@@ -78,6 +78,12 @@
 **Reasoning:** Auth is non-negotiable — unsigned requests are rejected. Ed25519 signing is standard and secure. The signing protocol is well-documented: canonical string → sign → base64url encode. Once set up, it's programmatic.
 **Outcome:** Blocked until keypair generated and registered. Need manual step (public key registration) before automated publishing resumes.
 
+## 2026-04-23: Minto Pyramid as Pipeline Checkpoint
+**Context:** Content was passing humanizer but still lacked structural clarity — building up to a point instead of leading with it.
+**Decision:** Add Minto Pyramid check as a mandatory pipeline step AFTER humanizer, BEFORE publishing.
+**Reasoning:** The Minto Pyramid (claim-first structure) is teachable and testable. A 5-point checklist catches content that reads well but doesn't land: (1) one-sentence conclusion first, (2) first sentence contains entire claim, (3) every paragraph serves conclusion, (4) claim → points → evidence, (5) read-aloud test. This is structure, not voice — orthogonal to humanizer.
+**Outcome:** New skill created (`minto-pyramid`). Pipeline updated to 5 steps: draft → humanizer → Minto check → HeyGen video → ZenBin publish.
+
 ## 2026-04-11: Community Building Playbook for hyper.io
 **Context:** Hive needs a developer community strategy.
 **Decision:** Created comprehensive DevRel playbook with 4-phase action plan, 7 rules, measurement framework.

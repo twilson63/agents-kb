@@ -32,9 +32,10 @@ agents/clu/
 │   ├── 2026-04-21.md   ← April 21 compile
 │   ├── 2026-04-22.md   ← April 22 compile
 │   ├── 2026-04-23.md   ← April 23 compile
-│   ├── decisions.md    ← 14 important decisions and reasoning
-│   ├── patterns.md     ← 14 recurring patterns and mental models
-│   ├── lessons.md      ← 14 lessons learned
+│   ├── 2026-04-24.md   ← April 24 compile
+│   ├── decisions.md    ← 15 important decisions and reasoning
+│   ├── patterns.md     ← 16 recurring patterns and mental models
+│   ├── lessons.md      ← 16 lessons learned
 │   └── insights.md     ← 10 key insights
 ├── raw/            ← Source material (unprocessed)
 │   └── archive/    ← Processed raw files
@@ -66,6 +67,9 @@ Daily compile cron: `second-brain-compile` at 4 AM EST
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-04-24
+- Second brain compile (cron): Apr 23 compiled — Minto Pyramid skill added to pipeline (claim-first structure check after humanizer), 3 essays + 1 video published, Zenbin Ed25519 auth resolved
 
 ### 2026-04-23
 - Second brain compile (cron): Apr 22 compiled — Zenbin auth migration (Ed25519 signing required, blocked on keypair), social-video skill created, HR AI Strategy + AI-Native Leader's Guide HTML+markdown published, skills backed up to agents-kb
