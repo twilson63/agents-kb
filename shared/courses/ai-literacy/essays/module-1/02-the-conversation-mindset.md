@@ -1,6 +1,6 @@
 # The Conversation Mindset
 
-*Module 1 — Reverse Prompting | Essay 2 of 8*
+*Module 1, Reverse Prompting | Essay 2 of 8*
 
 ---
 
@@ -16,7 +16,7 @@ Think about how you'd actually brief a capable new hire on a task. You wouldn't 
 
 That's the conversation mindset. The agent is capable. It just needs the same thing a smart person needs: context about the situation, clarity about what you want, and room to ask questions.
 
-What makes this hard at first is that it feels slower. Writing a three-sentence brief feels like more work than firing off a quick prompt. And in the short term, it is. But the output you get from a well-briefed agent is faster to use than the output you get from a vague one. Editing something that's 70% right takes five minutes. Starting from scratch because the first result missed entirely takes 20.
+What makes this hard at first is that it feels slower. Writing a three-sentence brief feels like more work than firing off a quick prompt. And in the short term, it's. But the output you get from a well-briefed agent is faster to use than the output you get from a vague one. Editing something that's 70% right takes five minutes. Starting from scratch because the first result missed entirely takes 20.
 
 The other thing that shifts with this mindset: you stop needing the perfect prompt. There's a whole industry of "prompt engineering" built on the idea that if you just find the right magic words, the AI performs. That's largely a distraction. What actually works is having a conversation. Give context. Read the response. Tell it what's right and what's off. Keep going.
 

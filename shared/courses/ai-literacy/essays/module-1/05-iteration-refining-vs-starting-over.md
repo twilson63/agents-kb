@@ -1,6 +1,6 @@
 # Iteration: Refining vs. Starting Over
 
-*Module 1 — Reverse Prompting | Essay 5 of 8*
+*Module 1, Reverse Prompting | Essay 5 of 8*
 
 ---
 
@@ -10,7 +10,7 @@ Starting over throws away something valuable: the context that's already built u
 
 The better move almost always is to stay in the conversation and tell the agent what's wrong.
 
-Not "make it better." That's not feedback, it's a wish. Useful feedback is specific and directional. "The tone is too formal — I need this to sound like me, not a press release." "The second paragraph repeats what you said in the first. Cut it." "You buried the main point. Lead with it."
+Not "make it better." That's not feedback, it's a wish. Useful feedback is specific and directional. "The tone is too formal, I need this to sound like me, not a press release." "The second paragraph repeats what you said in the first. Cut it." "You buried the main point. Lead with it."
 
 Three questions that sharpen any feedback:
 - What's wrong with it? (specific, not general)
@@ -27,4 +27,4 @@ The agents you'll get the most from aren't the ones you prompt perfectly on the 
 
 ---
 
-*Pod exercise: Take the email output from Essay 1's exercise — the generic one from the vague prompt. Instead of rewriting the prompt, reply to the agent in the same conversation with specific feedback about what's wrong. Run two or three rounds of refinement. See how close you can get to something you'd actually send.*
+*Pod exercise: Take the email output from Essay 1's exercise, the generic one from the vague prompt. Instead of rewriting the prompt, reply to the agent in the same conversation with specific feedback about what's wrong. Run two or three rounds of refinement. See how close you can get to something you'd actually send.*

@@ -1,14 +1,14 @@
 # Building Your Prompting Instincts
 
-*Module 1 — Reverse Prompting | Essay 8 of 8*
+*Module 1, Reverse Prompting | Essay 8 of 8*
 
 ---
 
 Good prompting isn't a formula you memorize. It's a set of instincts you build through practice. This essay is less about new techniques and more about consolidating what you've learned into habits that stick.
 
-The five-second check. Before you send any prompt, pause. Ask yourself five questions: Does the agent know who I am and what I do? Does it know who this output is for? Have I told it what good looks like? Have I said what to avoid? Does it know why this matters? You won't always answer all five — some tasks don't need them. But the habit of asking stops the most common mistake: skipping straight to the request.
+The five-second check. Before you send any prompt, pause. Ask yourself five questions: Does the agent know who I am and what I do? Does it know who this output is for? Have I told it what good looks like? Have I said what to avoid? Does it know why this matters? You won't always answer all five, some tasks don't need them. But the habit of asking stops the most common mistake: skipping straight to the request.
 
-The reverse prompt instinct. For anything complex or high-stakes, your first message isn't the task — it's the invitation to be interviewed. "Before you start, ask me everything you need to know." Two minutes of answering questions beats 20 minutes of fixing a missed output. Over time you'll develop a feel for when to use it and when to skip it.
+The reverse prompt instinct. For anything complex or high-stakes, your first message isn't the task, it's the invitation to be interviewed. "Before you start, ask me everything you need to know." Two minutes of answering questions beats 20 minutes of fixing a missed output. Over time you'll develop a feel for when to use it and when to skip it.
 
 The iteration instinct. When something isn't right, stay in the conversation. Tell the agent specifically what's wrong, what you want instead, and what to keep. Starting over is the last resort, not the first move.
 
@@ -16,13 +16,13 @@ The signal-reading instinct. Hedging, generic language and mismatched structure 
 
 The decomposition instinct. Big complex requests get broken into stages. Each stage is its own conversation. Each conversation produces something that feeds the next.
 
-None of these are hard. They're all versions of how you'd work with a capable person — communicate clearly, give feedback specifically, build toward something rather than expecting it all at once.
+None of these are hard. They're all versions of how you'd work with a capable person, communicate clearly, give feedback specifically, build toward something rather than expecting it all at once.
 
 What changes with practice is speed. These instincts start as conscious checks. After a few weeks of real use, they become automatic. You stop thinking about how to prompt and start just working.
 
-One last thing. When a conversation produces something genuinely good — save it. Not just the output, the whole exchange. The way you briefed the agent, the questions it asked, how you refined it. Those patterns are yours. They're the beginning of your personal prompt library, and they'll make the next similar task faster.
+One last thing. When a conversation produces something genuinely good, save it. Not just the output, the whole exchange. The way you briefed the agent, the questions it asked, how you refined it. Those patterns are yours. They're the beginning of your personal prompt library, and they'll make the next similar task faster.
 
-Module 2 takes all of this further. You'll stop rebuilding context from scratch every session and start teaching your agent your world — so it remembers who you are, how you work, and what you care about.
+Module 2 takes all of this further. You'll stop rebuilding context from scratch every session and start teaching your agent your world, so it remembers who you're, how you work, and what you care about.
 
 ---
 

@@ -1,6 +1,6 @@
 # When Memory and Skills Change Everything
 
-*Module 2 — Skills & Memory | Essay 8 of 8*
+*Module 2, Skills & Memory | Essay 8 of 8*
 
 ---
 
@@ -18,10 +18,10 @@ The investment is small relative to the return. Two hours building a solid memor
 
 Think of it this way. Every piece of context you add to memory is time you'll never spend re-explaining that context again. Every skill you write is a process you'll never have to reconstruct. Both compound indefinitely.
 
-The people who get the most out of AI agents aren't the ones who are best at prompting in the moment. They're the ones who invest a little time upfront teaching their agent their world — and then get to work in an environment that's already configured for them.
+The people who get the most out of AI agents aren't the ones who are best at prompting in the moment. They're the ones who invest a little time upfront teaching their agent their world, and then get to work in an environment that's already configured for them.
 
-Module 3 takes this further. Memory and skills become even more powerful when you're working with multiple agents, each focused on a different part of a task. But that starts with what you've built here: an agent that knows you and knows how to work for you.
+Module 3 takes this further. Memory and skills get even more capable when you're working with multiple agents, each focused on a different part of a task. But that starts with what you've built here: an agent that knows you and knows how to work for you.
 
 ---
 
-*Pod exercise: Run a complete real work task using your memory notes and at least one skill you built today. Don't brief the agent on who you are — let the memory handle it. Notice what feels different. Write two sentences about it to share with the group.*
+*Pod exercise: Run a complete real work task using your memory notes and at least one skill you built today. Don't brief the agent on who you're, let the memory handle it. Notice what feels different. Write two sentences about it to share with the group.*

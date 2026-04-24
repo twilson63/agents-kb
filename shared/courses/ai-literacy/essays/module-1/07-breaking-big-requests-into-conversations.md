@@ -1,18 +1,18 @@
 # Breaking Big Requests into Conversations
 
-*Module 1 — Reverse Prompting | Essay 7 of 8*
+*Module 1, Reverse Prompting | Essay 7 of 8*
 
 ---
 
-There's a temptation with AI agents to hand them the whole problem at once. One prompt to cover everything. Research, plan, draft, format — do it all.
+There's a temptation with AI agents to hand them the whole problem at once. One prompt to cover everything. Research, plan, draft, format, do it all.
 
 The output from that prompt is almost always disappointing. Not because the agent can't handle complexity, but because complexity requires stages, and stages require conversation.
 
-Think about how a project actually unfolds. Research happens before writing. Writing happens before editing. Editing happens before formatting. Each stage produces something that informs the next. Collapsing all of that into a single prompt skips the moments where you review, redirect and add new information — the moments that make the output actually right for your situation.
+Think about how a project actually unfolds. Research happens before writing. Writing happens before editing. Editing happens before formatting. Each stage produces something that informs the next. Collapsing all of that into a single prompt skips the moments where you review, redirect and add new information, the moments that make the output actually right for your situation.
 
 Breaking work into conversations changes this. Instead of one sprawling prompt, you have a series of focused exchanges. Each one has a clear goal. Each one builds on what came before.
 
-Here's what that looks like in practice. Say you need to prepare for an important client meeting. Instead of: "Help me prepare for a client meeting next Tuesday about our Q2 performance" — try three conversations:
+Here's what that looks like in practice. Say you need to prepare for an important client meeting. Instead of: "Help me prepare for a client meeting next Tuesday about our Q2 performance", try three conversations:
 
 First: "Help me identify the three things this client cares most about based on what I tell you about them." Share what you know. Get a focused list.
 
@@ -28,4 +28,4 @@ You don't need a rigid system. Just the habit of asking: is this one task or sev
 
 ---
 
-*Pod exercise: Take a complex task you've been putting off — something that feels too big to tackle. Break it into three to five separate conversations, each with its own clear goal. Run the first conversation in your practice pod. Just the first one. Then use that output to brief the second.*
+*Pod exercise: Take a complex task you've been putting off, something that feels too big to tackle. Break it into three to five separate conversations, each with its own clear goal. Run the first conversation in your practice pod. Just the first one. Then use that output to brief the second.*

@@ -1,6 +1,6 @@
 # How Agents Hand Off to Each Other
 
-*Module 3 — Multi-Agent & Delegation | Essay 5 of 7*
+*Module 3, Multi-Agent & Delegation | Essay 5 of 7*
 
 ---
 
@@ -10,11 +10,11 @@ A weak handoff is the most common failure point. The first agent produces someth
 
 A strong handoff has three parts.
 
-*What happened.* A summary of what the first agent produced. Not the full output — a digest. What did it find? What are the key points? What's the most important thing the next agent should know? This is your job, not the first agent's. You're the judgment layer between stages.
+*What happened.* A summary of what the first agent produced. Not the full output, a digest. What did it find? What are the key points? What's the most important thing the next agent should know? This is your job, not the first agent's. You're the judgment layer between stages.
 
 *What it means.* Why does this matter for the next step? What implications does it have? What should the second agent weight most heavily? This is interpretation, and it's where a human's judgment adds real value to the chain.
 
-*What you need next.* A specific ask. Not "write a draft" — "write a 300-word executive summary of these findings for a non-technical audience who will use it to make a budget decision." Format, audience, purpose, length — all of it.
+*What you need next.* A specific ask. Not "write a draft", "write a 300-word executive summary of these findings for a non-technical audience who will use it to make a budget decision." Format, audience, purpose, length, all of it.
 
 The handoff document doesn't need to be long. Two to four sentences for a simple workflow. A page for a complex one. What matters is that the second agent has everything it needs to do its job without guessing.
 

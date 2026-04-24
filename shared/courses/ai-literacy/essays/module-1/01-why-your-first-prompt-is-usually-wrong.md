@@ -1,6 +1,6 @@
 # Why Your First Prompt Is Usually Wrong
 
-*Module 1 — Reverse Prompting | Essay 1 of 8*
+*Module 1, Reverse Prompting | Essay 1 of 8*
 
 ---
 
@@ -28,4 +28,4 @@ But it starts here. Your first prompt is a starting point. The agent is ready to
 
 ---
 
-*Pod exercise: Open your practice pod and send this exact prompt: "Help me write an email." Read what comes back. Now send a second message adding context — who it's for, what you want to accomplish, your tone. Keep both outputs. You'll refer to them throughout the module.*
+*Pod exercise: Open your practice pod and send this exact prompt: "Help me write an email." Read what comes back. Now send a second message adding context, who it's for, what you want to accomplish, your tone. Keep both outputs. You'll refer to them throughout the module.*

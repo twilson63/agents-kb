@@ -1,14 +1,14 @@
 # Writing Your First Memory Note
 
-*Module 2 — Skills & Memory | Essay 3 of 8*
+*Module 2, Skills & Memory | Essay 3 of 8*
 
 ---
 
-A memory note is not a paragraph about yourself. It's a specific, factual statement your agent can apply across many different conversations.
+A memory note isn't a paragraph about yourself. It's a specific, factual statement your agent can apply across many different conversations.
 
 The difference matters. "I work in marketing" is a memory note. "I work in content marketing at a B2B SaaS company. My audience is usually technical buyers who distrust hype, so I write direct, evidence-based copy with no fluff" is a much better one. Same topic, completely different usefulness.
 
-Good memory notes have three qualities. They're specific — concrete details, not general categories. They're durable — true across many conversations, not just today. And they're actionable — the agent can actually change its behavior based on what the note says.
+Good memory notes have three qualities. They're specific, concrete details, not general categories. They're durable, true across many conversations, not just today. And they're actionable, the agent can actually change its behavior based on what the note says.
 
 Here are examples of each kind worth writing early on.
 
@@ -26,4 +26,4 @@ Write notes the way you'd brief a new colleague who's sharp but knows nothing ab
 
 ---
 
-*Pod exercise: Write five memory notes using the categories above — one for role and context, one for communication style, one for a recurring situation, one standing instruction, and one wildcard: something about your work that would change how an agent helps you if it knew. Share one with the group.*
+*Pod exercise: Write five memory notes using the categories above, one for role and context, one for communication style, one for a recurring situation, one standing instruction, and one wildcard: something about your work that would change how an agent helps you if it knew. Share one with the group.*

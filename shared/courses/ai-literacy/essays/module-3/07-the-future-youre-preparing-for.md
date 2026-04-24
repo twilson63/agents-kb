@@ -1,6 +1,6 @@
 # The Future You're Preparing For
 
-*Module 3 — Multi-Agent & Delegation | Essay 7 of 7*
+*Module 3, Multi-Agent & Delegation | Essay 7 of 7*
 
 ---
 
@@ -8,7 +8,7 @@ The skills in this course aren't about using a specific tool. They're about deve
 
 Agents are getting better fast. The models are more capable. The tools are more reliable. The workflows are more sophisticated. What you can accomplish with an AI agent today is significantly more than what was possible two years ago, and that trajectory is continuing.
 
-The people who will work most effectively in that environment aren't the ones who know the most about AI technology. They're the ones who know how to direct it — how to communicate clearly, delegate well, structure complex work and maintain judgment over the output.
+The people who will work most effectively in that environment aren't the ones who know the most about AI technology. They're the ones who know how to direct it, how to communicate clearly, delegate well, structure complex work and maintain judgment over the output.
 
 Those are the skills you've been building.
 
@@ -18,10 +18,10 @@ None of this is complicated. It's a set of habits built through practice. The pr
 
 The practice pod you've been working in today isn't a classroom exercise. It's the beginning of your real setup. The memory notes are yours. The skills are yours. The workflows you tested are yours to refine and build on.
 
-The next step is using it on real work. Not the polished tasks you'd show someone, but the ordinary work of your week — the emails, the prep, the summaries, the drafts. That's where the habits solidify. That's where the time savings become real. That's where this stops being a course and starts being how you work.
+The next step is using it on real work. Not the polished tasks you'd show someone, but the ordinary work of your week, the emails, the prep, the summaries, the drafts. That's where the habits solidify. That's where the time savings become real. That's where this stops being a course and starts being how you work.
 
 You're not trying to keep up with AI. You're learning to direct it. That's the skill that matters.
 
 ---
 
-*Pod exercise: Write a 30-day plan — three memory notes to add, two skills to build, one multi-agent workflow to try on real work. Share it with the group as a commitment. Come back to it in a month.*
+*Pod exercise: Write a 30-day plan, three memory notes to add, two skills to build, one multi-agent workflow to try on real work. Share it with the group as a commitment. Come back to it in a month.*

@@ -1,25 +1,25 @@
 # Parallel Work vs. Sequential Work
 
-*Module 3 — Multi-Agent & Delegation | Essay 4 of 7*
+*Module 3, Multi-Agent & Delegation | Essay 4 of 7*
 
 ---
 
-Not all multi-agent work runs one step at a time. Some of it runs simultaneously — and that's where agent teams start to feel like genuine leverage.
+Not all multi-agent work runs one step at a time. Some of it runs simultaneously, and that's where agent teams start to feel like genuine use.
 
 Sequential work is what most people think of first. Step one feeds step two. Research feeds writing. Writing feeds editing. Each phase waits for the previous one to finish. This is the right structure when each stage depends on what came before.
 
 Parallel work is different. Multiple things happen at the same time because they don't depend on each other. Three agents researching three different angles on the same question, all running while you do something else. Two agents drafting two different sections of a document simultaneously. An agent preparing a summary while another prepares the supporting data.
 
-The leverage is real. Work that would take one agent an hour can take multiple agents 15 minutes. Not because any individual agent is faster, but because the work is distributed.
+The use is real. Work that would take one agent an hour can take multiple agents 15 minutes. Not because any individual agent is faster, but because the work is distributed.
 
 The key to parallel work is identifying tasks that are genuinely independent. If Step B can only start after Step A finishes, those are sequential. If Step B and Step C can both start the moment Step A is done, they're parallel candidates.
 
 Practical example: you're preparing for a board presentation. You need competitive research, financial analysis and a narrative structure. These three things are independent of each other at the research stage. Three agents, three parallel tracks, all running while you focus on something else. Then you review the three outputs and hand them to a fourth agent to synthesize into the presentation outline.
 
-That's a four-agent workflow, but the total wall-clock time is roughly the time of one research task plus the synthesis — not four research tasks in sequence.
+That's a four-agent workflow, but the total wall-clock time is roughly the time of one research task plus the synthesis, not four research tasks in sequence.
 
 You don't need sophisticated tooling to run parallel work. You just need to open multiple conversations at the same time. Brief them separately, let them run, review when they're done.
 
 ---
 
-*Pod exercise: Identify a workflow from your work that has at least two independent research or drafting tasks. Run them in parallel in your practice pod — two separate conversations, started at the same time. Compare the time to what a sequential approach would have taken.*
+*Pod exercise: Identify a workflow from your work that has at least two independent research or drafting tasks. Run them in parallel in your practice pod, two separate conversations, started at the same time. Compare the time to what a sequential approach would have taken.*

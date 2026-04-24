@@ -1,6 +1,6 @@
 # Personal Context vs. Task Context
 
-*Module 2 — Skills & Memory | Essay 6 of 8*
+*Module 2, Skills & Memory | Essay 6 of 8*
 
 ---
 
@@ -8,13 +8,13 @@ Not all context belongs in memory. Getting this wrong is the most common reason 
 
 Here's the distinction that matters: personal context is stable. Task context is temporary.
 
-Personal context is who you are and how you work. Your role, your industry, your communication style, the kind of outputs you need. This doesn't change week to week. It belongs in memory because it's true across every conversation you'll ever have.
+Personal context is who you're and how you work. Your role, your industry, your communication style, the kind of outputs you need. This doesn't change week to week. It belongs in memory because it's true across every conversation you'll ever have.
 
-Task context is what you're doing right now. The specific project, the current deadline, the particular client, the decision you're in the middle of. This belongs in the conversation where it's relevant — not in your persistent memory.
+Task context is what you're doing right now. The specific project, the current deadline, the particular client, the decision you're in the middle of. This belongs in the conversation where it's relevant, not in your persistent memory.
 
 The test is simple: if you'd tell a new colleague this once and expect them to remember it forever, it's memory. If you'd say it every time you assigned them a related task, it belongs in the prompt.
 
-Here's where people get into trouble. They add task-specific notes to memory during a busy project. "I'm preparing for the Acme Corp renewal on June 15th. The main risk is their new procurement process." That's useful context — for a few weeks. But left in memory indefinitely, it becomes noise. Six months later the agent is factoring in a procurement process that resolved long ago.
+Here's where people get into trouble. They add task-specific notes to memory during a busy project. "I'm preparing for the Acme Corp renewal on June 15th. The main risk is their new procurement process." That's useful context, for a few weeks. But left in memory indefinitely, it becomes noise. Six months later the agent is factoring in a procurement process that resolved long ago.
 
 Memory files that don't get maintained drift into confusion. Notes pile up. Old context conflicts with new context. The agent tries to apply outdated information to current work.
 

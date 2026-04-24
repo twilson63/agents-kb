@@ -1,6 +1,6 @@
 # Context Before Commands
 
-*Module 1 — Reverse Prompting | Essay 4 of 8*
+*Module 1, Reverse Prompting | Essay 4 of 8*
 
 ---
 
@@ -8,7 +8,7 @@ The single most common prompting mistake isn't what you ask. It's what you skip 
 
 Most people go straight to the request. "Write a bio." "Draft a proposal." "Summarize these notes." The task is clear in their head, so they assume it's clear to the agent. It isn't. The agent is starting from nothing every time.
 
-Context is everything the agent needs to know before it starts working. Not the task — the situation around the task. Who you are. Who the output is for. What you're trying to accomplish. What tone fits. What constraints matter. What you've already tried.
+Context is everything the agent needs to know before it starts working. Not the task, the situation around the task. Who you're. Who the output is for. What you're trying to accomplish. What tone fits. What constraints matter. What you've already tried.
 
 Compare these two prompts:
 
@@ -20,18 +20,18 @@ Same request. Completely different information. The second one will produce some
 
 The five things worth including before almost any task:
 
-*Who you are* — your role, your industry, how you work.
-*Who this is for* — the audience, their level, what they already know.
-*What good looks like* — the outcome you want, the tone, the format.
-*What to avoid* — things that would make the output wrong for your situation.
-*Why it matters* — a sentence on the stakes, because context on purpose changes everything.
+*Who you're:* your role, your industry, how you work.
+*Who this is for:* the audience, their level, what they already know.
+*What good looks like:* the outcome you want, the tone, the format.
+*What to avoid:* things that would make the output wrong for your situation.
+*Why it matters:* a sentence on the stakes, because context on purpose changes everything.
 
 You don't need all five for every prompt. A quick task might only need one or two. But the habit of pausing before you type and asking "what does the agent need to know here?" consistently produces better results than any prompt trick.
 
-One more thing. You'll find yourself writing the same context over and over — who you are, how you communicate, what your work is about. That's a signal. That context belongs in memory, not in every prompt. Module 2 covers how to set that up so you never repeat yourself.
+One more thing. You'll find yourself writing the same context over and over, who you're, how you communicate, what your work is about. That's a signal. That context belongs in memory, not in every prompt. Module 2 covers how to set that up so you never repeat yourself.
 
 For now: context first, request second. Every time.
 
 ---
 
-*Pod exercise: Write a "context card" — five sentences about yourself that would help an agent work with you. Your role, your industry, your communication style, what you're working on right now, one thing you always want the agent to keep in mind. Paste it at the top of your next three prompts and watch what changes.*
+*Pod exercise: Write a "context card", five sentences about yourself that would help an agent work with you. Your role, your industry, your communication style, what you're working on right now, one thing you always want the agent to keep in mind. Paste it at the top of your next three prompts and watch what changes.*
