@@ -4,13 +4,15 @@
 
 ---
 
-Every session with an AI agent starts from nothing.
+Your AI agent doesn't get smarter the more you use it. It gets better when you teach it about you: and memory and skills are how you do that.
 
-It doesn't know your name. It doesn't know what you do, who you work with, or how you prefer to communicate. It doesn't know about the project you've been heads-down on for three months or the client call you're preparing for. Every conversation begins with a blank slate, and you're responsible for filling it in.
+Without them, you're stuck in a loop. Every session starts from nothing. The agent doesn't know your name, your role, how you communicate, or what you've been working on. Every conversation begins with a blank slate, and you're responsible for filling it in.
 
-This is why so many people hit a wall after their first few weeks with an AI tool. The novelty wears off and the repetition sets in. You find yourself writing the same background every single time. Who you're. What you're working on. How you like things formatted. You're not getting smarter at using the tool, you're just getting better at explaining yourself from scratch.
+That's the core problem this module solves.
 
-The frustrating part is that none of this re-explaining is useful work. It's overhead. Time spent briefing the agent on things it already knew yesterday.
+Here's what the loop looks like in practice. The novelty of a new AI tool wears off after a few weeks. Then the repetition sets in. You find yourself writing the same background every single time: who you are, what you're working on, how you like things formatted. You're not getting smarter at using the tool. You're just getting better at explaining yourself from scratch.
+
+None of that re-explaining is useful work. It's overhead. Time spent briefing the agent on things it already knew yesterday.
 
 Memory changes this. Instead of re-explaining yourself every session, you teach the agent once. You write down the things that are always true about you and your work, and the agent reads them before it responds. No re-briefing. No context lost between sessions. Your agent starts every conversation already knowing you.
 

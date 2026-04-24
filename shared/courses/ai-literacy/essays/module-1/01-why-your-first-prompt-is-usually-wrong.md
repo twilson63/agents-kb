@@ -4,13 +4,13 @@
 
 ---
 
-Most people approach AI the same way they approach a vending machine. Put in a selection, expect a result. Wrong result? Try a different selection. Still wrong? The machine must be broken.
+Most AI frustration isn't an AI problem. It's a context problem. Your first prompt almost never contains enough information for the agent to do what you actually want: and until you change that, you'll keep fighting outputs that miss.
 
-That instinct makes sense for vending machines. It's the wrong frame for an AI agent.
+That's the whole lesson in this module. Not how to write better prompts in isolation, but how to have a real conversation with an agent instead of issuing commands and hoping something lands.
 
-We've spent years training ourselves on search engines. Type something in, scan the results, refine if it missed. So when people sit down with an AI agent for the first time, they do the same thing. Type a request. Read the output. Decide if it worked. And when it doesn't, type a new request from scratch.
+Here's why this matters. We've spent years training ourselves on search engines: type something in, scan results, refine if it missed. So when people sit down with an AI agent for the first time, they do the same thing. Type a request. Read the output. Decide if it worked. And when it doesn't, type a new request from scratch.
 
-The problem isn't the agent. Your first prompt almost never contains enough information for the agent to do what you actually want.
+The problem isn't the agent. It's that the agent is working with almost nothing.
 
 Take a common one: "help me write an email." The agent doesn't know who it's for. It doesn't know your relationship with that person, the tone you want, what outcome you're after, or the three things you definitely don't want to say. It doesn't know if you write formally or casually, if you're in sales or operations, if this is a follow-up or a cold outreach.
 
@@ -18,7 +18,7 @@ So it fills in the blanks. It produces a reasonable, generic email that doesn't 
 
 This is where most frustration with AI tools comes from. People decide the AI isn't smart enough, doesn't understand them, or just doesn't work for their use case. The gap isn't intelligence. It's information.
 
-Here's what actually changes things: your first prompt is the start of a conversation, not a finished order. The agent isn't a machine waiting for a perfect input. It's a capable collaborator that works better the more context you give it, and that can ask you for what it needs if you let it.
+Your first prompt is the start of a conversation, not a finished order. The agent isn't a machine waiting for a perfect input. It's a capable collaborator that works better the more context you give it, and that can ask you for what it needs if you let it.
 
 Once you start thinking of prompting as a dialogue, a few things shift. You stop expecting perfection on round one. You start including context you'd previously assumed was obvious. You get comfortable going back and forth, building toward the output you actually want rather than hunting for the magic phrasing that produces it instantly.
 

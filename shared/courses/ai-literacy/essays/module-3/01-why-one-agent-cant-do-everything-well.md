@@ -4,13 +4,15 @@
 
 ---
 
-There's a natural tendency, once you get comfortable with an AI agent, to hand it bigger and bigger problems. One prompt to research, plan, draft and format a full deliverable. One conversation to handle what used to take half a day.
+One agent trying to research, write, review, and format a complex deliverable at the same time produces mediocre results at every step. The fix is giving each phase its own agent: and that's what this module teaches.
 
-Sometimes that works. For genuinely simple tasks, a capable agent handles the whole thing fine. But for complex work, the kind that has distinct phases, different audiences, different standards at each stage, the single-agent approach produces mediocre results at every step.
+This isn't intuitive at first. Once you get comfortable with an AI agent, the temptation is to hand it bigger and bigger problems. One prompt to research, plan, draft and format a full deliverable. One conversation to handle what used to take half a day.
 
-The reason is focus. A person who's simultaneously researching, writing, editing and formatting isn't doing any of those things well. Their attention is divided. Their standards for each shift because they're constantly context-switching. The quality of the work suffers across the board.
+For genuinely simple tasks, that works fine. But for complex work, the kind with distinct phases, different standards at each stage, competing priorities throughout, the single-agent approach breaks down in a specific and predictable way.
 
-Agents have the same problem. When you ask one agent to do everything in a single conversation, it has to hold too many competing objectives at once. The research phase gets rushed because the draft needs to start. The editing gets shallow because there's still formatting to do. The result is something that sort of covers all the bases and does none of them well.
+The reason is focus. A person who's simultaneously researching, writing, editing and formatting isn't doing any of those things well. Their attention is divided. Their standards shift because they're constantly context-switching. The quality suffers across the board.
+
+Agents have the same problem. When you ask one agent to do everything in a single conversation, it holds too many competing objectives at once. The research phase gets rushed because the draft needs to start. The editing gets shallow because there's still formatting to do. The result covers all the bases and does none of them well.
 
 Multi-agent work solves this by giving each phase what it actually needs: full attention from an agent whose only job is that phase.
 
