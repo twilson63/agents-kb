@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 3: Multi-Agent & Delegation — AI Literacy Course</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a; --border: #2e3350;
+    --accent: #22d3ee; --accent2: #4ade80; --text: #e8eaf0; --muted: #8b90a7; --radius: 12px; --sidebar: 280px;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; display: flex; min-height: 100vh; }
+  .sidebar { width: var(--sidebar); min-width: var(--sidebar); height: 100vh; position: sticky; top: 0; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow-y: auto; }
+  .sidebar-header { padding: 24px 20px 16px; border-bottom: 1px solid var(--border); }
+  .module-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  .module-title { font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.3; }
+  .progress-bar-wrap { margin-top: 12px; }
+  .progress-bar-bg { background: var(--surface2); border-radius: 4px; height: 4px; }
+  .progress-bar-fill { background: var(--accent); height: 4px; border-radius: 4px; width: 0%; transition: width 0.3s; }
+  .progress-label { font-size: 11px; color: var(--muted); margin-top: 5px; }
+  .nav-list { list-style: none; padding: 12px 0; flex: 1; }
+  .nav-link { display: flex; align-items: center; gap: 12px; padding: 10px 20px; text-decoration: none; color: var(--muted); font-size: 13px; font-weight: 500; transition: background 0.15s, color 0.15s; border-left: 3px solid transparent; }
+  .nav-link:hover { background: var(--surface2); color: var(--text); }
+  .nav-link.active { color: var(--text); background: var(--surface2); border-left-color: var(--accent); }
+  .nav-link.done .nav-num { background: var(--accent2); color: #0f1117; }
+  .nav-num { width: 22px; height: 22px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; transition: background 0.2s; }
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+  .course-hero { margin-bottom: 64px; padding: 48px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); }
+  .hero-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .hero-title { font-size: 36px; font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+  .hero-subtitle { font-size: 16px; color: var(--muted); line-height: 1.6; max-width: 600px; }
+  .hero-meta { display: flex; gap: 24px; margin-top: 24px; }
+  .hero-meta-item { font-size: 13px; color: var(--muted); }
+  .lesson { margin-bottom: 80px; scroll-margin-top: 24px; }
+  .lesson-badge { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
+  .lesson-header { margin-bottom: 24px; }
+  .lesson-header h2 { font-size: 26px; font-weight: 700; line-height: 1.3; }
+  .lesson-video-wrap { border-radius: var(--radius); overflow: hidden; background: #000; margin-bottom: 32px; border: 1px solid var(--border); }
+  .lesson-video { width: 100%; display: block; max-height: 480px; }
+  .lesson-body { font-size: 16px; line-height: 1.75; color: #c8cad8; }
+  .lesson-body p { margin-bottom: 18px; }
+  .lesson-body em { color: var(--text); font-style: normal; font-weight: 600; }
+  .pod-exercise { margin-top: 32px; padding: 24px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); border-left: 4px solid var(--accent2); }
+  .pod-label { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent2); margin-bottom: 10px; }
+  .pod-exercise p { font-size: 14px; color: var(--muted); line-height: 1.65; margin: 0; }
+  .lesson-nav { display: flex; gap: 12px; justify-content: flex-end; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); }
+  .btn { padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.15s; }
+  .btn-primary { background: var(--accent); color: #0f1117; }
+  .btn-primary:hover { opacity: 0.9; }
+  .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+  .btn-ghost:hover { background: var(--surface2); color: var(--text); }
+  .btn-complete { background: var(--surface2); color: var(--accent2); border: 1px solid var(--border); cursor: default; }
+  @media (max-width: 768px) { .sidebar { display: none; } .main { padding: 24px 20px 60px; } }
+</style>
+</head>
+<body>
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <div class="module-label">AI Literacy Course</div>
+    <div class="module-title">Module 3: Multi-Agent &amp; Delegation</div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-fill"></div></div>
+      <div class="progress-label" id="progress-label">0 of 7 complete</div>
+    </div>
+  </div>
+  <ul class="nav-list"><li><a href="#lesson-01" class="nav-link" data-num="01"><span class="nav-num">1</span><span class="nav-title">Why One Agent Can't Do Everything Well</span></a></li><li><a href="#lesson-02" class="nav-link" data-num="02"><span class="nav-num">2</span><span class="nav-title">Thinking in Roles</span></a></li><li><a href="#lesson-03" class="nav-link" data-num="03"><span class="nav-num">3</span><span class="nav-title">Your First Delegation</span></a></li><li><a href="#lesson-04" class="nav-link" data-num="04"><span class="nav-num">4</span><span class="nav-title">Parallel Work vs. Sequential Work</span></a></li><li><a href="#lesson-05" class="nav-link" data-num="05"><span class="nav-num">5</span><span class="nav-title">How Agents Hand Off to Each Other</span></a></li><li><a href="#lesson-06" class="nav-link" data-num="06"><span class="nav-num">6</span><span class="nav-title">When to Supervise vs. When to Trust</span></a></li><li><a href="#lesson-07" class="nav-link" data-num="07"><span class="nav-num">7</span><span class="nav-title">The Future You're Preparing For</span></a></li></ul>
+</nav>
+<main class="main">
+  <div class="course-hero">
+    <div class="hero-eyebrow">AI Literacy Course · Module 3</div>
+    <h1 class="hero-title">Multi-Agent &amp; Delegation</h1>
+    <p class="hero-subtitle">Stop doing everything in one prompt. This module teaches you to decompose complex work into focused agent roles, run tasks in parallel, write clean handoffs, and know when to supervise and when to trust.</p>
+    <div class="hero-meta">
+      <span class="hero-meta-item">📺 7 lessons</span>
+      <span class="hero-meta-item" style="margin-left:24px">⏱ ~50 min</span>
+      <span class="hero-meta-item" style="margin-left:24px">✏️ 7 exercises</span>
+    </div>
+  </div>
+  
+<section id="lesson-01" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 1 of 7</span>
+    <h2>Why One Agent Can't Do Everything Well</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v176b82c7982a44deba889674a3f0a6ed/caption_c0d95e334d7f490491af45813f8925e1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body"><p>One agent trying to research, write, review, and format a complex deliverable at the same time produces mediocre results at every step. The fix is giving each phase its own agent: and that's what this module teaches.</p>
+<p>This isn't intuitive at first. Once you get comfortable with an AI agent, the temptation is to hand it bigger and bigger problems. One prompt to research, plan, draft and format a full deliverable. One conversation to handle what used to take half a day.</p>
+<p>For genuinely simple tasks, that works fine. But for complex work, the kind with distinct phases, different standards at each stage, competing priorities throughout, the single-agent approach breaks down in a specific and predictable way.</p>
+<p>The reason is focus. A person who's simultaneously researching, writing, editing and formatting isn't doing any of those things well. Their attention is divided. Their standards shift because they're constantly context-switching. The quality suffers across the board.</p>
+<p>Agents have the same problem. When you ask one agent to do everything in a single conversation, it holds too many competing objectives at once. The research phase gets rushed because the draft needs to start. The editing gets shallow because there's still formatting to do. The result covers all the bases and does none of them well.</p>
+<p>Multi-agent work solves this by giving each phase what it actually needs: full attention from an agent whose only job is that phase.</p>
+<p>A research agent that does nothing but gather and synthesize information does better research than an all-in-one agent that also has to write. A writing agent that receives clean research and a clear brief produces a better draft. A review agent that reads only for quality, not for structure or format, catches more.</p>
+<p>This isn't a new concept. It's how good work has always been organized. Specialists outperform generalists on specialized tasks. The insight of multi-agent work is that you can apply that principle to AI, too.</p></div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Write down a complex task from your work, something with at least three distinct phases. List what each phase requires. Notice where the requirements conflict (speed vs. thoroughness, creative vs. critical, broad vs. focused). That conflict is where multi-agent work helps most.</p></div>
+  <div class="lesson-nav"><a href="#lesson-02" class="btn btn-primary">Next →</a></div>
+</section>
+
+<section id="lesson-02" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 2 of 7</span>
+    <h2>Thinking in Roles</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v9f2141c5dce24a709423e06d0129b851/caption_784eab4560b1407587b4b1303e5e3087.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body"><p>Before you can delegate to multiple agents, you need to be able to decompose a task into distinct roles. This is the foundational skill of multi-agent work, and it's more intuitive than it sounds.</p>
+<p>A role is a focused responsibility with clear boundaries. The researcher finds and synthesizes information. The writer turns that information into a draft. The editor improves the draft without rewriting it from scratch. The reviewer checks the whole thing against the original goal. Each role has a different focus, different standards, and a different definition of "done."</p>
+<p>The way to identify roles in a task is to ask: what are the distinct phases of this work, and what mindset does each one require?</p>
+<p>Research requires breadth and skepticism, gather as much as possible, evaluate sources, surface what matters. Writing requires narrative judgment, what's the story, what's the structure, what's the right level of detail. Editing requires precision, what's redundant, what's unclear, what breaks the flow. Review requires distance, does this actually accomplish what it was supposed to?</p>
+<p>These mindsets conflict. The best researchers are often expansive; the best editors are ruthless. The best writers make confident choices; the best reviewers question everything. Putting all of those in one agent at once produces tension that dilutes each phase.</p>
+<p>Role boundaries matter too. An agent with a clearly defined role does better work because it's not second-guessing itself. A writer who knows someone else is doing the research doesn't pad the draft with extra context. An editor who knows the goals upfront doesn't try to reimagine the structure. Clear roles let each agent do its job cleanly.</p>
+<p>You don't need elaborate role designs for everyday tasks. Two roles, produce and review, covers a lot of ground. Research plus write is another simple split that improves most information-based work. Start simple, add roles where you see quality gaps.</p></div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Take your complex task from Essay 1. Write a one-sentence role description for each agent you'd use. For each, write what it's responsible for and one thing it's explicitly NOT responsible for. This boundary-setting is what makes each agent more effective.</p></div>
+  <div class="lesson-nav"><a href="#lesson-01" class="btn btn-ghost">← Previous</a><a href="#lesson-03" class="btn btn-primary">Next →</a></div>
+</section>
+
+<section id="lesson-03" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 3 of 7</span>
+    <h2>Your First Delegation</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v8f4a79286b4a470a8deecd3a2f50e3ce/caption_9738466c8d5840c2a2ef7c4fe8b9b02d.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body"><p>The simplest form of multi-agent work is two agents: one that produces something, and one that does something with it.</p>
+<p>A researcher and a writer. A drafter and a reviewer. A planner and an executor. Two focused conversations, one clean handoff between them. That's enough to feel the difference.</p>
+<p>Here's what a first delegation actually looks like.</p>
+<p>You start with the first agent. Give it a clear, focused brief: "I need research on [topic]. I'm looking for [specific angle]. The research will be used to write [specific output] for [specific audience]." The context at the end matters, knowing the destination shapes what the researcher surfaces.</p>
+<p>The first agent produces its output. You read it. Not to evaluate whether it's perfect, but to understand what you now have to work with. Summarize it in your own words if it helps.</p>
+<p>Then you start a second conversation with a second agent. This is the handoff. You give it the research output as context, a clear brief on what to produce, and any specific instructions about format, tone or length. "Here's the research. Based on this, write a [specific output]. The audience is [who]. Keep it under [length]. Lead with [what matters most]."</p>
+<p>The second agent produces the draft. It's better than if you'd asked one agent to do both, because the researcher wasn't trying to write, and the writer wasn't trying to research. Each had one job.</p>
+<p>A few things that make first delegations go well:</p>
+<p>Don't skip the brief on the first agent. The quality of the handoff material depends on how well you set up the first task.</p>
+<p>Read the handoff material before passing it on. You're the judgment layer between agents. If the research went off track, correct it before it becomes the foundation of the draft.</p>
+<p>Be specific in the second brief. The second agent is working from someone else's output. It needs more direction than if you were building from scratch together.</p>
+<p>That's it. Two agents, one handoff. Try it once and the pattern clicks.</p></div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Run a two-agent workflow in your practice pod. First agent: research a topic relevant to your work. You review the output. Second agent: use that research to produce a specific deliverable with a clear brief. Compare the result to what you'd get from a single prompt asking for both.</p></div>
+  <div class="lesson-nav"><a href="#lesson-02" class="btn btn-ghost">← Previous</a><a href="#lesson-04" class="btn btn-primary">Next →</a></div>
+</section>
+
+<section id="lesson-04" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 4 of 7</span>
+    <h2>Parallel Work vs. Sequential Work</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v0b0aa4fb61ca4ec3962e062052a8619a/caption_676588b39e434c41ba75b7d9722be745.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body"><p>Not all multi-agent work runs one step at a time. Some of it runs simultaneously, and that's where agent teams start to feel like genuine use.</p>
+<p>Sequential work is what most people think of first. Step one feeds step two. Research feeds writing. Writing feeds editing. Each phase waits for the previous one to finish. This is the right structure when each stage depends on what came before.</p>
+<p>Parallel work is different. Multiple things happen at the same time because they don't depend on each other. Three agents researching three different angles on the same question, all running while you do something else. Two agents drafting two different sections of a document simultaneously. An agent preparing a summary while another prepares the supporting data.</p>
+<p>The use is real. Work that would take one agent an hour can take multiple agents 15 minutes. Not because any individual agent is faster, but because the work is distributed.</p>
+<p>The key to parallel work is identifying tasks that are genuinely independent. If Step B can only start after Step A finishes, those are sequential. If Step B and Step C can both start the moment Step A is done, they're parallel candidates.</p>
+<p>Practical example: you're preparing for a board presentation. You need competitive research, financial analysis and a narrative structure. These three things are independent of each other at the research stage. Three agents, three parallel tracks, all running while you focus on something else. Then you review the three outputs and hand them to a fourth agent to synthesize into the presentation outline.</p>
+<p>That's a four-agent workflow, but the total wall-clock time is roughly the time of one research task plus the synthesis, not four research tasks in sequence.</p>
+<p>You don't need sophisticated tooling to run parallel work. You just need to open multiple conversations at the same time. Brief them separately, let them run, review when they're done.</p></div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Identify a workflow from your work that has at least two independent research or drafting tasks. Run them in parallel in your practice pod, two separate conversations, started at the same time. Compare the time to what a sequential approach would have taken.</p></div>
+  <div class="lesson-nav"><a href="#lesson-03" class="btn btn-ghost">← Previous</a><a href="#lesson-05" class="btn btn-primary">Next →</a></div>
+</section>
+
+<section id="lesson-05" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 5 of 7</span>
+    <h2>How Agents Hand Off to Each Other</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v6fbac9e5af7f41319512a452031ba1f5/caption_bd6b388ed70a4c9bb1a8e61258ad8b31.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body"><p>The quality of a multi-agent workflow depends less on how good each individual agent is and more on how well they hand off to each other.</p>
+<p>A weak handoff is the most common failure point. The first agent produces something solid. The second agent receives a vague summary or an unexplained data dump. It doesn't know what matters, what to prioritize or what the final output needs to accomplish. The quality of the second agent's work drops, not because it's less capable, but because it was under-briefed.</p>
+<p>A strong handoff has three parts.</p>
+<p><em>What happened.</em> A summary of what the first agent produced. Not the full output, a digest. What did it find? What are the key points? What's the most important thing the next agent should know? This is your job, not the first agent's. You're the judgment layer between stages.</p>
+<p><em>What it means.</em> Why does this matter for the next step? What implications does it have? What should the second agent weight most heavily? This is interpretation, and it's where a human's judgment adds real value to the chain.</p>
+<p><em>What you need next.</em> A specific ask. Not "write a draft", "write a 300-word executive summary of these findings for a non-technical audience who will use it to make a budget decision." Format, audience, purpose, length, all of it.</p>
+<p>The handoff document doesn't need to be long. Two to four sentences for a simple workflow. A page for a complex one. What matters is that the second agent has everything it needs to do its job without guessing.</p>
+<p>One useful habit: before you pass the handoff, read it back to yourself as if you were the receiving agent. Do you have what you'd need? If something's missing, add it now.</p>
+<p>Multi-agent work only delivers its potential when each agent starts its phase fully informed. The handoff is how you make that happen.</p></div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Take the two-agent workflow from Essay 3 and improve the handoff. After the first agent finishes, write an explicit handoff document using the three-part structure: what happened, what it means, what you need next. Use that to brief the second agent. Compare the output to your first attempt.</p></div>
+  <div class="lesson-nav"><a href="#lesson-04" class="btn btn-ghost">← Previous</a><a href="#lesson-06" class="btn btn-primary">Next →</a></div>
+</section>
+
+<section id="lesson-06" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 6 of 7</span>
+    <h2>When to Supervise vs. When to Trust</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v04ad8b0c79664acc911618906986a012/caption_67155b9651af430abb011b9030e4d104.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body"><p>Delegation only works if you actually let go.</p>
+<p>The most common failure mode with multi-agent work isn't bad outputs, it's over-supervision. Checking every step. Redirecting constantly. Asking for a review before the first agent has even finished. That's not delegation. That's doing the work yourself while an agent types.</p>
+<p>But under-supervision has its own failure mode. You hand off a complex workflow, walk away entirely and come back to find that the second stage built on a first stage that went sideways. The error compounded. What would have taken a small correction early now requires starting over.</p>
+<p>The right answer is calibrated supervision. Not hands-off, not hovering, strategic checkpoints at the moments where a bad direction would cost you the most.</p>
+<p>Three factors determine where to put your checkpoints.</p>
+<p><em>Complexity.</em> Simple tasks with clear outputs need one review at the end. Complex tasks with judgment calls at multiple stages need a check before moving from each stage to the next.</p>
+<p><em>Familiarity.</em> A skill you've run 20 times with good results needs less oversight than something you're trying for the first time. Trust is earned through track record.</p>
+<p><em>Stakes.</em> The higher the cost of getting it wrong, the more supervision is warranted. A first draft of an internal document can be reviewed once. A draft going to a client tomorrow needs a checkpoint after every stage.</p>
+<p>When something does go wrong, and it will, the correction instinct matters. Don't start over out of frustration. Understand what actually went wrong. Was it a bad brief? A weak handoff? An agent that made a reasonable choice you didn't anticipate? Fix that specific thing and continue.</p>
+<p>The goal is to develop a feel for your workflows. Over time you'll know which stages need close review and which ones run cleanly. Your checkpoints will tighten around the moments that actually matter and relax everywhere else.</p>
+<p>That's what experienced delegation looks like. Not blind trust, not constant intervention. Judgment about where your attention is actually needed.</p></div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Run a three-step workflow in your practice pod. Before you start, write down your supervision plan: where will you review before proceeding, and where will you let it run to completion? After the workflow, evaluate: was your checkpoint in the right place? What would you change?</p></div>
+  <div class="lesson-nav"><a href="#lesson-05" class="btn btn-ghost">← Previous</a><a href="#lesson-07" class="btn btn-primary">Next →</a></div>
+</section>
+
+<section id="lesson-07" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 7 of 7</span>
+    <h2>The Future You're Preparing For</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v5561ec4eea74445f80d6848c8eb83f75/caption_f5cbe9a987f743559fb391a0e791227c.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body"><p>The skills in this course aren't about using a specific tool. They're about developing a way of thinking that will compound in value as AI becomes more capable and more integrated into how work gets done.</p>
+<p>Agents are getting better fast. The models are more capable. The tools are more reliable. The workflows are more sophisticated. What you can accomplish with an AI agent today is significantly more than what was possible two years ago, and that trajectory is continuing.</p>
+<p>The people who will work most effectively in that environment aren't the ones who know the most about AI technology. They're the ones who know how to direct it, how to communicate clearly, delegate well, structure complex work and maintain judgment over the output.</p>
+<p>Those are the skills you've been building.</p>
+<p>Reverse prompting is how you have a real conversation with an agent instead of firing commands and hoping. Memory and skills are how you stop starting from scratch every session and start working in an environment configured for you. Multi-agent delegation is how you stop doing everything in one prompt and start thinking in teams.</p>
+<p>None of this is complicated. It's a set of habits built through practice. The prompting instincts from Module 1 become automatic after a few weeks of real use. The memory file you built today will save you time every single day. The skill library you start now will grow into something that reflects how you actually work.</p>
+<p>The practice pod you've been working in today isn't a classroom exercise. It's the beginning of your real setup. The memory notes are yours. The skills are yours. The workflows you tested are yours to refine and build on.</p>
+<p>The next step is using it on real work. Not the polished tasks you'd show someone, but the ordinary work of your week, the emails, the prep, the summaries, the drafts. That's where the habits solidify. That's where the time savings become real. That's where this stops being a course and starts being how you work.</p>
+<p>You're not trying to keep up with AI. You're learning to direct it. That's the skill that matters.</p></div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Write a 30-day plan, three memory notes to add, two skills to build, one multi-agent workflow to try on real work. Share it with the group as a commitment. Come back to it in a month.</p></div>
+  <div class="lesson-nav"><a href="#lesson-06" class="btn btn-ghost">← Previous</a><span class="btn btn-complete">✓ Course Complete</span></div>
+</section>
+
+</main>
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+  const lessons = document.querySelectorAll('.lesson');
+  const progressFill = document.getElementById('progress-fill');
+  const progressLabel = document.getElementById('progress-label');
+  const total = 7;
+  let completed = new Set();
+  function updateActive() {
+    let current = lessons[0].id;
+    lessons.forEach(l => { if (l.getBoundingClientRect().top <= 120) current = l.id; });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  }
+  document.querySelectorAll('.lesson-video').forEach(v => {
+    v.addEventListener('ended', () => {
+      const num = v.closest('.lesson').id.replace('lesson-','');
+      completed.add(num);
+      const link = document.querySelector(`.nav-link[data-num="${num}"]`);
+      if (link) link.classList.add('done');
+      progressFill.style.width = Math.round(completed.size/total*100)+'%';
+      progressLabel.textContent = completed.size+' of '+total+' complete';
+    });
+  });
+  window.addEventListener('scroll', updateActive, {passive:true});
+  updateActive();
+</script>
+</body>
+</html>
