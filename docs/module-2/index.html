@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 2: Skills & Memory — AI Literacy Course</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a; --border: #2e3350;
+    --accent: #f59e0b; --accent2: #4ade80; --text: #e8eaf0; --muted: #8b90a7; --radius: 12px; --sidebar: 280px;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; display: flex; min-height: 100vh; }
+  .sidebar { width: var(--sidebar); min-width: var(--sidebar); height: 100vh; position: sticky; top: 0; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow-y: auto; }
+  .sidebar-header { padding: 24px 20px 16px; border-bottom: 1px solid var(--border); }
+  .module-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  .module-title { font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.3; }
+  .progress-bar-wrap { margin-top: 12px; }
+  .progress-bar-bg { background: var(--surface2); border-radius: 4px; height: 4px; }
+  .progress-bar-fill { background: var(--accent); height: 4px; border-radius: 4px; width: 0%; transition: width 0.3s; }
+  .progress-label { font-size: 11px; color: var(--muted); margin-top: 5px; }
+  .nav-list { list-style: none; padding: 12px 0; flex: 1; }
+  .nav-link { display: flex; align-items: center; gap: 12px; padding: 10px 20px; text-decoration: none; color: var(--muted); font-size: 13px; font-weight: 500; transition: background 0.15s, color 0.15s; border-left: 3px solid transparent; }
+  .nav-link:hover { background: var(--surface2); color: var(--text); }
+  .nav-link.active { color: var(--text); background: var(--surface2); border-left-color: var(--accent); }
+  .nav-link.done .nav-num { background: var(--accent2); color: #0f1117; }
+  .nav-num { width: 22px; height: 22px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; transition: background 0.2s; }
+  .nav-title { line-height: 1.3; }
+  .main { flex: 1; max-width: 860px; padding: 48px 48px 80px; }
+  .course-hero { margin-bottom: 64px; padding: 48px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); }
+  .hero-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .hero-title { font-size: 36px; font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+  .hero-subtitle { font-size: 16px; color: var(--muted); line-height: 1.6; max-width: 600px; }
+  .hero-meta { display: flex; gap: 24px; margin-top: 24px; }
+  .hero-meta-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+  .lesson { margin-bottom: 80px; scroll-margin-top: 24px; }
+  .lesson-header { margin-bottom: 24px; }
+  .lesson-badge { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
+  .lesson-header h2 { font-size: 26px; font-weight: 700; line-height: 1.3; }
+  .lesson-video-wrap { border-radius: var(--radius); overflow: hidden; background: #000; margin-bottom: 32px; border: 1px solid var(--border); }
+  .lesson-video { width: 100%; display: block; max-height: 480px; }
+  .lesson-body { font-size: 16px; line-height: 1.75; color: #c8cad8; }
+  .lesson-body p { margin-bottom: 18px; }
+  .lesson-body em { color: var(--text); font-style: normal; font-weight: 600; }
+  .pod-exercise { margin-top: 32px; padding: 24px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); border-left: 4px solid var(--accent2); }
+  .pod-label { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent2); margin-bottom: 10px; }
+  .pod-exercise p { font-size: 14px; color: var(--muted); line-height: 1.65; margin: 0; }
+  .lesson-nav { display: flex; gap: 12px; justify-content: flex-end; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); }
+  .btn { padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.15s; }
+  .btn-primary { background: var(--accent); color: #0f1117; }
+  .btn-primary:hover { opacity: 0.9; }
+  .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+  .btn-ghost:hover { background: var(--surface2); color: var(--text); }
+  .btn-complete { background: var(--surface2); color: var(--accent2); border: 1px solid var(--border); cursor: default; }
+  @media (max-width: 768px) { .sidebar { display: none; } .main { padding: 24px 20px 60px; } .course-hero { padding: 28px; } .hero-title { font-size: 26px; } }
+</style>
+</head>
+<body>
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <div class="module-label">AI Literacy Course</div>
+    <div class="module-title">Module 2: Skills &amp; Memory</div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-fill"></div></div>
+      <div class="progress-label" id="progress-label">0 of 8 complete</div>
+    </div>
+  </div>
+  <ul class="nav-list"><li><a href="#lesson-01" class="nav-link" data-num="01"><span class="nav-num">1</span><span class="nav-title">The Blank Slate Problem</span></a></li><li><a href="#lesson-02" class="nav-link" data-num="02"><span class="nav-num">2</span><span class="nav-title">What Memory Actually Is</span></a></li><li><a href="#lesson-03" class="nav-link" data-num="03"><span class="nav-num">3</span><span class="nav-title">Writing Your First Memory Note</span></a></li><li><a href="#lesson-04" class="nav-link" data-num="04"><span class="nav-num">4</span><span class="nav-title">What Is a Skill?</span></a></li><li><a href="#lesson-05" class="nav-link" data-num="05"><span class="nav-num">5</span><span class="nav-title">Writing Your First Skill</span></a></li><li><a href="#lesson-06" class="nav-link" data-num="06"><span class="nav-num">6</span><span class="nav-title">Personal Context vs. Task Context</span></a></li><li><a href="#lesson-07" class="nav-link" data-num="07"><span class="nav-num">7</span><span class="nav-title">Building a Skill Library Over Time</span></a></li><li><a href="#lesson-08" class="nav-link" data-num="08"><span class="nav-num">8</span><span class="nav-title">When Memory and Skills Change Everything</span></a></li></ul>
+</nav>
+<main class="main">
+  <div class="course-hero">
+    <div class="hero-eyebrow">AI Literacy Course · Module 2</div>
+    <h1 class="hero-title">Skills &amp; Memory</h1>
+    <p class="hero-subtitle">Stop starting every session from scratch. This module teaches you how to build memory notes and skills so your agent already knows you — and knows how to work for you — before you type a word.</p>
+    <div class="hero-meta">
+      <span class="hero-meta-item">📺 8 lessons</span>
+      <span class="hero-meta-item">⏱ ~50 min</span>
+      <span class="hero-meta-item">✏️ 8 exercises</span>
+    </div>
+  </div>
+  
+<section id="lesson-01" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 1 of 8</span>
+    <h2>The Blank Slate Problem</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v6ab255aa4bf544e79b75eacb5b7a37a7/caption_4b65b5e2b68f4d38a8a0a6f761fac27d.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>Your AI agent doesn't get smarter the more you use it. It gets better when you teach it about you: and memory and skills are how you do that.</p>
+<p>Without them, you're stuck in a loop. Every session starts from nothing. The agent doesn't know your name, your role, how you communicate, or what you've been working on. Every conversation begins with a blank slate, and you're responsible for filling it in.</p>
+<p>That's the core problem this module solves.</p>
+<p>Here's what the loop looks like in practice. The novelty of a new AI tool wears off after a few weeks. Then the repetition sets in. You find yourself writing the same background every single time: who you are, what you're working on, how you like things formatted. You're not getting smarter at using the tool. You're just getting better at explaining yourself from scratch.</p>
+<p>None of that re-explaining is useful work. It's overhead. Time spent briefing the agent on things it already knew yesterday.</p>
+<p>Memory changes this. Instead of re-explaining yourself every session, you teach the agent once. You write down the things that are always true about you and your work, and the agent reads them before it responds. No re-briefing. No context lost between sessions. Your agent starts every conversation already knowing you.</p>
+<p>Skills take this further. If memory is what your agent knows about you, skills are what it knows how to do for you. A skill is a saved set of instructions for a task you do repeatedly. Instead of figuring out the best way to run your weekly summary every week, you figure it out once, write it down as a skill, and your agent follows it every time.</p>
+<p>Together, memory and skills solve the blank slate problem. Not by making the agent smarter, by making it informed.</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Before the next exercise, write three things you wish your agent already knew about you, your role, one thing about how you communicate, one thing about the work you're doing right now. Keep this list. It becomes your first memory notes.</p></div>
+  <div class="lesson-nav">
+    
+    <a href="#lesson-02" class="btn btn-primary">Next →</a>
+  </div>
+</section>
+
+<section id="lesson-02" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 2 of 8</span>
+    <h2>What Memory Actually Is</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v008fa4e3d44945e2947fb255e816c3cb/caption_476f20614d5e4063a98464d2c09eadc0.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>Memory sounds like something complex happening inside the agent. It isn't. Memory is a file, plain text, usually markdown, that your agent reads at the start of every conversation. That's it.</p>
+<p>There's no magic. No learning in the machine learning sense. Your agent isn't updating its model based on what you tell it. It's reading notes you wrote, the same way a new colleague reads a briefing document before a meeting.</p>
+<p>Understanding this demystifies the whole thing. Memory is just organized information. You write it, the agent reads it, and every conversation starts from that context instead of zero.</p>
+<p>There are two kinds of context worth keeping in memory. The first is persistent context, things that are always true about you. Your job title and industry. How you like to communicate. Who your key stakeholders are. What kind of work you do day to day. This is the foundation. You write it once and update it when things change.</p>
+<p>The second is working context, things that are true right now. The project you're focused on. An upcoming deadline. A recent decision that affects your work. This context has a shelf life. It's useful for weeks or months, not forever. You add it when something significant starts and clean it up when it's resolved.</p>
+<p>What doesn't belong in memory: one-off tasks, temporary to-dos, information specific to a single conversation. That stuff belongs in the conversation itself, not in your persistent notes.</p>
+<p>A good memory file is short and scannable. The agent reads it quickly. Long, dense notes slow things down and make it harder for the agent to identify what's relevant to any given conversation. Aim for clarity over completeness. A crisp three-line note about your communication style is more useful than a paragraph.</p>
+<p>You'll refine your memory over time. Start with the obvious things, who you're, what you're working on, how you prefer outputs formatted. Run a few sessions. Notice what you keep re-explaining. Add that to memory. The file improves as you use it.</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Open your practice pod's memory file. Write three notes: one about your role, one about your communication style, one about something you're currently working on. Each note should be two to three sentences, specific and factual, not general.</p></div>
+  <div class="lesson-nav">
+    <a href="#lesson-01" class="btn btn-ghost">← Previous</a>
+    <a href="#lesson-03" class="btn btn-primary">Next →</a>
+  </div>
+</section>
+
+<section id="lesson-03" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 3 of 8</span>
+    <h2>Writing Your First Memory Note</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v470919f0458e4ce9bba2b1c1b442db78/caption_cbdc7c7b38a7420188626cbd6f6bb168.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>A memory note isn't a paragraph about yourself. It's a specific, factual statement your agent can apply across many different conversations.</p>
+<p>The difference matters. "I work in marketing" is a memory note. "I work in content marketing at a B2B SaaS company. My audience is usually technical buyers who distrust hype, so I write direct, evidence-based copy with no fluff" is a much better one. Same topic, completely different usefulness.</p>
+<p>Good memory notes have three qualities. They're specific, concrete details, not general categories. They're durable, true across many conversations, not just today. And they're actionable, the agent can actually change its behavior based on what the note says.</p>
+<p>Here are examples of each kind worth writing early on.</p>
+<p><em>Role and context:</em> "I'm a customer success manager at a 200-person software company. I manage 40 enterprise accounts. My biggest challenges are renewals and getting customers to adopt new features." Specific, durable, immediately useful.</p>
+<p><em>Communication style:</em> "I write informally. Short sentences. No corporate language. I'd rather sound like a person than a press release. When drafting for me, match that." The agent now knows how to sound like you.</p>
+<p><em>Recurring context:</em> "I have a quarterly business review with my top 10 accounts every three months. The next one is in June. These are high-stakes conversations where I need to show impact clearly." Time-bounded but specific enough to shape many conversations.</p>
+<p><em>Standing instructions:</em> "Always give me options when there's more than one good approach. Don't just pick one without telling me there were alternatives." This changes how the agent responds to almost everything.</p>
+<p>The mistake to avoid: writing memory notes so broad they don't change anything. "I like clear communication" tells the agent nothing it didn't already know. "I need all outputs under 200 words unless I ask for more" tells it something specific it can act on.</p>
+<p>Write notes the way you'd brief a new colleague who's sharp but knows nothing about your world. What would they need to know to do good work for you from day one?</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Write five memory notes using the categories above, one for role and context, one for communication style, one for a recurring situation, one standing instruction, and one wildcard: something about your work that would change how an agent helps you if it knew. Share one with the group.</p></div>
+  <div class="lesson-nav">
+    <a href="#lesson-02" class="btn btn-ghost">← Previous</a>
+    <a href="#lesson-04" class="btn btn-primary">Next →</a>
+  </div>
+</section>
+
+<section id="lesson-04" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 4 of 8</span>
+    <h2>What Is a Skill?</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v821f66f37abb4e90ae4f512dc9a3f3ec/caption_473098750b6747a0ab47541c357e8af3.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>Memory is what your agent knows about you. A skill is what it knows how to do for you.</p>
+<p>More precisely: a skill is a saved set of instructions for a task you do repeatedly. Instead of figuring out the best approach every time, you figure it out once, write it down, and your agent follows it consistently from then on.</p>
+<p>Think about the tasks that show up in your work week after week. A standing meeting that always needs notes formatted a certain way. A type of email you write regularly, follow-ups, introductions, updates to the same audience. A weekly summary that always covers the same categories. A document review that follows the same checklist.</p>
+<p>For each of these, you currently figure out the right prompt every time you do it. Or you've landed on a prompt that works and you copy-paste it from somewhere. Either way, you're doing repetitive work that doesn't need to be repetitive.</p>
+<p>A skill makes it automatic. You describe the task once, what it's, what steps to follow, what the output should look like. Save it. The next time you need it, you activate the skill instead of rebuilding the instructions.</p>
+<p>The difference between a skill and a saved prompt is depth. A prompt is a single instruction. A skill is a workflow, it can have multiple steps, decision points, reference materials, and quality checks built in. A skill for writing a client update email might include: check the tone guidelines, lead with outcomes not activities, flag anything that needs client action, keep it under 150 words. That's not a prompt. That's a process.</p>
+<p>Skills also represent institutional knowledge. The best way your team runs a certain type of meeting, formats a certain type of report, responds to a certain type of customer situation, that knowledge usually lives in someone's head. A skill captures it. New team members get your best practices on day one. Everyone produces consistent outputs regardless of who's doing the work.</p>
+<p>You don't need to know anything technical to write a skill. The next essay covers exactly how.</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>List three tasks you do every week that always follow roughly the same pattern. For each, write one sentence describing what a skill for it would do. These become your skill backlog.</p></div>
+  <div class="lesson-nav">
+    <a href="#lesson-03" class="btn btn-ghost">← Previous</a>
+    <a href="#lesson-05" class="btn btn-primary">Next →</a>
+  </div>
+</section>
+
+<section id="lesson-05" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 5 of 8</span>
+    <h2>Writing Your First Skill</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/vda9a4114d0384e9095315ae1e582cc05/caption_6e39b0edf9204b19a108d8bc793dea03.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>Writing a skill isn't a technical task. It's the same thing you'd do if you were explaining a process to a capable new colleague: describe what needs to happen, in what order, and what good looks like at the end.</p>
+<p>A skill has four parts.</p>
+<p><em>Name:</em> What you call the skill. Short, specific, action-oriented. "Weekly team update" or "Client follow-up email" or "Meeting notes."</p>
+<p><em>Purpose:</em> One sentence on what this skill does and when to use it. "Use this skill to draft a weekly update to my team covering progress, blockers and next steps."</p>
+<p><em>Instructions:</em> The steps the agent should follow. Written in plain language. As specific as you need to get consistent results. Include formatting preferences, tone guidance, what to include and what to leave out.</p>
+<p><em>Output:</em> What the final result should look like. Length, format, structure.</p>
+<p>Here's a real example:</p>
+<p>---</p>
+<p><em>Skill: Weekly team standup summary</em></p>
+<p><em>Purpose:</em> Draft a weekly summary for my team covering the past week's progress and the week ahead. Send every Friday afternoon.</p>
+<p><em>Instructions:</em> 1. Ask me for three to five bullet points on what got done this week 2. Ask me for the top two or three priorities for next week 3. Ask if there are any blockers or things the team should know about 4. Draft a summary using those inputs, casual tone, plain language, no jargon 5. Keep it under 200 words 6. End with one sentence of encouragement</p>
+<p><em>Output:</em> A short email-style update ready to paste and send. No subject line needed.</p>
+<p>---</p>
+<p>That took about five minutes to write. Run it once, refine it once, and you've got a skill that saves time every Friday for as long as you're doing standups.</p>
+<p>The first run is the test. Activate your skill on a real task and see what the agent does with it. If something's off, update the instructions. Skills improve quickly with one or two rounds of refinement.</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Choose one task from your skill backlog. Write a complete skill for it using the four-part structure above. Activate it in your practice pod with real inputs from your work. Refine the instructions based on what comes back. Share with the group what you built.</p></div>
+  <div class="lesson-nav">
+    <a href="#lesson-04" class="btn btn-ghost">← Previous</a>
+    <a href="#lesson-06" class="btn btn-primary">Next →</a>
+  </div>
+</section>
+
+<section id="lesson-06" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 6 of 8</span>
+    <h2>Personal Context vs. Task Context</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/vf0c43316c2a84de7989b3ab517f7d54a/caption_078ff1a38f044ae4bbc8d8618b19a7ce.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>Not all context belongs in memory. Getting this wrong is the most common reason memory files become cluttered and less useful over time.</p>
+<p>Here's the distinction that matters: personal context is stable. Task context is temporary.</p>
+<p>Personal context is who you're and how you work. Your role, your industry, your communication style, the kind of outputs you need. This doesn't change week to week. It belongs in memory because it's true across every conversation you'll ever have.</p>
+<p>Task context is what you're doing right now. The specific project, the current deadline, the particular client, the decision you're in the middle of. This belongs in the conversation where it's relevant, not in your persistent memory.</p>
+<p>The test is simple: if you'd tell a new colleague this once and expect them to remember it forever, it's memory. If you'd say it every time you assigned them a related task, it belongs in the prompt.</p>
+<p>Here's where people get into trouble. They add task-specific notes to memory during a busy project. "I'm preparing for the Acme Corp renewal on June 15th. The main risk is their new procurement process." That's useful context, for a few weeks. But left in memory indefinitely, it becomes noise. Six months later the agent is factoring in a procurement process that resolved long ago.</p>
+<p>Memory files that don't get maintained drift into confusion. Notes pile up. Old context conflicts with new context. The agent tries to apply outdated information to current work.</p>
+<p>The fix is a light maintenance habit. Every month or two, scan your memory file. Remove anything that's no longer true. Update anything that's changed. Add anything new that's become permanently relevant.</p>
+<p>Think of your memory file like a briefing document for a trusted colleague. You'd keep it current. You wouldn't let it fill up with resolved issues and old projects. Same principle.</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Review the memory notes you've written so far. Categorize each one: is it personal context (stable, belongs in memory) or task context (temporary, belongs in prompts)? Move any task-specific notes out of memory. Notice how much cleaner the remaining file feels.</p></div>
+  <div class="lesson-nav">
+    <a href="#lesson-05" class="btn btn-ghost">← Previous</a>
+    <a href="#lesson-07" class="btn btn-primary">Next →</a>
+  </div>
+</section>
+
+<section id="lesson-07" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 7 of 8</span>
+    <h2>Building a Skill Library Over Time</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v5952a12074e0443db93611c438497415/caption_681f63e0014f4549a800dacf79bc2e3c.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>One skill changes one task. A library of skills changes how you work.</p>
+<p>The compounding effect is real. Each skill you build represents a task you'll never have to fully reconstruct again. After a few months of building, your agent handles the repetitive structure of your work automatically, leaving your attention for the parts that actually require judgment.</p>
+<p>The habit that builds a library is simple: every time you find yourself doing the same thing twice, ask if it should be a skill.</p>
+<p>Not everything deserves one. One-off tasks, highly variable work, anything where the approach changes significantly each time, those stay as regular conversations. But anything with a consistent pattern, a recurring output, or a process that other people on your team also do: that's a skill candidate.</p>
+<p>Categories worth building first:</p>
+<p><em>Communication:</em> Writing styles for different audiences (client-facing, internal, executive summary). Response templates for situations that recur. Your personal voice for emails and updates.</p>
+<p><em>Analysis:</em> How to structure a weekly review. How to format a data summary for your stakeholders. Your standard checklist for evaluating a new proposal.</p>
+<p><em>Planning:</em> How you structure an agenda. How you break a project into tasks. How you write a brief for a new initiative.</p>
+<p><em>Recurring outputs:</em> Meeting notes, status updates, handoff documents, anything that follows a consistent format.</p>
+<p>When you share skills with your team, the value multiplies. One person figures out the best way to handle a certain type of client situation and writes it as a skill. Everyone on the team now has access to that knowledge. New hires onboard with your best practices built in, not something they've had to learn the hard way.</p>
+<p>Start small. Two or three skills that cover your most repetitive work. You don't need a complete library on day one. Run them for a few weeks. Refine them based on what you learn. Then add more.</p>
+<p>A library of 10 well-crafted skills covering your real work is worth more than 50 mediocre ones covering theoretical tasks.</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Sketch a skill library map for your role. Write three categories of skills you'd want to have built in 30 days. Under each category, name two specific skills. That's your roadmap. Share it with the group as a commitment.</p></div>
+  <div class="lesson-nav">
+    <a href="#lesson-06" class="btn btn-ghost">← Previous</a>
+    <a href="#lesson-08" class="btn btn-primary">Next →</a>
+  </div>
+</section>
+
+<section id="lesson-08" class="lesson">
+  <div class="lesson-header">
+    <span class="lesson-badge">Lesson 8 of 8</span>
+    <h2>When Memory and Skills Change Everything</h2>
+  </div>
+  <div class="lesson-video-wrap">
+    <video controls playsinline preload="metadata" class="lesson-video">
+      <source src="https://resource2.heygen.ai/aws_pacific/avatar_tmp/5c9b644d60644cab9580b8c67045527f/v91ac9b761d8f45b7bc202259895179f0/caption_ae759bbd65ff43cdb58d3d2a30a83aa9.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="lesson-body">
+    <p>There's a specific moment that happens for most people a few weeks into working with memory and skills. They open their agent, start a session, and realize they didn't have to explain anything. The agent already knew who they were, what they're working on, and how to format the output. They just started working.</p>
+<p>That moment is small. But it's the shift from using an AI tool to having an AI collaborator.</p>
+<p>Before memory and skills, every session starts with overhead. Re-briefing. Re-establishing context. Figuring out the right prompt for a task you've done a dozen times. The tool is capable, but it feels like work to work with it.</p>
+<p>After: the overhead is gone. Your agent knows you. It produces outputs in your voice. It follows your process on recurring tasks without being told. The cognitive load drops.</p>
+<p>What's actually happening is straightforward. Memory means the agent spends less of your conversation asking the questions it needed answered and more of it doing the work. Skills mean the tasks that used to require careful prompting now run on a consistent, refined process you built once.</p>
+<p>The investment is small relative to the return. Two hours building a solid memory file and three or four skills pays back that time in the first week of use.</p>
+<p>Think of it this way. Every piece of context you add to memory is time you'll never spend re-explaining that context again. Every skill you write is a process you'll never have to reconstruct. Both compound indefinitely.</p>
+<p>The people who get the most out of AI agents aren't the ones who are best at prompting in the moment. They're the ones who invest a little time upfront teaching their agent their world, and then get to work in an environment that's already configured for them.</p>
+<p>Module 3 takes this further. Memory and skills get even more capable when you're working with multiple agents, each focused on a different part of a task. But that starts with what you've built here: an agent that knows you and knows how to work for you.</p>
+  </div>
+  <div class="pod-exercise"><div class="pod-label">✏️ Pod Exercise</div><p>Run a complete real work task using your memory notes and at least one skill you built today. Don't brief the agent on who you're, let the memory handle it. Notice what feels different. Write two sentences about it to share with the group.</p></div>
+  <div class="lesson-nav">
+    <a href="#lesson-07" class="btn btn-ghost">← Previous</a>
+    <span class="btn btn-complete">✓ Module Complete</span>
+  </div>
+</section>
+
+</main>
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+  const lessons = document.querySelectorAll('.lesson');
+  const progressFill = document.getElementById('progress-fill');
+  const progressLabel = document.getElementById('progress-label');
+  let completed = new Set();
+  function updateActive() {
+    let current = lessons[0].id;
+    lessons.forEach(l => { if (l.getBoundingClientRect().top <= 120) current = l.id; });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  }
+  document.querySelectorAll('.lesson-video').forEach(v => {
+    v.addEventListener('ended', () => {
+      const num = v.closest('.lesson').id.replace('lesson-','');
+      completed.add(num);
+      const link = document.querySelector(`.nav-link[data-num="${num}"]`);
+      if (link) link.classList.add('done');
+      progressFill.style.width = Math.round(completed.size/8*100)+'%';
+      progressLabel.textContent = completed.size+' of 8 complete';
+    });
+  });
+  window.addEventListener('scroll', updateActive, {passive:true});
+  updateActive();
+</script>
+</body>
+</html>
