@@ -1,4 +1,4 @@
-# Today — 2026-04-24
+# Today — 2026-04-25
 
 ## Status Summary
 - Scout Live: **Degraded** (gateway fragile — needs memory limit increase and probe tuning)
@@ -16,12 +16,12 @@
 - Still in degraded state since Apr 11 CrashLoopBackOff
 - Root cause: 512Mi memory limit + aggressive liveness probe
 - Needs: memory limit increase, probe timeout/threshold tuning
-- Last heartbeat (Apr 20): 4 restarts, last 30h ago — stable but fragile
+- Last known state (Apr 20): 4 restarts, last 30h ago — stable but fragile
 
 ## Alerts
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — all 3 platforms need re-login
-- PR #2 (scout-live) open since Mar 7 (48+ days)
+- PR #2 (scout-live) open since Mar 7 (49+ days)
 - 4 unpublished blog posts queued, blocked by content auth expiry
 
 ## Notes
