@@ -45,5 +45,8 @@ External APIs that change auth requirements without migration paths break agent 
 ## Taste Over Output
 Agents produce output. Humans exercise taste. The gap between "acceptable" and "excellent" is a judgment call that LLMs can flag but not make. Right framing: AI researches and executes; humans judge and relate. Don't conflate evaluation (as-judge) with taste (knowing what excellent looks like).
 
+## Sampling Inverts the Tool Call Pattern
+Traditional tool use: LLM calls tool, tool responds. MCP sampling: LLM calls tool, tool asks LLM to reason, then responds. The intelligence is bidirectional. This is the primitive that enables autonomous loops — not ping-pong but recursion.
+
 ## Claim-First Structure Beats Narrative Build
-Minto Pyramid principle: lead with your conclusion, then prove it. Content that builds up to a point loses readers before it arrives. The structure check (claim → points → evidence) is a pipeline step, not an afterthought. Apply after humanizer, before publish. If the first sentence doesn't contain the entire claim, the content won't land.
+Minto Pyramid principle: lead with your conclusion, then prove it. Content that builds up to a point loses readers before it arrives. The structure check (claim → points → evidence) is a pipeline step, not an afterthought. Apply after humanizer, before publish. If the first sentence doesn't contain the entire claim, the content won't land.aim, the content won't land.

@@ -68,6 +68,9 @@ See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
 
+### 2026-04-25
+- Second brain compile (cron): Apr 24 compiled — MCP vs API essay published, Obscura essay published, AI Literacy course site live on Zenbin (3 modules, 23 essays), Malte Ubl talk covered (agent traffic > human at Vercel), new insights on MCP sampling and purpose-built agent tools
+
 ### 2026-04-24
 - Second brain compile (cron): Apr 23 compiled — Minto Pyramid skill added to pipeline (claim-first structure check after humanizer), 3 essays + 1 video published, Zenbin Ed25519 auth resolved
 

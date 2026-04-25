@@ -34,6 +34,21 @@ Products are splitting into human surface (visual, verifiable) and agent surface
 
 **Source:** Michael Grinich (WorkOS), Jor reply | **Updated:** 2026-04-11
 
+### MCP Sampling Enables Agentic Loops (April 2026)
+MCP's sampling primitive allows servers to request LLM reasoning, not just respond to tool calls. This creates bidirectional intelligence: the agent calls a tool, the tool server can ask the LLM to reason about intermediate results, then returns a smarter response. This is the primitive that enables autonomous agent behavior — not sequential request-response but recursive reasoning loops.
+
+**Source:** MCP spec research, Anthropic code execution pattern | **Updated:** 2026-04-25
+
+### Agent Traffic > Human Traffic (April 2026)
+Malte Ubl (Vercel): 60% of Vercel traffic now comes from AI agents. Humans are the minority. Application layer is officially shifting from UI to API/CLI as the primary interface. Two surfaces (human + agent) aren't a prediction — they're already the reality. Products without both surfaces are already losing.
+
+**Source:** Malte Ubl, "The New Application Layer" talk | **Updated:** 2026-04-25
+
+### Purpose-Built Beats General-Purpose (April 2026)
+Obscura (30MB, 85ms page load, built-in anti-detection) vs Chrome (200+MB, 500ms load, detectable). The pattern repeats: MCP for APIs (self-describing, semantic) vs REST (human-readable docs). Purpose-built tools for agents win because they strip everything that serves humans but slows agents down. "Chrome is a browsing engine. Obscura is an extraction engine."
+
+**Source:** Obscura launch, MCP essay research | **Updated:** 2026-04-25
+
 ### Expressive Tool Calling > Sequential (April 2026)
 Most MCP implementations are sequential request-response. Colvin (Pydantic creator) shows the real unlock: expressive tool calling where agents compose, branch, and parallelize. The control-capability trade-off — most choose control, losing speed and flexibility.
 
