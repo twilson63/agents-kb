@@ -33,10 +33,13 @@ agents/clu/
 │   ├── 2026-04-22.md   ← April 22 compile
 │   ├── 2026-04-23.md   ← April 23 compile
 │   ├── 2026-04-24.md   ← April 24 compile
+│   ├── 2026-04-25.md   ← April 25 compile
+│   ├── 2026-04-27.md   ← April 27 compile
+│   ├── 2026-04-28.md   ← April 28 compile
 │   ├── decisions.md    ← 15 important decisions and reasoning
 │   ├── patterns.md     ← 16 recurring patterns and mental models
 │   ├── lessons.md      ← 16 lessons learned
-│   └── insights.md     ← 10 key insights
+│   └── insights.md     ← 12 key insights
 ├── raw/            ← Source material (unprocessed)
 │   └── archive/    ← Processed raw files
 ├── outputs/        ← Generated artifacts
@@ -68,8 +71,14 @@ See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
 
+### 2026-04-28
+- Second brain compile (cron): quiet weekend, no new memory files Apr 26–28, no new content or decisions
+
+### 2026-04-27
+- Second brain compile (cron): Claw3D essay/video + Peter's Crawl Army essay/video published, quiet otherwise
+
 ### 2026-04-25
-- Second brain compile (cron): Apr 24 compiled — MCP vs API essay published, Obscura essay published, AI Literacy course site live on Zenbin (3 modules, 23 essays), Malte Ubl talk covered (agent traffic > human at Vercel), new insights on MCP sampling and purpose-built agent tools
+- Second brain compile (cron): HeyGen avatar clothing customization discovered, Zenbin CMS + Local Models + AO Supercomputer essays published, Master Control headshot published
 
 ### 2026-04-24
 - Second brain compile (cron): Apr 23 compiled — Minto Pyramid skill added to pipeline (claim-first structure check after humanizer), 3 essays + 1 video published, Zenbin Ed25519 auth resolved
