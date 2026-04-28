@@ -17,6 +17,11 @@
 - Lesson: either increase memory limit, increase probe timeout/failure threshold, or investigate event loop blocking
 - Pattern: pod restart count climbing = likely resource pressure, not app bug
 
+## Hono XSS Vulnerability (Apr 26)
+- Hono `^4.12.0` had an XSS vulnerability — patched in `^4.12.14`
+- Bumped dependency in Scout Live, lint and TS compilation pass
+- Lesson: Keep dependencies updated; even mature frameworks can have security patches in minor versions
+
 ## GitHub PAT Expiry
 - PATs expire silently — no advance warning from GitHub
 - Set calendar reminders 1-2 weeks before expiry
