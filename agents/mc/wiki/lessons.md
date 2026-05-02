@@ -41,6 +41,28 @@
 - Also updated DESIGN_GUIDE.md with best practices
 - Lesson: Always compile TypeScript in Dockerfile; never rely on runtime TS execution in containers
 
+## Scout Live Gateway Fix (May 1)
+- Increasing memory limit from 512Mi → 1Gi resolved CrashLoopBackOff
+- Also: reduced CPU limits on app containers (500m→200m) and Kaniko builder (2CPU→1CPU)
+- Cleaned up 25 orphaned test app services that were consuming resources
+- Lesson: ResourceQuota creep from orphaned resources is a silent killer — periodically audit
+
+## Env Var Feature (May 1)
+- Build API now accepts env vars at deploy time via `env` query param (JSON object)
+- Sensitive key names (containing "key", "secret", "token", "password") auto-encrypted in vault
+- Crash diagnostics now detect missing env vars and surface hints
+- Lesson: Env var injection should happen at build/deploy time, not as a separate step
+
+## Zenbin Ed25519 Auth Change (May 1)
+- Zenbin API now requires Ed25519 signed requests for publishing
+- Blocked "The Case for MCP" essay from being published directly
+- Lesson: API auth changes can silently break agent workflows — need skill updates when APIs change requirements
+
+## SCP API Key Quota Management (May 1)
+- ScoutOS API key was burning through hyper org's free tier (200 agent messages, 50 workflow runs/month)
+- Removed key entirely rather than trying to rate-limit — free tier not sustainable for shared platform use
+- Lesson: Shared platform API keys on free tiers will exhaust quickly; either upgrade or remove
+
 ## MCP Server Research (Apr 6)
 - Created comprehensive research doc: `scout-live/docs/MCP_SERVER_RESEARCH.md`
 - Architecture: scouts.live (MCP server) → scoutos.live (REST API) — MCP is just another client

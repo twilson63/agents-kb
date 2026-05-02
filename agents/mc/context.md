@@ -32,6 +32,8 @@
 ## Alerts
 
 - **GitHub PAT renewed Apr 13, 2026** — new token `mc-agent-pat-2026`, expires Jul 12, 2026
+- **ScoutOS API key removed from gateway** (May 1) — was burning through free tier; agents adapter returns 401 without key
+- **Zenbin API now requires Ed25519 signed requests** — blocked MCP essay publish
 
 ## Conventions
 

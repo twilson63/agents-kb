@@ -43,6 +43,14 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-05-02
+- Second brain compile — captured May 1 daily note (significant cluster ops day)
+- New decisions: ScoutOS API key removed, port hardening roadmap, SRE cron setup
+- New patterns: Env var injection pattern for Scout Live deploys
+- New lessons: gateway fix (memory→1Gi), env var feature, zenbin Ed25519 auth change, ScoutOS quota management
+- Gateway now stable with SRE monitoring; 25 orphaned services cleaned
+- Port hardening roadmap created (logs→metrics→config→llm→sql→auth)
+
 ### 2026-05-01
 - Second brain compile — no new daily notes since Apr 26, status unchanged
 - Updated today.md: PR #2 now 55+ days open, all alerts persist

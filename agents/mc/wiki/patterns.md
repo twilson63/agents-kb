@@ -20,6 +20,13 @@
 4. Update shared/ files if cross-agent projects changed
 5. Commit and push to GitHub
 
+## Env Var Injection Pattern (May 2026)
+1. Agent deploys app via `POST /api/build?subdomain=my-app&env={"API_KEY":"sk-xxx"}`
+2. Env vars set BEFORE container deployment
+3. Keys containing "key", "secret", "token", "password" auto-encrypted in vault
+4. Crash diagnostics detect missing env vars and include hint in error response
+5. Published code: SHA-256 hashed in LMDB (cannot recover plaintext, can regenerate)
+
 ## Scout Live Template Build Pattern
 1. Agent creates app with Dockerfile
 2. **Always compile TS in Dockerfile:** `RUN bun build src/index.ts --outdir=dist`

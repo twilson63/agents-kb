@@ -16,6 +16,23 @@
 - External callers can now also use /_ports/data/... (was /ports/data/... only)
 - This makes SDK and client code consistent regardless of where it runs
 
+## 2026-05-01: ScoutOS API key removed from gateway
+- Was burning through hyper org's free tier quota
+- Agents adapter still registered but returns 401 without key
+- onhyper.io ScoutOS proxy also needs key removed on Railway manually
+- Decision: Remove the key entirely rather than rate-limit; free tier not sustainable for shared platform
+
+## 2026-05-01: Port hardening roadmap priority order
+- Created HARDENING_ROADMAP.md in scout-live repo
+- Priority: logs port → metrics port → config/flags → llm → sql → auth
+- Logs port started (spec, router, memory/redis-streams/posthog adapters)
+- Removed hyper-micro adapter from blob and cache ports (deprecated)
+
+## 2026-05-01: SRE Agent cron setup (every 10min, glm-5:cloud)
+- Automated K8s cluster health monitoring: nodes, pods, gateway, resources
+- Model changed from glm-4 (deprecated) to glm-5:cloud
+- Reduces manual heartbeat checks for cluster health
+
 ## 2026-04-14: GitHub PAT renewal needed → Completed
 - Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
 - New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)
