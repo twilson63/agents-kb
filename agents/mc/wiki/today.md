@@ -1,4 +1,4 @@
-# Today — 2026-05-02
+# Today — 2026-05-03
 
 ## Status Summary
 - Scout Live: **Stable with SRE monitoring** (gateway memory bumped to 1Gi, orphaned services cleaned, SRE cron running every 10min)
@@ -27,8 +27,8 @@
 
 ## Alerts
 - Pipedrive CRM: paywall/billing issue blocking access
-- Content engine social auth still expired (X/LinkedIn/Substack) — all 3 platforms need re-login (16+ days stale)
-- PR #2 (scout-live) open since Mar 7 (56+ days)
+- Content engine social auth still expired (X/LinkedIn/Substack) — all 3 platforms need re-login (30+ days stale)
+- PR #2 (scout-live) open since Mar 7 (57+ days)
 - 4 unpublished blog posts queued, blocked by content auth expiry
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
