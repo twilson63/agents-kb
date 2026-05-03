@@ -38,4 +38,10 @@
 
 **ZChat** — chat app at zchat.scoutos.live using ScoutOS Agents API. Minimal Bun server, SSE streaming, UUID sessions. MVP complete.
 
+**SRE Agent** — OpenClaw cron (every 10min, glm-5:cloud) that monitors Scout Live K8s cluster: nodes, pods, gateway health, resource quotas.
+
+**Port Hardening Roadmap** — Scout Live infrastructure improvement plan. Priority order: logs → metrics → config/flags → llm → sql → auth.
+
+**Ed25519 Auth** — Zenbin API now requires Ed25519 signed requests for publishing. Breaks direct API calls from agents without key signing.
+
 **App Builder** — Scout Live native app for creating/deploying apps from the dashboard. One of several new apps deployed Apr 2026.
