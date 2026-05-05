@@ -58,6 +58,13 @@
 - Blocked "The Case for MCP" essay from being published directly
 - Lesson: API auth changes can silently break agent workflows — need skill updates when APIs change requirements
 
+## Scout Live Gateway Liveness Probe (May 4)
+- Liveness probe with `initialDelaySeconds:15` and `timeoutSeconds:1` is too aggressive for gateway's ~30s startup
+- Sandbox apps block event loop during initialization → `/api/health` times out → K8s kills pod → restart loop
+- Fix: Either add a `startupProbe` (preferred in K8s 1.18+) or increase `initialDelaySeconds:30`, `timeoutSeconds:10`, `periodSeconds:30`
+- Pattern: Every pod rotation triggers crash cycle if gateway can't pass health check during startup window
+- Lesson: Separate startup detection from liveness — a pod that's starting up isn't dead, it's just not ready yet
+
 ## SCP API Key Quota Management (May 1)
 - ScoutOS API key was burning through hyper org's free tier (200 agent messages, 50 workflow runs/month)
 - Removed key entirely rather than trying to rate-limit — free tier not sustainable for shared platform use

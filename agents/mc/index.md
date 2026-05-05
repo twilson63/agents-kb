@@ -43,6 +43,12 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-05-05
+- Second brain compile — captured May 4 daily note (liveness probe root cause)
+- New lesson: Scout Live gateway liveness probe too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
+- Updated today.md: probe fix needed, PR #2 59+ days, social auth 34+ days stale
+- No new decisions or patterns
+
 ### 2026-05-04
 - Second brain compile — no new daily notes since May 1, status unchanged
 - Updated today.md: PR #2 now 58+ days open, social auth stale 30+ days
