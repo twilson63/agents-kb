@@ -44,4 +44,6 @@
 
 **Ed25519 Auth** — Zenbin API now requires Ed25519 signed requests for publishing. Breaks direct API calls from agents without key signing.
 
+**Liveness Probe** — Kubernetes health check that restarts containers when they fail. Scout Live gateway needs relaxed probe settings (`initialDelaySeconds:30`, `timeoutSeconds:10`) or a separate `startupProbe` because sandbox apps block the event loop during ~30s startup.
+
 **App Builder** — Scout Live native app for creating/deploying apps from the dashboard. One of several new apps deployed Apr 2026.
