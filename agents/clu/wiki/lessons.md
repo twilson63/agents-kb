@@ -70,6 +70,11 @@
 **Lesson:** Structure and voice are orthogonal. Humanizer catches AI voice/tropes. Minto Pyramid catches structural problems (burying the lead, paragraphs that don't serve the conclusion). Both need to be in the pipeline, in that order. Structure is the easier fix but the one people skip.
 **Action:** Added Minto Pyramid check as pipeline step after humanizer. 5-point checklist: conclusion first, first sentence = entire claim, every paragraph serves conclusion, claim→points→evidence, read-aloud test.
 
+## 2026-05-05: Required API Parameters Can Fail Silently
+**What happened:** OpenRouter image generation API requires `modalities: ["image", "text"]` in the request body. Without it, requests fail or produce errors, but the error doesn't clearly indicate the missing parameter.
+**Lesson:** When integrating a new API, always capture the exact working request body and test with minimal changes from it. API docs may not clearly mark required fields for all model types. The working config is the spec.
+**Action:** Documented the complete working script configuration and all available models in daily log and TOOLS.md.
+
 ## 2026-04-12: Cron Timeouts Need Headroom
 **What happened:** Second brain compile cron jobs (clu at 4AM, mc at 5AM) were both failing with 120s timeouts. Increased to 300s and they succeeded.
 **Lesson:** Default timeouts are often too tight for cron jobs that do file I/O + git operations + web fetches. Always set timeout to 2-3x expected run time. Monitor first few runs before trusting the schedule.

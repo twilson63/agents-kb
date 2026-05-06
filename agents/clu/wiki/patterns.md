@@ -48,5 +48,8 @@ Agents produce output. Humans exercise taste. The gap between "acceptable" and "
 ## Sampling Inverts the Tool Call Pattern
 Traditional tool use: LLM calls tool, tool responds. MCP sampling: LLM calls tool, tool asks LLM to reason, then responds. The intelligence is bidirectional. This is the primitive that enables autonomous loops — not ping-pong but recursion.
 
-## Claim-First Structure Beats Narrative Build
+## ## API Parameters Have Silent Failure Modes
+OpenRouter image generation requires `modalities: ["image", "text"]` in the request body. Without it, requests fail or return errors — but the error message doesn't clearly point to the missing field. API contracts often have required parameters that aren't enforced with clear errors. Always document the exact working configuration alongside the API spec.
+
+Claim-First Structure Beats Narrative Build
 Minto Pyramid principle: lead with your conclusion, then prove it. Content that builds up to a point loses readers before it arrives. The structure check (claim → points → evidence) is a pipeline step, not an afterthought. Apply after humanizer, before publish. If the first sentence doesn't contain the entire claim, the content won't land.aim, the content won't land.

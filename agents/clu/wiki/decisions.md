@@ -84,6 +84,12 @@
 **Reasoning:** The Minto Pyramid (claim-first structure) is teachable and testable. A 5-point checklist catches content that reads well but doesn't land: (1) one-sentence conclusion first, (2) first sentence contains entire claim, (3) every paragraph serves conclusion, (4) claim → points → evidence, (5) read-aloud test. This is structure, not voice — orthogonal to humanizer.
 **Outcome:** New skill created (`minto-pyramid`). Pipeline updated to 5 steps: draft → humanizer → Minto check → HeyGen video → ZenBin publish.
 
+## 2026-05-05: OpenRouter as Image Generation Provider
+**Context:** Needed illustrations for HR AI Strategy slides. Compared OpenRouter/gemini-2.5-flash-image vs dedicated image APIs.
+**Decision:** Use OpenRouter with gemini-nano (google/gemini-2.5-flash-image) as default for slide illustrations and visual content generation.
+**Reasoning:** Cheapest option on OpenRouter. Good quality for illustrations. API-native with existing script (`scripts/generate.mjs`). Complements HeyGen (video) and Zenbin (publishing) as part of full content pipeline.
+**Outcome:** 10 HR AI slide illustrations generated successfully. Critical discovery: `modalities: ["image", "text"]` must be in request body.
+
 ## 2026-04-11: Community Building Playbook for hyper.io
 **Context:** Hive needs a developer community strategy.
 **Decision:** Created comprehensive DevRel playbook with 4-phase action plan, 7 rules, measurement framework.
