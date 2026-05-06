@@ -1,4 +1,4 @@
-# Today — 2026-05-05
+# Today — 2026-05-06
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -31,8 +31,8 @@
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - Pipedrive CRM: paywall/billing issue blocking access
-- Content engine social auth still expired (X/LinkedIn/Substack) — 34+ days stale
-- PR #2 (scout-live) open since Mar 7 (59+ days)
+- Content engine social auth still expired (X/LinkedIn/Substack) — 36+ days stale
+- PR #2 (scout-live) open since Mar 7 (60+ days)
 - 4 unpublished blog posts queued, blocked by content auth expiry
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
