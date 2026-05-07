@@ -1,6 +1,6 @@
 # Today — Current Status
 
-**Last compiled:** 2026-05-06 (4 AM EST)
+**Last compiled:** 2026-05-07 (4 AM EST)
 
 ## Active
 
@@ -11,7 +11,8 @@
 - HeyGen: Master Control suit avatar + Tom voice as defaults
 - HeyGen: Avatar clothing customization confirmed (Hawaiian shirt test, Apr 25)
 - Content publishing pipeline: draft → humanizer → Minto check → image gen → HeyGen video → ZenBin publish
-- Second brain compile running daily at 4 AM EST (30 consecutive compiles)
+- Second brain compile running daily at 4 AM EST (31 consecutive compiles)
+- New article in progress: "When the Algorithm Comes for Your Job" (sources compiled May 6)
 
 ## Resolved
 
@@ -20,10 +21,12 @@
 3. **HeyGen clothing** — ✅ Avatar clothing customizable via text prompts
 4. **OpenRouter image generation** — ✅ gemini-nano working, critical `modalities` param documented
 
-## New (May 5)
+## Recent Activity
 
-- HR AI Strategy 10 slide illustrations generated
-- HR AI Strategy slide deck created (4 parts: Strategy, Policy, Performance, Learning)
+- AI article "When the Algorithm Comes for Your Job" — sources + draft started (May 6)
+- HR AI Strategy 10 slide illustrations generated (May 5)
+- HR AI Strategy slide deck created (4 parts: Strategy, Policy, Performance, Learning) (May 5)
+- OpenRouter image pipeline established (May 5)
 
 ## Pending
 
@@ -32,14 +35,13 @@
 3. AI-Native Leader's Guide: long-form videos still needed
 4. ScoutOS video: delegate to sub-agent
 5. Pocock Fundamentals essay — saved locally, needs Zenbin publish when stable
+6. "When the Algorithm Comes for Your Job" article — in progress
 
 ## Recent Wins
 
+- AI article started + sources compiled (May 6)
 - HR AI Strategy slide deck + 10 illustrations (May 5)
 - OpenRouter image pipeline established (May 5)
 - Claw3D + Peter's Crawl Army essays/videos shipped Apr 27
 - 3 essays + headshot published Apr 25 (Zenbin CMS, Local Models, AO Supercomputer)
 - HeyGen avatar clothing customization discovered Apr 25
-- MCP essay + Obscura essay + Course site + Malte Ubl coverage Apr 24
-- Minto Pyramid skill + 3 essays + 1 video Apr 23
-- 10 essays + 16 videos shipped Apr 20 via content pipeline
