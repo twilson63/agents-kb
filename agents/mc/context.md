@@ -35,6 +35,7 @@
 - **ScoutOS API key removed from gateway** (May 1) — was burning through free tier; agents adapter returns 401 without key
 - **Scout Live liveness probe too aggressive** (May 4) — needs `initialDelaySeconds:30`, `timeoutSeconds:10`, `periodSeconds:30` or a separate `startupProbe`
 - **Zenbin API now requires Ed25519 signed requests** — blocked MCP essay publish
+- **Content engine social auth expired** (X/LinkedIn/Substack) — 48+ days stale, blocking all publishing
 
 ## Conventions
 
