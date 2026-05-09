@@ -79,3 +79,8 @@
 **What happened:** Second brain compile cron jobs (clu at 4AM, mc at 5AM) were both failing with 120s timeouts. Increased to 300s and they succeeded.
 **Lesson:** Default timeouts are often too tight for cron jobs that do file I/O + git operations + web fetches. Always set timeout to 2-3x expected run time. Monitor first few runs before trusting the schedule.
 **Action:** Updated both cron jobs to 300s timeout. Will monitor and adjust if needed.
+
+## 2026-05-08: Talk Titles Should Promise, Not Describe
+**What happened:** Working title "What Leaders Need to Know about AI Strategy" felt like a lecture syllabus. Iterated to "AI Native, How?" — short, conversational, promises methodology.
+**Lesson:** Titles that describe ("What Leaders Need to Know") signal passive learning. Titles that promise ("How?") signal actionable outcome. The best talk/article titles create a question the content then answers. Apply Winston's promise rule to titles, not just openings.
+**Action:** Default to conversational, promise-driven titles for all talks, articles, and course modules.

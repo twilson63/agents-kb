@@ -51,5 +51,11 @@ Traditional tool use: LLM calls tool, tool responds. MCP sampling: LLM calls too
 ## ## API Parameters Have Silent Failure Modes
 OpenRouter image generation requires `modalities: ["image", "text"]` in the request body. Without it, requests fail or return errors — but the error message doesn't clearly point to the missing field. API contracts often have required parameters that aren't enforced with clear errors. Always document the exact working configuration alongside the API spec.
 
-Claim-First Structure Beats Narrative Build
-Minto Pyramid principle: lead with your conclusion, then prove it. Content that builds up to a point loses readers before it arrives. The structure check (claim → points → evidence) is a pipeline step, not an afterthought. Apply after humanizer, before publish. If the first sentence doesn't contain the entire claim, the content won't land.aim, the content won't land.
+## Claim-First Structure Beats Narrative Build
+Minto Pyramid principle: lead with your conclusion, then prove it. Content that builds up to a point loses readers before it arrives. The structure check (claim → points → evidence) is a pipeline step, not an afterthought. Apply after humanizer, before publish. If the first sentence doesn't contain the entire claim, the content won't land.
+
+## Conversational Titles Beat Descriptive Ones
+"AI Native, How?" beats "What Leaders Need to Know about AI Strategy" because it promises methodology, not just information. Short, conversational titles raise the question the talk answers. The "How?" does the heavy lifting — it signals actionable content. This applies beyond talks: blog posts, articles, and course modules all benefit from titles that promise a method, not just a topic.
+
+## Promise-Driven Openings (Winston's Rule)
+Patrick Winston's rule for talks: open with what the audience will be able to **do** after, not what they'll learn about. "After this talk, you'll know exactly where to start" is a promise. "Today I'll talk about AI strategy" is a topic. Promises create a contract. Topics create a syllabus. This applies equally to essays, course modules, and marketing copy.
