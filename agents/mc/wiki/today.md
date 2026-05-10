@@ -1,4 +1,4 @@
-# Today — 2026-05-09
+# Today — 2026-05-10
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -22,16 +22,16 @@
 - SRE Agent cron running every 10min (model: glm-5:cloud)
 
 ## Content Engine
-- Checked `~/onhyper/blog/` — folder empty, no unpublished drafts
-- Browser states likely expired (noted May 5 in social-engagement.json)
+- Checked `~/onhyper/blog/` — folder empty for 3+ consecutive days, no unpublished drafts
 - Next publish target: hyper-micro (per heartbeat-state)
-- Blocker: Substack needs login; social auth expired (X/LinkedIn/Substack) — 49+ days stale
+- Blocker: No content in queue + social auth expired (X/LinkedIn/Substack) — 50+ days stale
 
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - Pipedrive CRM: paywall/billing issue blocking access
-- Content engine social auth still expired (X/LinkedIn/Substack) — 49+ days stale
-- PR #2 (scout-live) open since Mar 7 (63+ days)
+- Content engine social auth still expired (X/LinkedIn/Substack) — 50+ days stale
+- Content pipeline blocked — no drafts in ~/onhyper/blog/ for 3+ consecutive days
+- PR #2 (scout-live) open since Mar 7 (64+ days)
 - 4 unpublished blog posts queued, blocked by content auth expiry
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
