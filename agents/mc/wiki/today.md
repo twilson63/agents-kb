@@ -1,4 +1,4 @@
-# Today — 2026-05-11
+# Today — 2026-05-12
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -22,20 +22,20 @@
 - SRE Agent cron running every 10min (model: glm-5:cloud)
 
 ## Content Engine
-- Checked `~/onhyper/blog/` — folder empty for 4+ consecutive days, no unpublished drafts
+- Checked `~/onhyper/blog/` — folder empty for 5+ consecutive days, no unpublished drafts
 - Blocker: No content in queue + social auth expired (X/LinkedIn/Substack) — 50+ days stale
+- Content pipeline has been blocked since ~May 1
 
 ## BRTN Clip Capture
-- Stream online at 12:01 AM, 30s clip captured
-- Published: https://zenbin.org/p/brtn-clip-20260511_000113
-- RSS feed: https://zenbin.org/p/brtn-rss (5 total clips)
+- Last clip: May 11 (5th clip in RSS feed)
+- RSS feed: https://zenbin.org/p/brtn-rss
 
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 50+ days stale
-- Content pipeline blocked — no drafts in ~/onhyper/blog/ for 4+ consecutive days
-- PR #2 (scout-live) open since Mar 7 (65+ days)
+- Content pipeline blocked — no drafts in ~/onhyper/blog/ for 5+ consecutive days
+- PR #2 (scout-live) open since Mar 7 (66+ days)
 - 4 unpublished blog posts queued, blocked by content auth expiry
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
