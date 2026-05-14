@@ -1,5 +1,10 @@
 # Lessons Learned
 
+## 2026-05-12: Original IP > Commentary
+**What happened:** After a quiet period, produced CAP Protocol — a full specification draft (not just a blog post about a problem, but a proposed solution). Paired with a thought leadership article for context.
+**Lesson:** When you see a gap in the market, building the solution (even as a draft spec) is more valuable than writing about the gap. Commentary is common; protocol authorship is rare. Position through creation, not just analysis.
+**Action:** Default to "build the spec" when identifying infrastructure gaps. Thought leadership follows the artifact, not the other way around.
+
 ## 2026-04-08: Token Budget Matters
 **What happened:** System prompt was consuming too many tokens with all skill descriptions pre-loaded.
 **Lesson:** Default to lazy-loading. Measure token cost of skills, MEMORY.md, and AGENTS.md. Every ~100 tokens of injected context reduces available conversation context.

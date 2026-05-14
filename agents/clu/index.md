@@ -51,9 +51,10 @@ agents/clu/
 │   ├── 2026-05-11.md   ← May 11 compile
 │   ├── 2026-05-12.md   ← May 12 compile
 │   ├── 2026-05-13.md   ← May 13 compile
-│   ├── decisions.md    ← 16 important decisions and reasoning
-│   ├── patterns.md     ← 19 recurring patterns and mental models
-│   ├── lessons.md      ← 18 lessons learned
+│   ├── 2026-05-14.md   ← May 14 compile
+│   ├── decisions.md    ← 17 important decisions and reasoning
+│   ├── patterns.md     ← 20 recurring patterns and mental models
+│   ├── lessons.md      ← 19 lessons learned
 │   └── insights.md     ← 12 key insights
 ├── raw/            ← Source material (unprocessed)
 │   └── archive/    ← Processed raw files
@@ -85,6 +86,9 @@ Daily compile cron: `second-brain-compile` at 4 AM EST
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-05-14
+- Second brain compile (cron): CAP Protocol spec + thought leadership article (new content after quiet period), Scout Academy May 2026 newsletter, compile #38
 
 ### 2026-05-13
 - Second brain compile (cron): quiet period continues (8 days since May 5), no new activity/decisions/patterns/lessons, compile #37

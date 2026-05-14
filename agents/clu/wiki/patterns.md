@@ -1,5 +1,8 @@
 # Patterns & Mental Models
 
+## Content Provenance Is the Next Trust Layer
+As agents produce exponentially more content, the question shifts from "is this AI-generated?" to "who generated this, and can I verify it?" A2A attests to agent identity, C2PA to media origin, but neither travels with the output. A missing infrastructure layer exists between agent identity and content trust — and whoever specifies it gets to shape the standard.
+
 ## RAG Retrieves, This Compounds
 RAG starts fresh every query. Knowledge bases compile once, update incrementally. The difference is compounding. Applies to agent memory (MEMORY.md), personal knowledge bases (Karpathy pattern), and enterprise systems.
 

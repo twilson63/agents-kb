@@ -90,6 +90,12 @@
 **Reasoning:** Cheapest option on OpenRouter. Good quality for illustrations. API-native with existing script (`scripts/generate.mjs`). Complements HeyGen (video) and Zenbin (publishing) as part of full content pipeline.
 **Outcome:** 10 HR AI slide illustrations generated successfully. Critical discovery: `modalities: ["image", "text"]` must be in request body.
 
+## 2026-05-12: CAP Protocol — Original IP for Agent Trust
+**Context:** Agent-generated content has no verifiable provenance. A2A proves who agents are, C2PA proves media origin, but nothing proves what an agent actually produced.
+**Decision:** Created CAP (Content Attestation Protocol) v0.1.0-draft — an open protocol for agent-to-agent content attestation, encryption, and expiration. Three components: Attest, Encrypt, TTL. Published as spec + thought leadership article.
+**Reasoning:** The trust gap is the next frontier. As agents produce exponentially more content, provenance becomes critical infrastructure. Rather than just comment on the gap, we built a spec. This positions hyper.io/Scout Academy as a protocol author, not just a commentator.
+**Outcome:** Draft spec and thought leadership article produced. Needs community review and publication strategy.
+
 ## 2026-04-11: Community Building Playbook for hyper.io
 **Context:** Hive needs a developer community strategy.
 **Decision:** Created comprehensive DevRel playbook with 4-phase action plan, 7 rules, measurement framework.
