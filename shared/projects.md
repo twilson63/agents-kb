@@ -8,6 +8,7 @@ AI-powered Telegram bot platform. Users create a "Claw" (bot) via a web dashboar
 - **Live:** https://claws.hyper.io
 - **Stack:** TypeScript, SvelteKit (client), Express (server), LMDB, Kubernetes
 - **Status:** Alpha stabilization
+- **Recent:** PR #185 merged — self-hosted local dev support with k3d
 - **Open PRs:** [PR #12](https://github.com/hyper63/claws/pull/12) — Clerk session fix + status-sync crash fix
 
 ### Known Issues Fixed

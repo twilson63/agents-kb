@@ -43,6 +43,14 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-05-15
+- Second brain compile — May 15 daily note: Adi Singh (AgentMail) inquiry, replied with interest in ingestion
+- PR #185 (hyper63/claws) merged — self-hosted local dev support with k3d
+- Pipedrive CRM still blocked by billing — cannot add Adi Singh as Lead
+- Content pipeline blocked 9+ days, social auth 59+ days stale, PR #2 now 69+ days
+- BRTN: last clip May 11, RSS feed running
+- No new decisions, patterns, or lessons to capture
+
 ### 2026-05-14
 - Second brain compile — no new daily notes since May 11, status unchanged
 - Status: content pipeline blocked 8+ days, social auth 58+ days stale, PR #2 now 68+ days
