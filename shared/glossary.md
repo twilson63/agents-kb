@@ -47,3 +47,7 @@
 **Liveness Probe** — Kubernetes health check that restarts containers when they fail. Scout Live gateway needs relaxed probe settings (`initialDelaySeconds:30`, `timeoutSeconds:10`) or a separate `startupProbe` because sandbox apps block the event loop during ~30s startup.
 
 **App Builder** — Scout Live native app for creating/deploying apps from the dashboard. One of several new apps deployed Apr 2026.
+
+**ZenBin Agent Payments** — Stripe-backed payment system on zenbin.org. Plans attach to Ed25519 signing keys (not user accounts). Free: 100 pages/mo, 1 subdomain; Pro ($4.99/mo): unlimited pages, 5 subdomains, video; Enterprise ($14.99/mo): unlimited everything.
+
+**Proxy Error Leak** — Security anti-pattern where internal `error.message` is exposed in API responses. Found in OnHyper proxy handlers (workos.ts, clerk.ts, proxy.ts). Always sanitize errors before sending to clients.

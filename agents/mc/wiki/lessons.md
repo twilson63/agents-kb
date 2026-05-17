@@ -65,6 +65,12 @@
 - Pattern: Every pod rotation triggers crash cycle if gateway can't pass health check during startup window
 - Lesson: Separate startup detection from liveness — a pod that's starting up isn't dead, it's just not ready yet
 
+## OnHyper Proxy Error Message Leak (May 16)
+- Proxy error handlers in `workos.ts:432`, `clerk.ts:480`, `proxy.ts:571` leak internal `error.message` to API responses
+- Security issue: internal error details visible to API consumers (medium severity)
+- Tracked as task-020, sub-agent spawned to fix
+- Lesson: Always sanitize error responses — never expose raw `error.message` in production APIs
+
 ## SCP API Key Quota Management (May 1)
 - ScoutOS API key was burning through hyper org's free tier (200 agent messages, 50 workflow runs/month)
 - Removed key entirely rather than trying to rate-limit — free tier not sustainable for shared platform use

@@ -16,7 +16,7 @@
 | Variable | Value |
 |----------|-------|
 | Host | Mac mini (arm64) |
-| Node | v24.13.1 |
+| Node | v25.6.1 |
 | Model | ollama/glm-5.1:cloud |
 | Channel | Telegram |
 | Workspace | ~/.openclaw/workspace/ |
@@ -28,6 +28,7 @@
 - Social engagement: X/Twitter and LinkedIn posts (hourly checks)
 - Scout Live: Monitor K8s pod health, PVC status
 - **Agents KB sync: Daily at 4 AM EST** — organize memories, update wiki, push to GitHub
+- **Marketing pivot (May 16)**: Focus social marketing on ZenBin (not OnHyper); agent payments feature is the hook
 
 ## Alerts
 

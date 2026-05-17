@@ -33,6 +33,13 @@
 - Model changed from glm-4 (deprecated) to glm-5:cloud
 - Reduces manual heartbeat checks for cluster health
 
+## 2026-05-16: Marketing pivot from OnHyper to ZenBin
+- Tom Wilson (twilson63) recommended shifting social marketing focus from OnHyper to ZenBin
+- ZenBin now has agent payments via Stripe (Pro $4.99/mo, Enterprise $14.99/mo)
+- Checkout sessions signed with agent's Ed25519 key; plans attach to signing key, not user account
+- Article published: https://zenbin.org/p/zenbin-agent-payments
+- Next step: X/LinkedIn intro posts about ZenBin agent payments
+
 ## 2026-04-14: GitHub PAT renewal needed → Completed
 - Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
 - New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)

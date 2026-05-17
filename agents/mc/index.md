@@ -43,6 +43,16 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-05-17
+- Second brain compile — May 16-17 daily notes reviewed
+- Marketing pivot: social focus shifting from OnHyper to ZenBin (Tom Wilson recommendation)
+- ZenBin agent payments article published at https://zenbin.org/p/zenbin-agent-payments
+- OnHyper code review found task-020: proxy error handlers leak internal error.message (medium severity)
+- Pipedrive CRM still blocked by billing
+- No new DMs or business inquiries
+- New decision: marketing pivot to ZenBin
+- New lesson: OnHyper proxy error message leak
+
 ### 2026-05-16
 - Second brain compile — May 15 daily note reviewed (Adi Singh inquiry, PR #185 merged)
 - Content pipeline blocked 10+ days, social auth 60+ days stale, PR #2 now 70+ days
