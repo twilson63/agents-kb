@@ -1,4 +1,4 @@
-# Today — 2026-05-17
+# Today — 2026-05-18
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -25,13 +25,16 @@
 - **Decision (May 16)**: Pivot social marketing from OnHyper to ZenBin
 - Tom Wilson (twilson63) recommended focusing on ZenBin agent payments feature
 - Article published: https://zenbin.org/p/zenbin-agent-payments
-- TODO: X/LinkedIn intro posts still needed
+- X/Twitter post published (May 17): https://x.com/hyperio_mc/status/2055942519024766996
+- TODO: LinkedIn intro post still needed
 
 ## Content Engine
 - Marketing focus shifted to ZenBin (from OnHyper)
 - Article about ZenBin agent payments published to zenbin.org
-- Social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- Content pipeline has been blocked for social posting since ~May 1
+- X/Twitter post published about ZenBin agent payments
+- Blog folder on OnHyper is empty — no blog content published there
+- Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
+- Content pipeline has been blocked for direct social posting since ~May 1
 
 ## BRTN Clip Capture
 - Last clip: May 11 (5th clip in RSS feed)
@@ -46,7 +49,7 @@
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (71+ days)
+- PR #2 (scout-live) open since Mar 7 (72+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
