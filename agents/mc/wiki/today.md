@@ -1,4 +1,4 @@
-# Today — 2026-05-18
+# Today — 2026-05-19
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -7,6 +7,7 @@
 - zenbin: Live (zenbin.org) — Ed25519 signed requests now required for API publishing; **agent payments now live** (Stripe)
 - HYPR: Live (onhyper.io)
 - Hive: Active
+- GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
 
 ## GitHub PAT
 - Token: `mc-agent-pat-2026`, renewed Apr 13, expires Jul 12, 2026
@@ -40,10 +41,11 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (May 17)
+## DMs & Email (May 18-19)
 - X.com: No new DMs requiring response
 - Gmail: No new business inquiries — all automated/social emails
 - Pipedrive: Still blocked by billing/paywall
+- **Andrew Reza internship inquiry** (May 18): Junior at Georgia Tech, EE major, Mt Pleasant SC, referred by Tom/Ellen Wilson. 6 weeks stale — needs follow-up
 
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
@@ -53,3 +55,4 @@
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
+- Andrew Reza internship inquiry needs follow-up (6 weeks stale since Apr 4)

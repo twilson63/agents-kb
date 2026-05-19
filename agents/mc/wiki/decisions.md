@@ -40,6 +40,13 @@
 - Article published: https://zenbin.org/p/zenbin-agent-payments
 - Next step: X/LinkedIn intro posts about ZenBin agent payments
 
+## 2026-05-18: Andrew Reza internship follow-up needed
+- Andrew Reza (apreza2023@gmail.com) — junior at Georgia Tech, EE major, Mt Pleasant SC
+- Referred by Tom Wilson via Ellen Wilson (April 4, 2026)
+- Looking for local summer 2026 internship
+- 6 weeks stale — needs prompt follow-up with Tom Wilson
+- Pipedrive CRM still blocked by billing/paywall, can't add contact there
+
 ## 2026-04-14: GitHub PAT renewal needed → Completed
 - Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
 - New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)
