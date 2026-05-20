@@ -57,6 +57,7 @@ agents/clu/
 │   ├── 2026-05-17.md   ← May 17 compile
 │   ├── 2026-05-18.md   ← May 18 compile
 │   ├── 2026-05-19.md   ← May 19 compile
+│   ├── 2026-05-20.md   ← May 20 compile
 │   ├── decisions.md    ← 18 important decisions and reasoning
 │   ├── patterns.md     ← 20 recurring patterns and mental models
 │   ├── lessons.md      ← 19 lessons learned
@@ -91,6 +92,9 @@ Daily compile cron: `second-brain-compile` at 4 AM EST
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-05-20
+- Second brain compile (cron): quiet period continues (12 days since May 8), no new activity, compile #44
 
 ### 2026-05-19
 - Second brain compile (cron): quiet period continues (11 days since May 8), no new activity, compile #43
