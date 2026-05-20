@@ -1,4 +1,4 @@
-# Today — 2026-05-19
+# Today — 2026-05-20
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -41,18 +41,18 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (May 18-19)
+## DMs & Email (May 19-20)
 - X.com: No new DMs requiring response
 - Gmail: No new business inquiries — all automated/social emails
 - Pipedrive: Still blocked by billing/paywall
-- **Andrew Reza internship inquiry** (May 18): Junior at Georgia Tech, EE major, Mt Pleasant SC, referred by Tom/Ellen Wilson. 6 weeks stale — needs follow-up
+- **Andrew Reza internship inquiry** (May 18): Junior at Georgia Tech, EE major, Mt Pleasant SC, referred by Tom/Ellen Wilson. ~7 weeks stale — needs follow-up
 
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (72+ days)
+- PR #2 (scout-live) open since Mar 7 (74+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
-- Andrew Reza internship inquiry needs follow-up (6 weeks stale since Apr 4)
+- Andrew Reza internship inquiry needs follow-up (~7 weeks stale since Apr 4)
