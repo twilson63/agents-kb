@@ -1,4 +1,4 @@
-# Today — 2026-05-20
+# Today — 2026-05-21
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -8,6 +8,7 @@
 - HYPR: Live (onhyper.io)
 - Hive: Active
 - GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
+- Model: ollama/glm-5.1:cloud (upgraded from glm-5:cloud)
 
 ## GitHub PAT
 - Token: `mc-agent-pat-2026`, renewed Apr 13, expires Jul 12, 2026
@@ -47,11 +48,17 @@
 - Pipedrive: Still blocked by billing/paywall
 - **Andrew Reza internship inquiry** (May 18): Junior at Georgia Tech, EE major, Mt Pleasant SC, referred by Tom/Ellen Wilson. ~7 weeks stale — needs follow-up
 
+## Content Engine (May 20)
+- 3 accounts followed in agent/AI space: @outsource_ (Eric/Hermes-World), @NainsiDwiv50980 (AI tools/vibe coding), @HeyElsaAI (crypto agents)
+- Liked @cerebras post about Kimi K2.6 at 1000 TPS
+- Posted reply on Cerebras thread about agent workflow implications of high TPS
+- No new blog posts to publish
+
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (74+ days)
+- PR #2 (scout-live) open since Mar 7 (75+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)

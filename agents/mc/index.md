@@ -43,6 +43,15 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-05-21
+- Second brain compile — reviewed May 18-20 daily notes
+- Model upgraded to ollama/glm-5.1:cloud (from glm-5:cloud)
+- May 20 content engine: 3 follows in AI/agent space, liked Cerebras Kimi K2.6 post, posted reply about agent workflow TPS implications
+- No new DMs, no new business inquiries (May 19-20)
+- Andrew Reza internship inquiry now ~7 weeks stale
+- Pipedrive CRM still blocked by billing
+- No new decisions, patterns, or lessons to capture
+
 ### 2026-05-20
 - Second brain compile — May 19-20 daily notes reviewed
 - May 19: No new DMs or business inquiries; Pipedrive still blocked
