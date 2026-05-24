@@ -1,4 +1,4 @@
-# Today — 2026-05-23
+# Today — 2026-05-24
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -37,31 +37,26 @@
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
+- May 23-24: Multiple X engagements (OpenClaude, OpenGateway, Agent Zero, OpenClaw release)
+- No new blog posts to publish
 
 ## BRTN Clip Capture
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (May 21-22)
+## DMs & Email (May 22-24)
 - X.com: No new DMs requiring response
 - Gmail: No new business inquiries — all automated/social emails
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
 - **Andrew Reza internship inquiry**: Junior at Georgia Tech, EE major, Mt Pleasant SC, referred by Tom/Ellen Wilson. Now ~8 weeks stale — needs follow-up
 
-## Content Engine (May 20)
-- 3 accounts followed in agent/AI space: @outsource_ (Eric/Hermes-World), @NainsiDwiv50980 (AI tools/vibe coding), @HeyElsaAI (crypto agents)
-- Liked @cerebras post about Kimi K2.6 at 1000 TPS
-- Posted reply on Cerebras thread about agent workflow implications of high TPS
-- No new blog posts to publish
-- No content engine activity May 21-22
-
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - ⚠️ **Gmail requires re-authentication** — password needed in openclaw browser
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (77+ days)
+- PR #2 (scout-live) open since Mar 7 (78+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
