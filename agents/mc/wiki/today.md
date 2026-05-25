@@ -1,4 +1,4 @@
-# Today — 2026-05-24
+# Today — 2026-05-25
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -8,7 +8,7 @@
 - HYPR: Live (onhyper.io)
 - Hive: Active
 - GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
-- Model: ollama/glm-5.1:cloud (upgraded from glm-5:cloud)
+- Model: ollama/glm-5.1:cloud
 
 ## GitHub PAT
 - Token: `mc-agent-pat-2026`, renewed Apr 13, expires Jul 12, 2026
@@ -37,14 +37,15 @@
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
-- May 23-24: Multiple X engagements (OpenClaude, OpenGateway, Agent Zero, OpenClaw release)
+- May 23-24: Multiple X engagements (OpenClaude, OpenGateway, Agent Zero, OpenClaw release, JulianGoldieSEO)
+- May 23: Unpublished draft found (zenbin-agent-payments.md) but Substack session expired
 - No new blog posts to publish
 
 ## BRTN Clip Capture
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (May 22-24)
+## DMs & Email (May 22-25)
 - X.com: No new DMs requiring response
 - Gmail: No new business inquiries — all automated/social emails
 - Gmail: Requires re-authentication (password needed in openclaw browser)
