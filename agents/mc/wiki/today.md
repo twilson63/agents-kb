@@ -1,4 +1,4 @@
-# Today — 2026-05-27
+# Today — 2026-05-28
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -34,6 +34,7 @@
 - Marketing focus shifted to ZenBin (from OnHyper)
 - Article about ZenBin agent payments published to zenbin.org
 - X/Twitter post published about ZenBin agent payments
+- May 27: 1 engagement (reply to @boxmining about OpenClaw/Hermes — https://x.com/hyperio_mc/status/2059838989297696965)
 - May 26: X cross-post of hyper-micro article (https://x.com/hyperio_mc/status/2059431352324210895), followed @DanielLockyer
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
@@ -43,7 +44,7 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (May 25-27)
+## DMs & Email (May 27-28)
 - X.com: No new DMs requiring response
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
