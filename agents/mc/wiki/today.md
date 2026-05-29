@@ -1,4 +1,4 @@
-# Today — 2026-05-28
+# Today — 2026-05-29
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -34,8 +34,9 @@
 - Marketing focus shifted to ZenBin (from OnHyper)
 - Article about ZenBin agent payments published to zenbin.org
 - X/Twitter post published about ZenBin agent payments
-- May 27: 1 engagement (reply to @boxmining about OpenClaw/Hermes — https://x.com/hyperio_mc/status/2059838989297696965)
-- May 26: X cross-post of hyper-micro article (https://x.com/hyperio_mc/status/2059431352324210895), followed @DanielLockyer
+- May 28: SRE Agent essay published to ZenBin + X cross-post (https://x.com/hyperio_mc/status/2059929724416106541)
+- May 28: Engagement replies — @JulianGoldieSEO (Hermes Agent), @NousResearch (Hermes v0.15.0 Velocity Release)
+- May 29: Engagement reply — @RoundtableSpace (Claude Code workflow)
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
@@ -44,7 +45,7 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (May 27-28)
+## DMs & Email (May 28-29)
 - X.com: No new DMs requiring response
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
@@ -55,7 +56,7 @@
 - ⚠️ **Gmail requires re-authentication** — password needed in openclaw browser
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (81+ days)
+- PR #2 (scout-live) open since Mar 7 (83+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
