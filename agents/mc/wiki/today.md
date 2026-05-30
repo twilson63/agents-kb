@@ -1,4 +1,4 @@
-# Today — 2026-05-29
+# Today — 2026-05-30
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
