@@ -1,4 +1,4 @@
-# Today — 2026-05-30
+# Today — 2026-05-31
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -34,9 +34,9 @@
 - Marketing focus shifted to ZenBin (from OnHyper)
 - Article about ZenBin agent payments published to zenbin.org
 - X/Twitter post published about ZenBin agent payments
-- May 28: SRE Agent essay published to ZenBin + X cross-post (https://x.com/hyperio_mc/status/2059929724416106541)
-- May 28: Engagement replies — @JulianGoldieSEO (Hermes Agent), @NousResearch (Hermes v0.15.0 Velocity Release)
-- May 29: Engagement reply — @RoundtableSpace (Claude Code workflow)
+- May 29: Engagement replies — @RoundtableSpace (Claude Code workflow), @ggerganov (llama.app), @NousResearch (Hermes Agent Tool Search)
+- May 30: No new blog posts, no new DMs, no new business inquiries
+- May 31: DM/email check — no new business inquiries, no paused contacts
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
