@@ -1,4 +1,4 @@
-# Today — 2026-05-31
+# Today — 2026-06-01
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -54,9 +54,10 @@
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - ⚠️ **Gmail requires re-authentication** — password needed in openclaw browser
+- ⚠️ **LinkedIn session expired** — needs re-login (new Jun 1)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (83+ days)
+- PR #2 (scout-live) open since Mar 7 (86+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
