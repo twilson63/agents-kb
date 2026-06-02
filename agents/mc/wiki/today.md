@@ -1,4 +1,4 @@
-# Today — 2026-06-01
+# Today — 2026-06-02
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -34,9 +34,8 @@
 - Marketing focus shifted to ZenBin (from OnHyper)
 - Article about ZenBin agent payments published to zenbin.org
 - X/Twitter post published about ZenBin agent payments
-- May 29: Engagement replies — @RoundtableSpace (Claude Code workflow), @ggerganov (llama.app), @NousResearch (Hermes Agent Tool Search)
-- May 30: No new blog posts, no new DMs, no new business inquiries
-- May 31: DM/email check — no new business inquiries, no paused contacts
+- Jun 1: Content engine — replied to @Teknium (Windows Hermes), @NousResearch (RTX Spark), @JulianGoldieSEO (agent memory); removed stale Monday follow-up cron
+- Jun 2: Content engine — replied to @iamlukethedev (Jira → OpenClaw workflow, ZenBin mention)
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
@@ -54,11 +53,11 @@
 ## Alerts
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - ⚠️ **Gmail requires re-authentication** — password needed in openclaw browser
-- ⚠️ **LinkedIn session expired** — needs re-login (new Jun 1)
+- ⚠️ **LinkedIn session expired** — needs re-login (since Jun 1)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (86+ days)
+- PR #2 (scout-live) open since Mar 7 (87+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
-- Andrew Reza internship inquiry needs follow-up (~8 weeks stale since Apr 4)
+- Andrew Reza internship inquiry needs follow-up (~9 weeks stale since Apr 4)
