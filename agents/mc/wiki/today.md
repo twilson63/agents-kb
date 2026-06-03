@@ -1,4 +1,4 @@
-# Today — 2026-06-02
+# Today — 2026-06-03
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -35,7 +35,7 @@
 - Article about ZenBin agent payments published to zenbin.org
 - X/Twitter post published about ZenBin agent payments
 - Jun 1: Content engine — replied to @Teknium (Windows Hermes), @NousResearch (RTX Spark), @JulianGoldieSEO (agent memory); removed stale Monday follow-up cron
-- Jun 2: Content engine — replied to @iamlukethedev (Jira → OpenClaw workflow, ZenBin mention)
+- Jun 2: Content engine — replied to @iamlukethedev (Jira → OpenClaw workflow), @witcheer (ouroboros/local models), @browser_use (browser infra announcement)
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
@@ -44,7 +44,7 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (May 28-29)
+## DMs & Email (Jun 2)
 - X.com: No new DMs requiring response
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
@@ -56,7 +56,7 @@
 - ⚠️ **LinkedIn session expired** — needs re-login (since Jun 1)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (87+ days)
+- PR #2 (scout-live) open since Mar 7 (88+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
