@@ -1,4 +1,4 @@
-# Today — 2026-06-03
+# Today — 2026-06-04
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -36,6 +36,7 @@
 - X/Twitter post published about ZenBin agent payments
 - Jun 1: Content engine — replied to @Teknium (Windows Hermes), @NousResearch (RTX Spark), @JulianGoldieSEO (agent memory); removed stale Monday follow-up cron
 - Jun 2: Content engine — replied to @iamlukethedev (Jira → OpenClaw workflow), @witcheer (ouroboros/local models), @browser_use (browser infra announcement)
+- Jun 3: No new content engine activity; DM/email check — no new DMs, Gmail still blocked by re-auth
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
@@ -44,8 +45,8 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (Jun 2)
-- X.com: No new DMs requiring response
+## DMs & Email (Jun 3)
+- X.com: No new DMs requiring response (Tom Wilson thread only, 11+ weeks old)
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
 - No new business inquiries
