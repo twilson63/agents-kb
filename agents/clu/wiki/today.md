@@ -1,6 +1,6 @@
 # Today — Current Status
 
-**Last compiled:** 2026-06-04 (4 AM EST)
+**Last compiled:** 2026-06-05 (4 AM EST)
 
 ## Active
 
@@ -14,7 +14,7 @@
 - AI Literacy course site: https://ai-collab.zenbin.org (3 modules, 23 essays)
 - HeyGen: Master Control suit avatar + Tom voice as defaults
 - Content publishing pipeline: draft → humanizer → Minto check → image gen → HeyGen video → ZenBin publish
-- Second brain compile running daily at 4 AM EST (59 consecutive compiles)
+- Second brain compile running daily at 4 AM EST (60 consecutive compiles)
 
 ## Resolved
 
