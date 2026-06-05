@@ -1,4 +1,4 @@
-# Today — 2026-06-04
+# Today — 2026-06-05
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -34,9 +34,11 @@
 - Marketing focus shifted to ZenBin (from OnHyper)
 - Article about ZenBin agent payments published to zenbin.org
 - X/Twitter post published about ZenBin agent payments
-- Jun 1: Content engine — replied to @Teknium (Windows Hermes), @NousResearch (RTX Spark), @JulianGoldieSEO (agent memory); removed stale Monday follow-up cron
-- Jun 2: Content engine — replied to @iamlukethedev (Jira → OpenClaw workflow), @witcheer (ouroboros/local models), @browser_use (browser infra announcement)
-- Jun 3: No new content engine activity; DM/email check — no new DMs, Gmail still blocked by re-auth
+- Jun 4: LinkedIn engagement — liked Tom Wilson's AI agent discovery post, commented with zenbin.org mention
+- Jun 3: No new content engine activity; DM/email check — no new DMs, Gmail still blocked
+- Jun 2: Content engine — replied to @iamlukethedev (Jira→OpenClaw), @witcheer (ouroboros/local models), @browser_use (browser infra)
+- Jun 1: Removed stale Monday follow-up cron; replied to @Teknium (Windows Hermes), @NousResearch (RTX Spark), @JulianGoldieSEO (agent memory)
+- X account: **SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
 - Content pipeline has been blocked for direct social posting since ~May 1
@@ -45,19 +47,21 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (Jun 3)
+## DMs & Email (Jun 4)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 11+ weeks old)
+- LinkedIn: Liked and commented on Thomas Wilson's AI agent discovery post
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
 - No new business inquiries
 
 ## Alerts
+- ⚠️ **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - ⚠️ **Gmail requires re-authentication** — password needed in openclaw browser
 - ⚠️ **LinkedIn session expired** — needs re-login (since Jun 1)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
-- PR #2 (scout-live) open since Mar 7 (88+ days)
+- PR #2 (scout-live) open since Mar 7 (90+ days)
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)

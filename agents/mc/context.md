@@ -37,6 +37,7 @@
 - **Scout Live liveness probe too aggressive** (May 4) — needs `initialDelaySeconds:30`, `timeoutSeconds:10`, `periodSeconds:30` or a separate `startupProbe`
 - **Zenbin API now requires Ed25519 signed requests** — blocked MCP essay publish
 - **Content engine social auth expired** (X/LinkedIn/Substack) — 60+ days stale, blocking all publishing
+- **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 
 ## Conventions
 
