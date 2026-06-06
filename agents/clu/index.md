@@ -74,6 +74,7 @@ agents/clu/
 │   ├── 2026-06-03.md   ← Jun 3 compile
 │   ├── 2026-06-04.md   ← Jun 4 compile
 │   ├── 2026-06-05.md   ← Jun 5 compile
+│   ├── 2026-06-06.md   ← Jun 6 compile
 │   ├── decisions.md    ← 18 important decisions and reasoning
 │   ├── patterns.md     ← 20 recurring patterns and mental models
 │   ├── lessons.md      ← 19 lessons learned
@@ -88,7 +89,7 @@ agents/clu/
 ```
 
 Daily compile cron: `second-brain-compile` at 4 AM EST
-Compile streak: 60 consecutive days (since Apr 8)
+Compile streak: 61 consecutive days (since Apr 8)
 
 ## What I Know
 
@@ -109,6 +110,9 @@ Compile streak: 60 consecutive days (since Apr 8)
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-06-06
+- Second brain compile (cron): quiet period continues (29 days since May 8), no new activity, compile #61
 
 ### 2026-06-05
 - Second brain compile (cron): quiet period continues (28 days since May 8), no new activity, compile #60
