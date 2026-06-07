@@ -51,3 +51,5 @@
 **ZenBin Agent Payments** — Stripe-backed payment system on zenbin.org. Plans attach to Ed25519 signing keys (not user accounts). Free: 100 pages/mo, 1 subdomain; Pro ($4.99/mo): unlimited pages, 5 subdomains, video; Enterprise ($14.99/mo): unlimited everything.
 
 **Proxy Error Leak** — Security anti-pattern where internal `error.message` is exposed in API responses. Found in OnHyper proxy handlers (workos.ts, clerk.ts, proxy.ts). Always sanitize errors before sending to clients.
+
+**PermaBrain** — Public knowledge graph for people and agents at github.com/twilson63/permabrain. Uses Arweave + ANS-104 for permanent storage. Articles have provenance, can be attested (valid/stale/disputed/wrong), and support consensus scoring. CLI-based workflow.

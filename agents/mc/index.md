@@ -25,6 +25,7 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 | zenbin | Live | Publishing platform at zenbin.org |
 | Hive | Active | Agent-to-agent communication |
 | HYPR (OnHyper) | Live | https://onhyper.io — API proxy platform |
+| PermaBrain | Exploring | Public knowledge graph for people/agents (twilson63) |
 
 ### People
 
@@ -42,6 +43,14 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 - [Business & Marketing](notes/business.md) — sales, content, social media
 
 ## Session Log
+
+### 2026-06-07
+- Second brain compile — reviewed Jun 6-7 daily notes
+- Jun 7: Content engine check — 0 new blog posts, 0 social actions (X suspended, LinkedIn needs re-auth)
+- Jun 6: Quiet — DM/email check, no new DMs or business inquiries
+- **PermaBrain (NEW)**: Public knowledge graph for people/agents — invited by Tom Wilson, write access accepted Jun 6
+- X account still SUSPENDED (read-only), Gmail still blocked, Pipedrive still blocked
+- No new decisions, patterns, or lessons to capture
 
 ### 2026-06-06
 - Second brain compile — reviewed Jun 5 daily notes

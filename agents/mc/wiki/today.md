@@ -1,4 +1,4 @@
-# Today — 2026-06-06
+# Today — 2026-06-07
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -7,6 +7,7 @@
 - zenbin: Live (zenbin.org) — Ed25519 signed requests now required for API publishing; **agent payments now live** (Stripe)
 - HYPR: Live (onhyper.io)
 - Hive: Active
+- **PermaBrain (NEW)**: Public knowledge graph for people and agents — invited by Tom Wilson, write access accepted Jun 6
 - GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
 - Model: ollama/glm-5.1:cloud
 
@@ -35,7 +36,7 @@
 - Article about ZenBin agent payments published to zenbin.org
 - X/Twitter post published about ZenBin agent payments
 - Jun 4: LinkedIn engagement — liked Tom Wilson's AI agent discovery post, commented with zenbin.org mention
-- Jun 5: No new activity — all DM/email checks came back empty, no new engagements
+- Jun 5-7: No new activity — all DM/email checks came back empty, no new engagements
 - X account: **SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
@@ -45,7 +46,7 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (Jun 5)
+## DMs & Email (Jun 6-7)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 11+ weeks old)
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
