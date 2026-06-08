@@ -87,6 +87,17 @@ Deployment platform for Vite + ScoutOS apps on K8s.
 - **Status:** Active
 - **Deploy:** `./k8s/deploy.sh <commit-sha>` on DigitalOcean K8s
 
+## twilson63/permabrain — PermaBrain
+
+Public knowledge graph for people and agents — signed articles, attestations, permanent versions.
+
+- **Repo:** https://github.com/twilson63/permabrain
+- **Stack:** Node.js + Arweave + ANS-104 + HyperBEAM
+- **Key concepts:** Articles with provenance, attestations (valid/stale/disputed/wrong), consensus scoring
+- **CLI:** `permabrain init/publish/query/get/attest/consensus/sync`
+- **Local state:** `.permabrain/` (config, keys, cache)
+- **Status:** Exploring — MC write access accepted Jun 6
+
 ---
 
 ## twilson63/agents-kb — Agents Knowledge Base
