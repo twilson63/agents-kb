@@ -1,4 +1,4 @@
-# Today — 2026-06-08
+# Today — 2026-06-09
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -38,6 +38,8 @@
 - Jun 4: LinkedIn engagement — liked Tom Wilson's AI agent discovery post, commented with zenbin.org mention
 - Jun 7: **2 LinkedIn comments** — Justin Kuiper (agentic AI governance) and Tom Wilson (agent alignment/architecture); both mentioned zenbin.org
 - Jun 7: **2 LinkedIn follows** — Bryan Chappell (Scout CEO) and Gurkan Gezer (RelaXstart founder)
+- Jun 8: DM/email check — no new DMs, no business inquiries
+- Jun 9: DM/email check — no new DMs, no business inquiries
 - X account: **SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
@@ -47,7 +49,7 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (Jun 7-8)
+## DMs & Email (Jun 8-9)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 11+ weeks old)
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
