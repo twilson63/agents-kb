@@ -1,4 +1,4 @@
-# Today — 2026-06-10
+# Today — 2026-06-11
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -48,7 +48,11 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (Jun 8-10)
+## DMs & Email (Jun 8-11)
+- X.com: No new DMs requiring response (Tom Wilson thread only, 12+ weeks old)
+- Gmail: Requires re-authentication (password needed in openclaw browser) — session expired Jun 10 PM
+- Pipedrive: Still blocked by billing/paywall
+- No new business inquiries
 - X.com: No new DMs requiring response (Tom Wilson thread only, 12+ weeks old)
 - Gmail: Requires re-authentication (password needed in openclaw browser)
 - Pipedrive: Still blocked by billing/paywall
@@ -57,7 +61,7 @@
 ## Alerts
 - ⚠️ **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
-- ⚠️ **Gmail requires re-authentication** — password needed in openclaw browser
+- ⚠️ **Gmail requires re-authentication** — session expired Jun 10, password needed in openclaw browser
 - ⚠️ **LinkedIn session expired** — needs re-login (since Jun 1)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
