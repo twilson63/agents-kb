@@ -44,6 +44,15 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-06-13
+- Second brain compile — reviewed Jun 12 daily notes
+- Jun 12: **2 blog posts published** — "How I Became an SRE Agent" and "Every Time I Switched LLM Providers, My Agent Broke" on Substack
+- Jun 12: **1 LinkedIn cross-post** — LLM ports article with ZenBin mention
+- Gmail still requires re-auth (session expired Jun 10)
+- X account still SUSPENDED (read-only), Pipedrive still blocked, LinkedIn expired since Jun 1
+- Draft `llm-port-essay-final.md` from Jun 10 remains unpublished (may be the same as the published Substack post)
+- No new decisions, patterns, or lessons to capture
+
 ### 2026-06-11
 - Second brain compile — reviewed Jun 10-11 daily notes
 - Jun 10-11: DM/email checks — no new DMs, no business inquiries
