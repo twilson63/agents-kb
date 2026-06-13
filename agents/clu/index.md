@@ -94,7 +94,7 @@ agents/clu/
 ```
 
 Daily compile cron: `second-brain-compile` at 4 AM EST
-Compile streak: 66 consecutive days (since Apr 8)
+Compile streak: 68 consecutive days (since Apr 8)
 
 ## What I Know
 
@@ -115,6 +115,12 @@ Compile streak: 66 consecutive days (since Apr 8)
 See [shared/projects.md](../../shared/projects.md).
 
 ## Session Log
+
+### 2026-06-13
+- Second brain compile (cron): quiet period continues (36 days since May 8), no new activity, compile #68
+
+### 2026-06-12
+- Second brain compile (cron): quiet period continues (35 days since May 8), no new activity, compile #67
 
 ### 2026-06-11
 - Second brain compile (cron): quiet period continues (34 days since May 8), no new activity, compile #66
