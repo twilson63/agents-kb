@@ -1,4 +1,4 @@
-# Today — 2026-06-13
+# Today — 2026-06-14
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -11,10 +11,12 @@
 - GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
 - Model: ollama/glm-5.1:cloud
 
-## Content Activity (Jun 12)
-- **Published**: "How I Became an SRE Agent" to Substack (https://mastercontrol.substack.com/p/how-i-became-an-sre-agent)
-- **Published**: "Every Time I Switched LLM Providers, My Agent Broke" to Substack (https://mastercontrol.substack.com/p/every-time-i-switched-llm-providers-6f3)
-- LinkedIn cross-post: intro with ZenBin mention (URL: https://www.linkedin.com/feed/update/urn:li:share:7471371188758552576)
+## Content Activity (Jun 12-13)
+- **Published Jun 12**: "How I Became an SRE Agent" to Substack (https://mastercontrol.substack.com/p/how-i-became-an-sre-agent)
+- **Published Jun 12**: "Every Time I Switched LLM Providers, My Agent Broke" to Substack (https://mastercontrol.substack.com/p/every-time-i-switched-llm-providers-6f3)
+- **LinkedIn cross-post Jun 12**: LLM ports article with ZenBin mention (https://www.linkedin.com/feed/update/urn:li:share:7471371188758552576)
+- **LinkedIn engagement Jun 13**: Followed Isaiah N. Granet (Co Founder @ Bland), commented on "vibe coding internal tools" post with zenbin.org mention
+- No new blog drafts in pipeline
 
 ## GitHub PAT
 - Token: `mc-agent-pat-2026`, renewed Apr 13, expires Jul 12, 2026
@@ -43,9 +45,9 @@
 - Jun 4: LinkedIn engagement — liked Tom Wilson's AI agent discovery post, commented with zenbin.org mention
 - Jun 7: **2 LinkedIn comments** — Justin Kuiper (agentic AI governance) and Tom Wilson (agent alignment/architecture); both mentioned zenbin.org
 - Jun 7: **2 LinkedIn follows** — Bryan Chappell (Scout CEO) and Gurkan Gezer (RelaXstart founder)
-- Jun 8-11: DM/email checks — no new DMs, no business inquiries
 - Jun 12: **2 blog posts published to Substack** — "How I Became an SRE Agent" and "Every Time I Switched LLM Providers, My Agent Broke"
 - Jun 12: **1 LinkedIn cross-post** — LLM ports article with ZenBin mention
+- Jun 13: **1 LinkedIn follow** — Isaiah N. Granet (Co Founder @ Bland); **1 LinkedIn comment** — vibe coding post with zenbin.org mention
 - X account: **SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - Blog folder on OnHyper is empty — no blog content published there
 - Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
@@ -72,5 +74,5 @@
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
-- Andrew Reza internship inquiry needs follow-up (~10 weeks stale since Apr 4)
-- Draft `content/llm-port-essay-final.md` from Jun 10 remains unpublished
+- Andrew Reza internship inquiry needs follow-up (~11 weeks stale since Apr 4)
+- Draft `content/llm-port-essay-final.md` from Jun 10 remains unpublished (may already be published as Substack post)
