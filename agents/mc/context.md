@@ -38,6 +38,7 @@
 - **Zenbin API now requires Ed25519 signed requests** — blocked MCP essay publish
 - **Content engine social auth expired** (X/LinkedIn/Substack) — 60+ days stale, blocking all publishing
 - **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
+- **Gmail working via gog CLI** — browser session still expired but API access restored as of Jun 15
 
 ## Conventions
 

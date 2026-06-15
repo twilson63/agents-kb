@@ -1,4 +1,4 @@
-# Today — 2026-06-14
+# Today — 2026-06-15
 
 ## Status Summary
 - Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
@@ -57,9 +57,9 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (Jun 8-13)
+## DMs & Email (Jun 8-15)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 12+ weeks old)
-- Gmail: Requires re-authentication (password needed in openclaw browser) — session expired Jun 10 PM
+- Gmail: **Working via gog CLI** (browser session still expired, but API access restored)
 - Pipedrive: Still blocked by billing/paywall
 - No new business inquiries
 
