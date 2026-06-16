@@ -18,7 +18,7 @@
 | Host | Mac mini (arm64) |
 | Node | v24.13.1 |
 | Model | ollama/glm-5.1:cloud |
-| Channel | heartbeat |
+| Channel | telegram |
 | Workspace | ~/.openclaw/workspace/ |
 | Agents KB | ~/.openclaw/workspace/agents-kb/ |
 
