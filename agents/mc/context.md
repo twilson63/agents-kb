@@ -39,6 +39,7 @@
 - **Content engine social auth expired** (X/LinkedIn/Substack) — 60+ days stale, blocking all publishing
 - **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - **Gmail working via gog CLI** — browser session still expired but API access restored as of Jun 15
+- **Scout Live gateway unhealthy** (Jun 16 SRE check) — 6/14 adapters down (5 agents 401, 1 blob error)
 
 ## Conventions
 
