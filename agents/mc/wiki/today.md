@@ -1,10 +1,10 @@
-# Today — 2026-06-17
+# Today — 2026-06-18
 
 ## Status Summary
-- Scout Live: **STABLE but liveness probe needs fix** — probe configuration too aggressive for ~30s startup, causes CrashLoopBackOff on every pod rotation
+- Scout Live: **STABLE but gateway unhealthy** — 6/14 adapters down (5 agents 401, 1 blob error); liveness probe still needs fix
 - Contacts App: Live (contacts.scoutos.live)
 - ZChat: Live (zchat.scoutos.live)
-- zenbin: Live (zenbin.org) — Ed25519 signed requests now required for API publishing; **agent payments now live** (Stripe)
+- zenbin: Live (zenbin.org) — Ed25519 signed requests required for API publishing; **agent payments live** (Stripe)
 - HYPR: Live (onhyper.io)
 - Hive: Active
 - **PermaBrain**: Public knowledge graph for people/agents — invited by Tom Wilson, write access accepted Jun 6
@@ -25,11 +25,12 @@
 ## Scout Live Gateway
 - **Root cause identified (May 4)**: Liveness probe is too aggressive for gateway's ~30s startup time
   - Current: `initialDelaySeconds:15`, `timeoutSeconds:1`, `failureThreshold:3`
-  - Sandbox apps block event loop during startup → health checks time out → K8s kills pod → restart loop
   - **Fix needed**: `initialDelaySeconds:30`, `timeoutSeconds:10`, `periodSeconds:30` (or add separate `startupProbe`)
   - Every pod rotation triggers crash cycle without this fix
 - Memory limit: 1Gi (bumped from 512Mi on May 1)
 - SRE Agent cron running every 10min (model: glm-5:cloud)
+- **Jun 16 SRE check**: gateway `ok: false` — 6/14 adapters unhealthy (5 agents 401, 1 blob error)
+- **Jun 16 node status**: Memory 57% on both nodes, ResourceQuota ~51% mem / ~43% CPU
 
 ## Marketing Pivot
 - **Decision (May 16)**: Pivot social marketing from OnHyper to ZenBin
@@ -57,18 +58,19 @@
 - Last clip: May 11 (5th clip in RSS feed)
 - RSS feed: https://zenbin.org/p/brtn-rss
 
-## DMs & Email (Jun 8-17)
+## DMs & Email (Jun 15-18)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 13+ weeks old)
-- Gmail: **Working via gog CLI** (browser session still expired, but API access restored)
+- Gmail: **Working via gog CLI** (browser session expired but API access restored)
 - Pipedrive: Still blocked by billing/paywall
-- No new business inquiries
+- No new business inquiries across all checks (Jun 15-17)
 - SRE check Jun 16: gateway `ok: false` (6/14 adapters unhealthy — 5 agents 401, 1 blob error)
 - Node memory: 57% on both nodes, ResourceQuota ~51% mem / ~43% CPU
 
 ## Alerts
 - ⚠️ **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
-- ⚠️ **Gmail requires re-authentication** — session expired Jun 10, password needed in openclaw browser
+- ⚠️ **Scout Live gateway unhealthy** (Jun 16) — 6/14 adapters down (5 agents 401, 1 blob error)
+- ⚠️ **Gmail browser session expired** — API access works via gog CLI
 - ⚠️ **LinkedIn session expired** — needs re-login (since Jun 1)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
@@ -76,5 +78,5 @@
 - Hono XSS + auth fixes committed locally but **not yet pushed**
 - Zenbin API now requires Ed25519 signed requests — skill update needed
 - OnHyper proxy error handlers leak `error.message` to API responses (task-020, May 16)
-- Andrew Reza internship inquiry needs follow-up (~11 weeks stale since Apr 4)
+- Andrew Reza internship inquiry needs follow-up (~12 weeks stale since Apr 4)
 - Draft `content/llm-port-essay-final.md` from Jun 10 remains unpublished (may already be published as Substack post)
