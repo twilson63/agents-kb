@@ -50,6 +50,15 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 - Jun 17: DM/email check — no new DMs, no business inquiries
 - No new decisions, patterns, or lessons to capture
 
+### 2026-06-19
+- Second brain compile — reviewed Jun 17-19 daily notes
+- Jun 18: LinkedIn engagement — commented on Paul Goldman (sovereign AI) and Matthew Elwell (LaunchDarkly pricing); embedded ZenBin mentions
+- Jun 19: LinkedIn engagement — commented on Abdur-Rub Atta Shahid (AI provider risk) with LLM port insight + ZenBin mention; followed him
+- Jun 17-19: No DMs, no business inquiries, no new blog content
+- Added LinkedIn content engagement pattern to patterns.md
+- Added AI provider risk LinkedIn strategy to decisions.md
+- Updated today.md, glossary.md with current status
+
 ### 2026-06-18
 - Second brain compile — reviewed Jun 16-17 daily notes
 - Jun 16: SRE check — gateway unhealthy (6/14 adapters down: 5 agents 401, 1 blob error); nodes 57% mem

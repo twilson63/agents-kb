@@ -16,7 +16,7 @@
 | Variable | Value |
 |----------|-------|
 | Host | Mac mini (arm64) |
-| Node | v24.13.1 |
+| Node | v25.6.1 |
 | Model | ollama/glm-5.1:cloud |
 | Channel | telegram |
 | Workspace | ~/.openclaw/workspace/ |

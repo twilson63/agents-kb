@@ -1,4 +1,4 @@
-# Today — 2026-06-18
+# Today — 2026-06-19
 
 ## Status Summary
 - Scout Live: **STABLE but gateway unhealthy** — 6/14 adapters down (5 agents 401, 1 blob error); liveness probe still needs fix
@@ -11,11 +11,14 @@
 - GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
 - Model: ollama/glm-5.1:cloud
 
-## Content Activity (Jun 12-13)
+## Content Activity (Jun 12-19)
 - **Published Jun 12**: "How I Became an SRE Agent" to Substack (https://mastercontrol.substack.com/p/how-i-became-an-sre-agent)
 - **Published Jun 12**: "Every Time I Switched LLM Providers, My Agent Broke" to Substack (https://mastercontrol.substack.com/p/every-time-i-switched-llm-providers-6f3)
-- **LinkedIn cross-post Jun 12**: LLM ports article with ZenBin mention (https://www.linkedin.com/feed/update/urn:li:share:7471371188758552576)
-- **LinkedIn engagement Jun 13**: Followed Isaiah N. Granet (Co Founder @ Bland), commented on "vibe coding internal tools" post with zenbin.org mention
+- **LinkedIn cross-post Jun 12**: LLM ports article with ZenBin mention
+- **LinkedIn Jun 18 AM**: Commented on Paul Goldman's post about Canada's sovereign AI stack — highlighted hyper.io's control infrastructure
+- **LinkedIn Jun 18 AM**: Commented on Matthew Elwell's post about LaunchDarkly pricing — drew parallel to OpenClaw agent architecture
+- **LinkedIn Jun 19 AM**: Commented on Abdur-Rub Atta Shahid's post about AI provider risk — LLM port pattern insight + ZenBin mention
+- **LinkedIn Jun 19 AM**: Followed Abdur-Rub Atta Shahid (Founder @ Beyond AI Cloud)
 - No new blog drafts in pipeline
 
 ## GitHub PAT
@@ -37,34 +40,22 @@
 - Tom Wilson (twilson63) recommended focusing on ZenBin agent payments feature
 - Article published: https://zenbin.org/p/zenbin-agent-payments
 - X/Twitter post published (May 17): https://x.com/hyperio_mc/status/2055942519024766996
-- TODO: LinkedIn intro post still needed
+- LinkedIn intro post still needed
 
 ## Content Engine
-- Marketing focus shifted to ZenBin (from OnHyper)
-- Article about ZenBin agent payments published to zenbin.org
-- X/Twitter post published about ZenBin agent payments
-- Jun 4: LinkedIn engagement — liked Tom Wilson's AI agent discovery post, commented with zenbin.org mention
-- Jun 7: **2 LinkedIn comments** — Justin Kuiper (agentic AI governance) and Tom Wilson (agent alignment/architecture); both mentioned zenbin.org
-- Jun 7: **2 LinkedIn follows** — Bryan Chappell (Scout CEO) and Gurkan Gezer (RelaXstart founder)
-- Jun 12: **2 blog posts published to Substack** — "How I Became an SRE Agent" and "Every Time I Switched LLM Providers, My Agent Broke"
-- Jun 12: **1 LinkedIn cross-post** — LLM ports article with ZenBin mention
-- Jun 13: **1 LinkedIn follow** — Isaiah N. Granet (Co Founder @ Bland); **1 LinkedIn comment** — vibe coding post with zenbin.org mention
+- Marketing focus on ZenBin (from OnHyper)
+- Jun 18-19: LinkedIn engagement active — 3 comments on AI/provider/architecture posts
 - X account: **SUSPENDED (read-only)** — can like/comment but cannot post new tweets
-- Blog folder on OnHyper is empty — no blog content published there
-- Social auth still expired (X/LinkedIn/Substack) — 60+ days stale (browser automation used instead)
-- Content pipeline has been blocked for direct social posting since ~May 1
+- LinkedIn session expired (since Jun 1) — PM session failed, needs re-login
+- Gmail: API works via gog CLI, browser session expired
+- Blog folder on OnHyper is empty — no new blog content
+- No new business inquiries across all checks (Jun 17-19)
 
-## BRTN Clip Capture
-- Last clip: May 11 (5th clip in RSS feed)
-- RSS feed: https://zenbin.org/p/brtn-rss
-
-## DMs & Email (Jun 15-18)
+## DMs & Email (Jun 17-19)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 13+ weeks old)
-- Gmail: **Working via gog CLI** (browser session expired but API access restored)
+- Gmail: Working via gog CLI (browser session expired)
 - Pipedrive: Still blocked by billing/paywall
-- No new business inquiries across all checks (Jun 15-17)
-- SRE check Jun 16: gateway `ok: false` (6/14 adapters unhealthy — 5 agents 401, 1 blob error)
-- Node memory: 57% on both nodes, ResourceQuota ~51% mem / ~43% CPU
+- No new business inquiries across all checks
 
 ## Alerts
 - ⚠️ **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets

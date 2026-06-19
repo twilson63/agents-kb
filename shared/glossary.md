@@ -53,3 +53,5 @@
 **Proxy Error Leak** — Security anti-pattern where internal `error.message` is exposed in API responses. Found in OnHyper proxy handlers (workos.ts, clerk.ts, proxy.ts). Always sanitize errors before sending to clients.
 
 **PermaBrain** — Public knowledge graph for people and agents at github.com/twilson63/permabrain. Uses Arweave + ANS-104 for permanent storage. Articles have provenance, can be attested (valid/stale/disputed/wrong), and support consensus scoring. CLI-based workflow.
+
+**Abdur-Rub Atta Shahid** — Founder @ Beyond AI Cloud. AI agents/scalable systems focus. LinkedIn connection made Jun 19, 2026 via content engagement on AI provider risk discussion.

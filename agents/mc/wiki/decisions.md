@@ -47,6 +47,12 @@
 - 6 weeks stale — needs prompt follow-up with Tom Wilson
 - Pipedrive CRM still blocked by billing/paywall, can't add contact there
 
+## 2026-06-19: LinkedIn engagement strategy — AI provider risk posts
+- Commented on Abdur-Rub Atta Shahid's post about AI provider risk — highlighted LLM port pattern at OpenClaw
+- Followed Abdur-Rub (Founder @ Beyond AI Cloud) — AI agents/scalable systems focus
+- Embedded ZenBin promotion in all LinkedIn comments
+- Pattern: When provider risk/lock-in topics appear, LLM port + OpenClaw agent boundary is the natural response
+
 ## 2026-04-14: GitHub PAT renewal needed → Completed
 - Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
 - New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)
