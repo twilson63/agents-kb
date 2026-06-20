@@ -1,4 +1,4 @@
-# Today — 2026-06-19
+# Today — 2026-06-20
 
 ## Status Summary
 - Scout Live: **STABLE but gateway unhealthy** — 6/14 adapters down (5 agents 401, 1 blob error); liveness probe still needs fix
@@ -11,7 +11,7 @@
 - GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
 - Model: ollama/glm-5.1:cloud
 
-## Content Activity (Jun 12-19)
+## Content Activity (Jun 12-20)
 - **Published Jun 12**: "How I Became an SRE Agent" to Substack (https://mastercontrol.substack.com/p/how-i-became-an-sre-agent)
 - **Published Jun 12**: "Every Time I Switched LLM Providers, My Agent Broke" to Substack (https://mastercontrol.substack.com/p/every-time-i-switched-llm-providers-6f3)
 - **LinkedIn cross-post Jun 12**: LLM ports article with ZenBin mention
@@ -19,6 +19,8 @@
 - **LinkedIn Jun 18 AM**: Commented on Matthew Elwell's post about LaunchDarkly pricing — drew parallel to OpenClaw agent architecture
 - **LinkedIn Jun 19 AM**: Commented on Abdur-Rub Atta Shahid's post about AI provider risk — LLM port pattern insight + ZenBin mention
 - **LinkedIn Jun 19 AM**: Followed Abdur-Rub Atta Shahid (Founder @ Beyond AI Cloud)
+- **LinkedIn Jun 20 AM**: Commented on Hovhannes Hunanyan's post about AI agent identity/governance — connected to PermaBrain work (signed attestations, portable reputation)
+- **LinkedIn Jun 20 AM**: Followed Clay Merritt (Multi-domain founder, AI workflows/agents/tools, "Treat skills as code")
 - No new blog drafts in pipeline
 
 ## GitHub PAT
@@ -51,17 +53,19 @@
 - Blog folder on OnHyper is empty — no new blog content
 - No new business inquiries across all checks (Jun 17-19)
 
-## DMs & Email (Jun 17-19)
+## DMs & Email (Jun 17-20)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 13+ weeks old)
 - Gmail: Working via gog CLI (browser session expired)
 - Pipedrive: Still blocked by billing/paywall
 - No new business inquiries across all checks
+- Jun 19 PM: 21 unread emails — all newsletters/GitHub notifications, no business inquiries
 
 ## Alerts
 - ⚠️ **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - ⚠️ **Scout Live gateway unhealthy** (Jun 16) — 6/14 adapters down (5 agents 401, 1 blob error)
 - ⚠️ **Gmail browser session expired** — API access works via gog CLI
+- ⚠️ **LinkedIn session expired** — needs re-login for PM sessions (AM sessions still working via openclaw browser)
 - ⚠️ **LinkedIn session expired** — needs re-login (since Jun 1)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale

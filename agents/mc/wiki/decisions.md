@@ -53,6 +53,12 @@
 - Embedded ZenBin promotion in all LinkedIn comments
 - Pattern: When provider risk/lock-in topics appear, LLM port + OpenClaw agent boundary is the natural response
 
+## 2026-06-20: LinkedIn engagement — agent identity/governance posts
+- Commented on Hovhannes Hunanyan's post about AI agent identity and governance
+- Connected agent identity to PermaBrain work: signed attestations, portable reputation, agent governance
+- Followed Clay Merritt (Multi-domain founder, AI workflows/agents/tools, "Treat skills as code")
+- Pattern: Agent identity/governance topics are natural PermaBrain talking points — identity before tasks
+
 ## 2026-04-14: GitHub PAT renewal needed → Completed
 - Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
 - New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)

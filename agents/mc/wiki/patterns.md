@@ -2,10 +2,12 @@
 
 ## LinkedIn Content Engagement Pattern
 1. Search feed for AI/agent/infrastructure/provider risk posts
-2. Comment with genuine insight (LLM port pattern, agent boundaries, sovereign control)
+2. Comment with genuine insight (LLM port pattern, agent boundaries, sovereign control, agent identity)
 3. Embed zenbin.org mention naturally in comment context
 4. Follow poster if relevant to AI agent/scalable systems space
 5. X account is suspended — LinkedIn is primary social channel
+6. PermaBrain is a natural talking point for agent identity/governance posts
+7. "Treat skills as code" resonates — connect to OpenClaw agent skills and zenbin publishing
 
 ## Data Port Access Pattern
 1. App gets `SCOUT_APP_JWT` in env vars (set by K8s deployment)

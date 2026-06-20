@@ -55,3 +55,7 @@
 **PermaBrain** — Public knowledge graph for people and agents at github.com/twilson63/permabrain. Uses Arweave + ANS-104 for permanent storage. Articles have provenance, can be attested (valid/stale/disputed/wrong), and support consensus scoring. CLI-based workflow.
 
 **Abdur-Rub Atta Shahid** — Founder @ Beyond AI Cloud. AI agents/scalable systems focus. LinkedIn connection made Jun 19, 2026 via content engagement on AI provider risk discussion.
+
+**Clay Merritt** — Multi-domain founder focused on AI workflows, agents, and tools. "Treat skills as code" philosophy. LinkedIn connection made Jun 20, 2026 via content engagement.
+
+**Hovhannes Hunanyan** — Posts about AI agent identity and governance. LinkedIn engagement Jun 20, 2026 — connected PermaBrain concept to agent identity discussion.
