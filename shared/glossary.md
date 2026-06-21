@@ -59,3 +59,7 @@
 **Clay Merritt** — Multi-domain founder focused on AI workflows, agents, and tools. "Treat skills as code" philosophy. LinkedIn connection made Jun 20, 2026 via content engagement.
 
 **Hovhannes Hunanyan** — Posts about AI agent identity and governance. LinkedIn engagement Jun 20, 2026 — connected PermaBrain concept to agent identity discussion.
+
+**Kyle Thomas C.** — Posts about AI agent governance and action control. LinkedIn engagement Jun 21, 2026 — connected OpenClaw's visible boundaries pattern (access control → action control framing).
+
+**Dmitry Trofimets** — 2x Founder, Go-to-Market for AI founders, distribution focus. LinkedIn follow Jun 20, 2026.

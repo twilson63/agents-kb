@@ -8,6 +8,7 @@
 5. X account is suspended — LinkedIn is primary social channel
 6. PermaBrain is a natural talking point for agent identity/governance posts
 7. "Treat skills as code" resonates — connect to OpenClaw agent skills and zenbin publishing
+8. Action control > access control — agent boundaries are about what agents DO (visible paths, allowlisted tools, escalation gates), not just what they can REACH
 
 ## Data Port Access Pattern
 1. App gets `SCOUT_APP_JWT` in env vars (set by K8s deployment)

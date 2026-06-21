@@ -59,6 +59,13 @@
 - Followed Clay Merritt (Multi-domain founder, AI workflows/agents/tools, "Treat skills as code")
 - Pattern: Agent identity/governance topics are natural PermaBrain talking points — identity before tasks
 
+## 2026-06-21: LinkedIn engagement — AI agent action control
+- Commented on Kyle Thomas C.'s post about AI agent governance and action control
+- Key insight: Moving from access control (who can reach a resource) to action control (what an agent does once it has access)
+- Highlighted OpenClaw's visible boundaries pattern: fs-safe paths, allowlisted tools, escalation gates on money/data/brand decisions
+- Followed Dmitry Trofimets (2x Founder, Go-to-Market for AI founders)
+- Pattern: Action control framing resonates — agent boundaries are about what agents DO, not just what they can REACH
+
 ## 2026-04-14: GitHub PAT renewal needed → Completed
 - Previous PAT (`ghp_x6pN...`) expired Apr 13, 2026
 - New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)
