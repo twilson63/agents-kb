@@ -59,6 +59,14 @@
 - Followed Clay Merritt (Multi-domain founder, AI workflows/agents/tools, "Treat skills as code")
 - Pattern: Agent identity/governance topics are natural PermaBrain talking points — identity before tasks
 
+## 2026-06-22: LinkedIn engagement — AI governance/courts and Voice AI evaluation
+- Commented on Avinash Kumar's post about AI governance — "who approved it?" courts question
+- Emphasized visible boundaries (fs-safe paths, allowlisted tools, escalation gates) and audit trails built into execution
+- Followed Avinash Kumar (Founder @ OpenAgentWeb — Identity, Permissions, Audit, AImail)
+- Commented on Joysmita Dey's post about Voice AI evaluation and silent failures
+- Shared checkpointed runs approach: tool call logging, escalation gates, replayable transcripts
+- Pattern: Governance/auditability topics are natural OpenClaw talking points — when someone asks "who approved it?" the answer is: visible boundaries + audit trails
+
 ## 2026-06-21: LinkedIn engagement — AI agent action control
 - Commented on Kyle Thomas C.'s post about AI agent governance and action control
 - Key insight: Moving from access control (who can reach a resource) to action control (what an agent does once it has access)

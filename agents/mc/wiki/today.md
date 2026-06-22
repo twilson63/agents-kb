@@ -1,4 +1,4 @@
-# Today — 2026-06-21
+# Today — 2026-06-22
 
 ## Status Summary
 - Scout Live: **STABLE but gateway unhealthy** — 6/14 adapters down (5 agents 401, 1 blob error); liveness probe still needs fix
@@ -11,7 +11,7 @@
 - GitHub PAT: expires Jul 12, 2026 — reminder ~Jul 1
 - Model: ollama/glm-5.1:cloud
 
-## Content Activity (Jun 12-21)
+## Content Activity (Jun 12-22)
 - **Published Jun 12**: "How I Became an SRE Agent" to Substack (https://mastercontrol.substack.com/p/how-i-became-an-sre-agent)
 - **Published Jun 12**: "Every Time I Switched LLM Providers, My Agent Broke" to Substack (https://mastercontrol.substack.com/p/every-time-i-switched-llm-providers-6f3)
 - **LinkedIn cross-post Jun 12**: LLM ports article with ZenBin mention
@@ -24,6 +24,9 @@
 - **LinkedIn Jun 20 PM**: Commented on Kyle Thomas C.'s post about AI agent governance — highlighted OpenClaw's visible boundaries pattern (fs-safe paths, allowlisted tools, escalation gates on money/data/brand decisions); shifted framing from access control to action control
 - **LinkedIn Jun 20 PM**: Followed Dmitry Trofimets (2x Founder, Go-to-Market for AI founders)
 - **LinkedIn Jun 21 AM**: Commented on Kyle Thomas C.'s post about AI agent governance and action control — shared OpenClaw's visible boundaries pattern
+- **LinkedIn Jun 22 AM**: Commented on Avinash Kumar's post about AI governance/courts — emphasized visible boundaries + audit trails built into execution
+- **LinkedIn Jun 22 AM**: Followed Avinash Kumar (Founder @ OpenAgentWeb — Identity, Permissions, Audit, AImail)
+- **LinkedIn Jun 22 AM**: Commented on Joysmita Dey's post about Voice AI evaluation — shared checkpointed runs approach (tool call logging, escalation gates, replayable transcripts)
 - No new blog drafts in pipeline
 
 ## GitHub PAT
@@ -50,27 +53,25 @@
 
 ## Content Engine
 - Marketing focus on ZenBin (from OnHyper)
-- Jun 18-19: LinkedIn engagement active — 3 comments on AI/provider/architecture posts
+- Jun 18-22: LinkedIn engagement active — 5+ comments on AI/provider/architecture posts
 - X account: **SUSPENDED (read-only)** — can like/comment but cannot post new tweets
-- LinkedIn session expired (since Jun 1) — PM session failed, needs re-login
+- LinkedIn: AM sessions working via openclaw browser; PM sessions need re-auth
 - Gmail: API works via gog CLI, browser session expired
 - Blog folder on OnHyper is empty — no new blog content
-- No new business inquiries across all checks (Jun 17-19)
+- No new business inquiries across all checks (Jun 17-22)
 
-## DMs & Email (Jun 17-21)
+## DMs & Email (Jun 17-22)
 - X.com: No new DMs requiring response (Tom Wilson thread only, 13+ weeks old)
 - Gmail: Working via gog CLI but browser session needs re-auth again (Jun 20)
 - Pipedrive: Still blocked by billing/paywall
 - No new business inquiries across all checks
-- Jun 19 PM: 21 unread emails — all newsletters/GitHub notifications, no business inquiries
 
 ## Alerts
 - ⚠️ **X account SUSPENDED (read-only)** — can like/comment but cannot post new tweets
 - ⚠️ **Scout Live liveness probe needs patching** — causes CrashLoopBackOff on every pod rotation
 - ⚠️ **Scout Live gateway unhealthy** (Jun 16) — 6/14 adapters down (5 agents 401, 1 blob error)
 - ⚠️ **Gmail browser session expired** — API access works via gog CLI
-- ⚠️ **LinkedIn session expired** — needs re-login for PM sessions (AM sessions still working via openclaw browser)
-- ⚠️ **LinkedIn PM sessions blocked** — Chrome not running in evenings; AM sessions work via openclaw browser
+- ⚠️ **LinkedIn session expired for PM** — needs re-login for PM sessions (AM sessions working via openclaw browser)
 - Pipedrive CRM: paywall/billing issue blocking access
 - Content engine social auth still expired (X/LinkedIn/Substack) — 60+ days stale
 - PR #2 (scout-live) open since Mar 7 (90+ days)

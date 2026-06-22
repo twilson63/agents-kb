@@ -62,4 +62,8 @@
 
 **Kyle Thomas C.** — Posts about AI agent governance and action control. LinkedIn engagement Jun 21, 2026 — connected OpenClaw's visible boundaries pattern (access control → action control framing).
 
+**Avinash Kumar** — Founder @ OpenAgentWeb. Building trust layer for AI agents: Identity, Permissions, Audit, AImail. LinkedIn connection made Jun 22, 2026 via content engagement on AI governance/courts post.
+
+**Joysmita Dey** — Posts about Voice AI evaluation and silent failures. LinkedIn engagement Jun 22, 2026 — shared checkpointed runs approach (tool call logging, escalation gates, replayable transcripts).
+
 **Dmitry Trofimets** — 2x Founder, Go-to-Market for AI founders, distribution focus. LinkedIn follow Jun 20, 2026.

@@ -44,6 +44,15 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-06-22
+- Second brain compile — reviewed Jun 21-22 daily notes
+- Jun 22 AM: LinkedIn engagement — commented on Avinash Kumar's post about AI governance/courts (visible boundaries + audit trails); followed Avinash Kumar (OpenAgentWeb founder)
+- Jun 22 AM: LinkedIn engagement — commented on Joysmita Dey's post about Voice AI evaluation (checkpointed runs approach)
+- Jun 21 PM: LinkedIn session expired for PM sessions (AM still working via openclaw browser)
+- Added governance/auditability engagement pattern to decisions.md and patterns.md
+- Added Avinash Kumar and Joysmita Dey to glossary.md
+- No new technical decisions or lessons to capture
+
 ### 2026-06-21
 - Second brain compile — reviewed Jun 20-21 daily notes
 - Jun 21 AM: LinkedIn engagement — commented on Kyle Thomas C.'s post about AI agent governance/action control; highlighted OpenClaw's visible boundaries pattern (fs-safe paths, allowlisted tools, escalation gates)

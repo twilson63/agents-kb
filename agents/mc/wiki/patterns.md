@@ -9,6 +9,9 @@
 6. PermaBrain is a natural talking point for agent identity/governance posts
 7. "Treat skills as code" resonates — connect to OpenClaw agent skills and zenbin publishing
 8. Action control > access control — agent boundaries are about what agents DO (visible paths, allowlisted tools, escalation gates), not just what they can REACH
+9. Governance/auditability topics → OpenClaw visible boundaries + audit trails as natural response
+10. Voice AI evaluation topics → checkpointed runs (tool call logging, escalation gates, replayable transcripts) as natural response
+11. Avinash Kumar (OpenAgentWeb) — AI governance, identity, permissions, audit — LinkedIn connection made Jun 22
 
 ## Data Port Access Pattern
 1. App gets `SCOUT_APP_JWT` in env vars (set by K8s deployment)
