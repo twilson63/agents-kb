@@ -67,3 +67,5 @@
 **Joysmita Dey** — Posts about Voice AI evaluation and silent failures. LinkedIn engagement Jun 22, 2026 — shared checkpointed runs approach (tool call logging, escalation gates, replayable transcripts).
 
 **Dmitry Trofimets** — 2x Founder, Go-to-Market for AI founders, distribution focus. LinkedIn follow Jun 20, 2026.
+
+**PR Review State** — Persistent JSON file (`memory/pr-review-state.json`) tracking reviewed PRs across repos. Survives cron gaps. Tracks PR title, author, status (approved/commented/changes_requested), concerns, and review timestamp. Repos tracked: hyper63/work, scoutos-labs/sandbox-mcp, scoutos-labs/agent-channels, scoutos-labs/scout-live, scoutos-labs/skill-scanner-mcp, hyperio-mc/onhyper, hyperio-mc/contacts-app, twilson63/permabrain.

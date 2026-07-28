@@ -82,3 +82,11 @@
 - No NPM package needed — just remote HTTP/SSE server
 - Tools: deploy_template, list_apps, set_env, get_logs, etc.
 - ~26 hours estimated implementation
+
+## PR Review State Recovery (Jul 27)
+- After 35-day cron gap, PR review state showed 10 PRs reviewed on Jul 27
+- Previous reviews (Jun 22) were 5 PRs across scoutos-labs and hyper63/work
+- Lesson: pr-review-state.json is persistent across cron gaps — state survives downtime
+- New repos added to tracking: hyper63/work (primary), scoutos-labs/skill-scanner-mcp
+- Dependabot PRs need quick triage: security CVEs approve fast, major version bumps need careful review
+- AJV 6→8 (hyper63/work#134) flagged for breaking API changes — always check migration guide before approving major bumps

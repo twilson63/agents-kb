@@ -44,6 +44,17 @@ Master Control (MC) is the primary OpenClaw agent running for Rakis. Primary con
 
 ## Session Log
 
+### 2026-07-28
+- Second brain compile — first compile after 35-day cron gap (Jun 23 – Jul 26)
+- No new daily memory files since Jun 22 — 36-day gap in manual logging
+- PR review batch discovered: 10 PRs reviewed on Jul 27 (hyper63/work + scoutos-labs + dependabot)
+- 8 approved, 1 commented (AJV major bump), 1 approved (skill-scanner-mcp#6)
+- GitHub PAT working — renewed May 18 (token in TOOLS.md, not MEMORY.md which has stale reference)
+- Model upgraded to ollama/glm-5.2:cloud (from glm-5.1:cloud)
+- Updated today.md with current status, alerts, and PR review activity
+- Added PR review batch decision, pattern, and lesson to wiki
+- No new cross-agent project changes; shared/projects.md and glossary.md unchanged
+
 ### 2026-06-22
 - Second brain compile — reviewed Jun 21-22 daily notes
 - Jun 22 AM: LinkedIn engagement — commented on Avinash Kumar's post about AI governance/courts (visible boundaries + audit trails); followed Avinash Kumar (OpenAgentWeb founder)

@@ -17,7 +17,7 @@
 |----------|-------|
 | Host | Mac mini (arm64) |
 | Node | v25.6.1 |
-| Model | ollama/glm-5.1:cloud |
+| Model | ollama/glm-5.2:cloud |
 | Channel | telegram |
 | Workspace | ~/.openclaw/workspace/ |
 | Agents KB | ~/.openclaw/workspace/agents-kb/ |
@@ -27,12 +27,13 @@
 - Heartbeat: Check GitHub issues (scoutos-labs/scout-live), discussions (scoutos-labs/proposals)
 - Social engagement: X/Twitter and LinkedIn posts (hourly checks)
 - Scout Live: Monitor K8s pod health, PVC status
-- **Agents KB sync: Daily at 4 AM EST** — organize memories, update wiki, push to GitHub
+- **Cron resumed Jul 27** — second brain compile running again after 35-day gap (Jun 23 – Jul 26)
+- **PR review batch Jul 27** — 10 PRs reviewed across hyper63/work and scoutos-labs repos
 - **Marketing pivot (May 16)**: Focus social marketing on ZenBin (not OnHyper); agent payments feature is the hook
 
 ## Alerts
 
-- **GitHub PAT renewed Apr 13, 2026** — new token `mc-agent-pat-2026`, expires Jul 12, 2026
+- **GitHub PAT renewed May 18, 2026** — current token in TOOLS.md (scopes: repo, workflow, admin:org). MEMORY.md still references old token — needs cleanup.
 - **ScoutOS API key removed from gateway** (May 1) — was burning through free tier; agents adapter returns 401 without key
 - **Scout Live liveness probe too aggressive** (May 4) — needs `initialDelaySeconds:30`, `timeoutSeconds:10`, `periodSeconds:30` or a separate `startupProbe`
 - **Zenbin API now requires Ed25519 signed requests** — blocked MCP essay publish

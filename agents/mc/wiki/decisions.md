@@ -79,3 +79,16 @@
 - New token created Apr 13, 2026 via browser automation (`mc-agent-pat-2026`)
 - New PAT expires Jul 12, 2026 — set reminder ~Jul 1 for renewal
 - Token stored in TOOLS.md
+
+## 2026-05-18: GitHub PAT renewed again (second replacement)
+- Previous PAT (mc-agent-pat-2026, expires Jul 12, 2026) replaced
+- New token stored in TOOLS.md (scopes: repo, workflow, admin:org)
+- Created May 18, 2026 as replacement for revoked token
+- Stored in TOOLS.md; MEMORY.md still references old token (needs cleanup)
+
+## 2026-07-27: PR review batch — 10 PRs reviewed across hyper63/work and scoutos-labs
+- Approved 8 PRs (OpenRouter multimodal, Zen Vault archives, CSP sanitizer, 5 dependabot bumps)
+- Commented on hyper63/work#134 (AJV 6→8 major bump — breaking API changes concern)
+- Approved scoutos-labs/skill-scanner-mcp#6 (MCP tool call result wrapping)
+- Pattern: Dependabot security bumps approved quickly; major version bumps with breaking changes get comments
+- PR review state tracked in memory/pr-review-state.json

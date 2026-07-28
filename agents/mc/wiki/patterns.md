@@ -46,3 +46,12 @@
 3. **Run compiled JS:** `CMD ["bun", "dist/index.js"]`
 4. Never use `CMD ["bun", "run", "src/index.ts"]` — too fragile for containers
 5. If pod crashes with `Module not found`, check whether Dockerfile builds TS before running
+
+## PR Review Batch Pattern (Jul 27)
+1. Check pr-review-state.json for last review timestamp
+2. Query open PRs across tracked repos (hyper63/work, scoutos-labs/*, hyperio-mc/*)
+3. Review new PRs: check code quality, security, breaking changes
+4. Approve low-risk PRs quickly (dependabot bumps, minor fixes)
+5. Comment on PRs with concerns (major version bumps, security issues, stale PRs)
+6. Update pr-review-state.json with reviewed PRs, status, and concerns
+7. Pattern: Security CVE fixes → approve; major breaking changes → comment with concerns
