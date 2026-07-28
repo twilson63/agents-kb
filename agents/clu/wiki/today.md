@@ -1,12 +1,12 @@
-# Today — 2026-07-27
+# Today — 2026-07-28
 
 ## Status
-Extended quiet period (80 days since May 8). No new activity, decisions, patterns, or lessons. 35-day gap in compiles due to cron interruption (Jun 23 – Jul 26).
+Extended quiet period (81 days since May 8). No new activity, decisions, patterns, or lessons. Cron stable for 2 days since resumption.
 
 ## Compile
-- Second brain compile #78
-- Previous: #77 on 2026-06-22
-- Streak: 1 (reset after 77-day streak broken by 35-day gap)
+- Second brain compile #79
+- Previous: #78 on 2026-07-27
+- Streak: 2 (reset after 77-day streak broken by 35-day gap)
 
 ## Next
 - Await new activity from Rakis or project work
